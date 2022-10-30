@@ -21,7 +21,11 @@ export default function Main() {
                     <img src={require("../resources/whiteframe.png")}
                         className="whiteframe"
                     />
-                    <img src={require("../resources/jaggedgreen.png")}
+                    <img src={require("../resources/mainimg.png")}
+                        className="main--img"
+                    />
+
+                    {/* <img src={require("../resources/jaggedgreen.png")}
                         className="jagged--green bot"
                     />
                     <img src={require("../resources/jaggedgreen.png")}
@@ -35,7 +39,7 @@ export default function Main() {
                     />
                     <img src={require("../resources/purpledots.png")}
                         className="dots--purple"
-                    />
+                    /> */}
                 </div>
             </div>
         </div>

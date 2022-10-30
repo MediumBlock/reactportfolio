@@ -56,7 +56,7 @@ h2 {
     top: 18%;
     height: 500px;
     width: 20%;
-    border: 1px black solid;
+    /* border: 1px black solid; */
 }
 
 
@@ -82,6 +82,15 @@ img.whiteframe {
     width: 75%;
 }
 
+
+.main--img {
+    width: 135%;
+    top: -5%;
+    left: -13%;
+    position: absolute;
+}
+
+/* 
 .jagged--green,
 .jagged--purple {
     position: absolute;
@@ -113,7 +122,7 @@ img.jagged--green {
 img.jagged--purple {
     width: 20%;
     height: 10%;
-}
+} */
 
 /* .dots--green {
     position: absolute;
@@ -125,7 +134,7 @@ img.jagged--purple {
 
 
 
-img.dots--green {
+/* img.dots--green {
     width: 35%;
 }
 
@@ -137,4 +146,4 @@ img.dots--green {
 
 img.dots--purple {
     width: 35%;
-}
+} */
