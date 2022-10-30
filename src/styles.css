@@ -1,0 +1,140 @@
+:root {
+    --background-green: #ccf381;
+    --background-purp: #4831d4;
+}
+
+html,
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+    color: var(--background-green);
+    font-size: 3.8vw;
+    line-height: 90%;
+    /* font-size: 4.5rem; */
+}
+
+h1 span {
+    color: white;
+}
+
+h2 {
+    color: white;
+    font-weight: 400;
+    font-size: 1.1vw;
+}
+
+.logo {
+    position: absolute;
+    top: 0%;
+    left: 1.5%;
+    width: 10%;
+}
+
+.main--container {
+    display: flex;
+    height: 800px;
+    background: linear-gradient(90deg, var(--background-purp) 67%, var(--background-green) 33%);
+
+}
+
+.main--left {
+    position: relative;
+    left: 15%;
+    top: 18%;
+    height: 500px;
+    width: 35%;
+    /* border: 1px black solid; */
+}
+
+
+.main--right {
+    position: relative;
+    left: 22%;
+    top: 18%;
+    height: 500px;
+    width: 20%;
+    border: 1px black solid;
+}
+
+
+
+.headshot {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    z-index: 2;
+}
+
+img.headshot {
+    width: 65%;
+}
+
+.whiteframe {
+    position: absolute;
+    top: 22%;
+    left: 18%
+}
+
+img.whiteframe {
+    width: 75%;
+}
+
+.jagged--green,
+.jagged--purple {
+    position: absolute;
+
+}
+
+.jagged--green.bot {
+    top: 75%;
+    left: -20%;
+    transform: rotate(45deg);
+}
+
+.jagged--green.mid {
+    top: 50%;
+    left: 2%;
+}
+
+img.jagged--green {
+    width: 20%;
+    height: 10%;
+}
+
+.jagged--purple {
+    top: 26%;
+    left: 92%;
+    transform: rotate(135deg) scale(-1);
+}
+
+img.jagged--purple {
+    width: 20%;
+    height: 10%;
+}
+
+/* .dots--green {
+    position: absolute;
+    top: -8%;
+    left: -6%;
+
+} */
+
+
+
+
+img.dots--green {
+    width: 35%;
+}
+
+.dots--purple {
+    position: absolute;
+    top: 45%;
+    left: 74.4%;
+}
+
+img.dots--purple {
+    width: 35%;
+}
