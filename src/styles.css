@@ -43,11 +43,10 @@ h2 {
 .main--left {
     position: relative;
     left: 15%;
-    top: 18%;
     /* height: 500px; */
-    height: 3vw;
+    top: 18%;
     width: 35%;
-    border: 1px black solid;
+    /* border: 1px black solid; */
 }
 
 
@@ -55,7 +54,6 @@ h2 {
     position: relative;
     left: 22%;
     top: 18%;
-    /* height: 500px; */
     height: 30vw;
     width: 20%;
     /* border: 1px black solid; */
@@ -65,85 +63,37 @@ h2 {
 
 .headshot {
     position: absolute;
-    top: 15%;
+    top: 10%;
     left: 15%;
     z-index: 2;
 }
 
 img.headshot {
-    width: 65%;
+    width: 75%;
 }
 
 .whiteframe {
     position: absolute;
-    top: 22%;
+    top: 17%;
     left: 18%
 }
 
 img.whiteframe {
-    width: 75%;
+    width: 85%;
 }
 
 
 .main--img {
-    width: 135%;
+    width: 145%;
     top: -5%;
-    left: -13%;
+    left: -14%;
     position: absolute;
 }
 
-/* 
-.jagged--green,
-.jagged--purple {
+.squiggle {
     position: absolute;
-
+    width: 10%;
+    height: 80%;
+    top: 40%;
+    left: -40%;
 }
-
-.jagged--green.bot {
-    top: 75%;
-    left: -20%;
-    transform: rotate(45deg);
-}
-
-.jagged--green.mid {
-    top: 50%;
-    left: 2%;
-}
-
-img.jagged--green {
-    width: 20%;
-    height: 10%;
-}
-
-.jagged--purple {
-    top: 26%;
-    left: 92%;
-    transform: rotate(135deg) scale(-1);
-}
-
-img.jagged--purple {
-    width: 20%;
-    height: 10%;
-} */
-
-.dots--green {
-    position: absolute;
-    top: -8%;
-    left: -6%;
-
-}
-
-
-/* img.dots--green {
-    width: 35%;
-}
-
-.dots--purple {
-    position: absolute;
-    top: 45%;
-    left: 74.4%;
-}
-
-img.dots--purple {
-    width: 35%;
-} */

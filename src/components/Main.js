@@ -12,6 +12,9 @@ export default function Main() {
             <div className="main--left">
                 <h1>Front-end <br />  Developer<span>.</span></h1>
                 <h2>A love for creating detailed and complete frontend packages for a great end user experience.</h2>
+                <img src={require("../resources/line.png")}
+                        className="squiggle"
+                    />
             </div>
             <div className="main--right">
                 <div className="sub--main">
@@ -25,21 +28,6 @@ export default function Main() {
                         className="main--img"
                     />
 
-                    {/* <img src={require("../resources/jaggedgreen.png")}
-                        className="jagged--green bot"
-                    />
-                    <img src={require("../resources/jaggedgreen.png")}
-                        className="jagged--green mid"
-                    />
-                    <img src={require("../resources/jaggedpurple.png")}
-                        className="jagged--purple"
-                    />
-                    <img src={require("../resources/greendots.png")}
-                        className="dots--green"
-                    />
-                    <img src={require("../resources/purpledots.png")}
-                        className="dots--purple"
-                    /> */}
                 </div>
             </div>
         </div>
