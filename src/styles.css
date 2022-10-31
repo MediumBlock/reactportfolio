@@ -115,7 +115,12 @@ h4 {
     font-size: 1.1vw;
     color: var(--background-purp);
     font-weight: 400;
+    transition: all 0.4s;
 
+}
+
+.visible .menu--text {
+    transform: translate(0px, 10%);
 }
 
 
