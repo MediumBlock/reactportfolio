@@ -1,10 +1,14 @@
 import React from "react";
 import Main from "./components/Main";
+import { Routes, Route, BrowserRouter as Router } from "react-router-dom"
+
 
 function App() {
   return (
     <div>
-      <Main />
+      <Routes>
+        <Route index path="/" element={<Main />} />
+      </Routes>
     </div>
   );
 }

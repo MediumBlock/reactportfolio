@@ -26,6 +26,10 @@ h2 {
     font-size: 1.1vw;
 }
 
+h4 {
+    font-weight: 400;
+}
+
 .logo {
     position: absolute;
     top: 0%;
@@ -49,6 +53,22 @@ h2 {
     /* border: 1px black solid; */
 }
 
+.subtext {
+    font-size: 0.8vw;
+    color: #ccf381;
+    display: flex;
+    position: absolute;
+    left: 0%;
+    top: 55%;
+    width: 85%;
+    /* border: 1px solid black; */
+}
+
+.subheading {
+    margin-right: 10%;
+    width: 70%;
+}
+
 
 .main--right {
     position: relative;
@@ -57,6 +77,75 @@ h2 {
     height: 30vw;
     width: 20%;
     /* border: 1px black solid; */
+}
+
+.menu--dropdown {
+    width: 15%;
+    position: absolute;
+}
+
+
+.top--tile {
+    top: -10%;
+    right: -95%;
+}
+
+@keyframes top--motion {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(45deg);
+        transform-origin: 30% 70%;
+    }
+}
+
+.top--tile.motion {
+    animation-name: top--motion;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+
+}
+
+.top--tile.reverse--motion {
+    animation-direction: reverse;
+    animation-name: top--motion;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes bottom--motion {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-45deg);
+        transform-origin: 40% 60%;
+    }
+}
+
+
+.bottom--tile {
+    top: -7.5%;
+    right: -95%;
+
+}
+
+.bottom--tile.motion {
+    animation-name: bottom--motion;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+
+}
+
+.bottom--tile.reverse--motion {
+    animation-direction: reverse;
+    animation-name: bottom--motion;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
 }
 
 
