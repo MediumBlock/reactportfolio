@@ -13,7 +13,7 @@ export default function Main() {
         const menu = toggleBotMenuRef.current;
         top.classList.toggle("reverse--motion")
         bottom.classList.toggle("reverse--motion")
-        menu.classList.toggle("hidden")
+        menu.classList.toggle("visible")
 
     }
 
@@ -53,7 +53,7 @@ export default function Main() {
                         <div className="menu--text">
                             <h5>My Résumé</h5>
                             <h5>My Projects</h5>
-                            <h5>SAY HELLO</h5>
+                            <h5 className="hello">SAY HELLO</h5>
                             <h5>m.paspaliaris@gmail.com</h5>
                             <h5>+61 420 686 886</h5>
                         </div>
@@ -68,6 +68,24 @@ export default function Main() {
                     />
                     <img src={require("../resources/mainimg.png")}
                         className="main--img"
+                    />
+
+                </div>
+                <div className="page--markers">
+                    <img src={require("../resources/box-purple.png")}
+                        className="marker unfilled"
+                    />
+                    <img src={require("../resources/box-purple-filled.png")}
+                        className="marker filled"
+                    />
+                    <img src={require("../resources/box-purple-filled.png")}
+                        className="marker filled"
+                    />
+                    <img src={require("../resources/box-purple-filled.png")}
+                        className="marker filled"
+                    />
+                    <img src={require("../resources/box-purple-filled.png")}
+                        className="marker filled"
                     />
 
                 </div>
