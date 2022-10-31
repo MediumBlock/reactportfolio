@@ -88,65 +88,37 @@ h4 {
 .top--tile {
     top: -10%;
     right: -95%;
+    transition: transform 0.5s;
+    transform-origin: 30% 70%;
+
 }
 
-@keyframes top--motion {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(45deg);
-        transform-origin: 30% 70%;
-    }
-}
 
 .top--tile.motion {
-    animation-name: top--motion;
-    animation-duration: 0.3s;
-    animation-fill-mode: forwards;
-
+    transform: rotate(0deg);
 }
 
 .top--tile.reverse--motion {
-    animation-direction: reverse;
-    animation-name: top--motion;
-    animation-duration: 0.3s;
-    animation-fill-mode: forwards;
+    transform: rotate(45deg);
 }
 
-
-@keyframes bottom--motion {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(-45deg);
-        transform-origin: 40% 60%;
-    }
-}
 
 
 .bottom--tile {
     top: -7.5%;
     right: -95%;
-
+    transition: transform 0.5s;
+    transform-origin: 40% 60%;
 }
 
 .bottom--tile.motion {
-    animation-name: bottom--motion;
-    animation-duration: 0.3s;
-    animation-fill-mode: forwards;
-
+    transform: rotate(0deg);
 }
 
 .bottom--tile.reverse--motion {
-    animation-direction: reverse;
-    animation-name: bottom--motion;
-    animation-duration: 0.3s;
-    animation-fill-mode: forwards;
+    transform: rotate(-45deg);
 }
+
 
 
 

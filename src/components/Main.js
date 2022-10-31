@@ -3,10 +3,14 @@ import React, { useState, useRef } from "react";
 export default function Main() {
 
     const toggleRef = useRef(null)
-    const [isToggled, setIsToggled] = useState(false)
-
+    const toggleSecondRef = useRef(null)
+// reverse--motion 
     function handleToggle() {
-        setIsToggled(!isToggled)
+        const wrapper = toggleRef.current;
+        const secondWrapper = toggleSecondRef.current
+        wrapper.classList.toggle("reverse--motion")
+        secondWrapper.classList.toggle("reverse--motion")
+
     }
 
     return (
@@ -33,10 +37,12 @@ export default function Main() {
                         onClick={handleToggle}
                     >
                         <img src={require("../resources/menu-dropdown.png")}
-                            className={isToggled ? "menu--dropdown top--tile motion" : "menu--dropdown top--tile reverse--motion"}
+                            className="menu--dropdown top--tile motion"
+                            ref={toggleRef}
                         />
                         <img src={require("../resources/menu-dropdown.png")}
-                            className={isToggled ? "menu--dropdown bottom--tile motion" : "menu--dropdown bottom--tile reverse--motion"}
+                            className="menu--dropdown bottom--tile motion"
+                            ref={toggleSecondRef}
                         />
                     </div>
                 </div>
