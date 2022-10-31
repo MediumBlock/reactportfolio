@@ -2,15 +2,16 @@ import React, { useState, useRef } from "react";
 
 export default function Main() {
 
-    const toggleRef = useRef(null)
-    const toggleSecondRef = useRef(null)
-// reverse--motion 
-    function handleToggle() {
-        const wrapper = toggleRef.current;
-        const secondWrapper = toggleSecondRef.current
-        wrapper.classList.toggle("reverse--motion")
-        secondWrapper.classList.toggle("reverse--motion")
+    const [isMenuToggled, setIsMenuToggled] = useState(false);
+    const toggleTopRef = useRef(null)
+    const toggleBotRef = useRef(null)
 
+    function handleToggle() {
+        const top = toggleTopRef.current;
+        const bottom = toggleBotRef.current
+        setIsMenuToggled(!isMenuToggled)
+        top.classList.toggle("reverse--motion")
+        bottom.classList.toggle("reverse--motion")
     }
 
     return (
@@ -32,19 +33,24 @@ export default function Main() {
                 />
             </div>
             <div className="main--right">
-                <div>
-                    <div className="menu"
-                        onClick={handleToggle}
-                    >
-                        <img src={require("../resources/menu-dropdown.png")}
-                            className="menu--dropdown top--tile motion"
-                            ref={toggleRef}
-                        />
-                        <img src={require("../resources/menu-dropdown.png")}
-                            className="menu--dropdown bottom--tile motion"
-                            ref={toggleSecondRef}
-                        />
-                    </div>
+                <div onClick={handleToggle} >
+                    <img src={require("../resources/menu-dropdown.png")}
+                        className="menu--dropdown top--tile motion"
+                        ref={toggleTopRef}
+                    />
+                    <img src={require("../resources/menu-dropdown.png")}
+                        className="menu--dropdown bottom--tile motion"
+                        ref={toggleBotRef}
+                    />
+                    { isMenuToggled && <div className="menu">
+                        <div className="menu--text">
+                            <h5>My Résumé</h5>
+                            <h5>My Projects</h5>
+                            <h5>SAY HELLO</h5>
+                            <h5>m.paspaliaris@gmail.com</h5>
+                            <h5>+61 420 686 886</h5>
+                        </div>
+                    </div> }
                 </div>
                 <div className="sub--main">
                     <img src={require("../resources/headshot.png")}

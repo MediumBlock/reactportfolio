@@ -79,10 +79,33 @@ h4 {
     /* border: 1px black solid; */
 }
 
+.menu {
+    position: absolute;
+    height: 70%;
+    width: 85%;
+    left: 120%;
+    top: -15%;
+    background-color: white;
+
+}
+
 .menu--dropdown {
     width: 15%;
     position: absolute;
+    cursor: pointer;
+    z-index: 2;
 }
+
+.menu--text {
+    position: absolute;
+    margin-left: 10%;
+    top: 10%;
+    font-size: 1.1vw;
+    color: var(--background-purp);
+    font-weight: 400;
+
+}
+
 
 
 .top--tile {
@@ -107,7 +130,7 @@ h4 {
 .bottom--tile {
     top: -7.5%;
     right: -95%;
-    transition: transform 0.5s;
+    transition: transform 0.8s;
     transform-origin: 40% 60%;
 }
 
