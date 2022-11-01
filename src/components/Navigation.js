@@ -18,7 +18,7 @@ export default function Navigation() {
     }
 
     return (
-        <div className="main--container">
+        <div className="main--container navigation--container">
             <div className="main--logo">
                 <img src={require("../resources/logo2.png")}
                     className="logo"

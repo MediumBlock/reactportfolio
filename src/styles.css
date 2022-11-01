@@ -7,6 +7,7 @@ html,
 body {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -35,6 +36,7 @@ h4 {
     top: 0%;
     left: 1.5%;
     width: 10%;
+
 }
 
 .main--container {
@@ -234,3 +236,7 @@ img.whiteframe {
 
 
 
+.navigation--container {
+    width: 100%;
+    position: absolute;
+}

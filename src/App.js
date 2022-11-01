@@ -7,8 +7,9 @@ import { Routes, Route, BrowserRouter as Router } from "react-router-dom"
 function App() {
   return (
     <div>
+      <Navigation />
       <Routes>
-        <Route index path="/" element={<Navigation />} />
+        <Route index path="/" element={<Main />} />
       </Routes>
     </div>
   );
