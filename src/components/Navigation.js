@@ -1,10 +1,12 @@
 import React, { useRef } from "react";
+import { Link, useLocation } from "react-router-dom"
 
 export default function Navigation() {
 
     const toggleTopRef = useRef(null)
     const toggleBotRef = useRef(null)
     const toggleBotMenuRef = useRef(null)
+    const location = useLocation().pathname
 
 
     function handleToggle() {
@@ -17,12 +19,23 @@ export default function Navigation() {
 
     }
 
+
     return (
-        <div className="main--container navigation--container">
+        <div className=" navigation--container">
             <div className="main--logo">
-                <img src={require("../resources/logo2.png")}
-                    className="logo"
-                />
+                <Link to="">
+                    {
+                        location === "/"
+                            ?
+                            <img src={require("../resources/logo2.png")}
+                                className="logo"
+                            />
+                            :
+                            <img src={require("../resources/logo-purp.png")}
+                                className="logo"
+                            />
+                    }
+                </Link>
             </div>
             <div className="main--right">
                 <div>
@@ -52,9 +65,11 @@ export default function Navigation() {
                     <img src={require("../resources/box-purple.png")}
                         className="marker unfilled"
                     />
-                    <img src={require("../resources/box-purple-filled.png")}
-                        className="marker filled"
-                    />
+                    <Link to="/skills">
+                        <img src={require("../resources/box-purple-filled.png")}
+                            className="marker filled"
+                        />
+                    </Link>
                     <img src={require("../resources/box-purple-filled.png")}
                         className="marker filled"
                     />

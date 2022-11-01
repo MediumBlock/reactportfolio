@@ -1,6 +1,7 @@
 :root {
     --background-green: #ccf381;
     --background-purp: #4831d4;
+    --subtext-purp: #3d155f;
 }
 
 html,
@@ -30,18 +31,23 @@ h4 {
     font-weight: 400;
 }
 
-.navigation--container {
-    width: 100%;
-    position: absolute;
-}
 
 .logo {
     position: absolute;
     top: 0%;
     left: 1.5%;
     width: 10%;
+    z-index: 2;
 
 }
+
+.navigation--container {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    height: 800px;
+}
+
 
 .main--container {
     display: flex;
@@ -203,7 +209,7 @@ img.whiteframe {
 
 .page--markers {
     position: absolute;
-    right:-275%;
+    right: -275%;
     top: 70%;
 
 }
@@ -211,7 +217,7 @@ img.whiteframe {
 .marker {
     position: relative;
     width: 25%;
-    right: -40%;   
+    right: -40%;
     display: block;
 }
 
@@ -234,5 +240,71 @@ img.whiteframe {
     left: -40%;
 }
 
+.skills {
+    display: flex;
+}
 
 
+.skills--left {
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    width: 27vw;
+}
+
+.skills--left img {
+    width: 60%;
+    position: absolute;
+    right: 0%
+}
+
+.skills--left .green {
+    width: 40%;
+    top: -20%;
+    left: 40%;
+}
+
+.skills--left h1 {
+    color: var(--background-purp);
+}
+
+.skills--left h5 {
+    font-size: 0.7vw;
+    font-weight: 400;
+    color: var(--subtext-purp);
+}
+
+.skills--right {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    width: 27vw;
+    margin-left: 5%;
+
+}
+.skills--right img {
+    /* border: 1px solid black; */
+    right: 20%;
+    top: -75%;
+    width: 55%;
+    position: absolute;
+}
+
+.skills--right h1 {
+    color: var(--background-purp);
+}
+
+.skills--right h5 {
+    font-size: 0.7vw;
+    font-weight: 400;
+    color: var(--subtext-purp);
+}
+
+.squiggle--skills {
+    position: absolute;
+    width: 5%;
+    height: 80%;
+    top: -20%;
+    left: 0%;
+    z-index: 1;
+}
