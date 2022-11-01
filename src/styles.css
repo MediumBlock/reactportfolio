@@ -14,7 +14,6 @@ h1 {
     color: var(--background-green);
     font-size: 3.8vw;
     line-height: 90%;
-    /* font-size: 4.5rem; */
 }
 
 h1 span {
@@ -29,6 +28,11 @@ h2 {
 
 h4 {
     font-weight: 400;
+}
+
+.navigation--container {
+    width: 100%;
+    position: absolute;
 }
 
 .logo {
@@ -49,10 +53,8 @@ h4 {
 .main--left {
     position: relative;
     left: 15%;
-    /* height: 500px; */
     top: 18%;
     width: 35%;
-    /* border: 1px black solid; */
 }
 
 .subtext {
@@ -63,7 +65,6 @@ h4 {
     left: 0%;
     top: 55%;
     width: 85%;
-    /* border: 1px solid black; */
 }
 
 .subheading {
@@ -202,10 +203,9 @@ img.whiteframe {
 
 .page--markers {
     position: absolute;
-    right:-270%;
+    right:-275%;
     top: 70%;
 
-    /* border: 1px solid black; */
 }
 
 .marker {
@@ -236,7 +236,3 @@ img.whiteframe {
 
 
 
-.navigation--container {
-    width: 100%;
-    position: absolute;
-}
