@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Brief() {
+export default function AboutMe() {
 
     return (
         <div>

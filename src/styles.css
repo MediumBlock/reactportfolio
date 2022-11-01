@@ -229,3 +229,8 @@ img.whiteframe {
     top: 40%;
     left: -40%;
 }
+
+.navigation {
+    position: absolute;
+    top: 0%;
+}
