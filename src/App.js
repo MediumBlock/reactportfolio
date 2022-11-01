@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
       <Routes>
-        <Route index path="/" element={<div><Main /><Navigation /></div>} />
+        <Route index path="/" element={<Navigation />} />
       </Routes>
     </div>
   );
