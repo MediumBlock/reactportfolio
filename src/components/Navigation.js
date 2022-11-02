@@ -21,7 +21,7 @@ export default function Navigation() {
 
 
     return (
-        <div className=" navigation--container">
+        <div className="navigation--container">
             <div className="main--logo">
                 <Link to="">
                     {

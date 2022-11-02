@@ -90,6 +90,7 @@ h4 {
     /* border: 1px black solid; */
 }
 
+
 .menu {
     position: absolute;
     height: 70%;
@@ -100,6 +101,8 @@ h4 {
     transition: all 0.4s;
     opacity: 0%;
     visibility: hidden;
+    z-index: 2;
+
 
 
 }
@@ -148,6 +151,8 @@ h4 {
     right: -270%;
     transition: transform 0.5s;
     transform-origin: 30% 70%;
+    z-index: 3;
+
 
 }
 
@@ -168,6 +173,8 @@ h4 {
     right: -270%;
     transition: transform 0.8s;
     transform-origin: 40% 60%;
+    z-index: 3;
+
 }
 
 .bottom--tile.motion {
@@ -214,6 +221,8 @@ img.whiteframe {
     position: absolute;
     right: -275%;
     top: 85%;
+    z-index: 2;
+
 
 }
 
