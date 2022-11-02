@@ -219,6 +219,7 @@ img.whiteframe {
 
 .page--markers {
     position: absolute;
+    width: 4vw;
     right: -275%;
     top: 85%;
     z-index: 2;
@@ -231,6 +232,8 @@ img.whiteframe {
     width: 25%;
     right: -40%;
     display: block;
+    margin-top: 15%;
+
 }
 
 .filled {

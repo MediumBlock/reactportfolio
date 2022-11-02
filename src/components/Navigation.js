@@ -8,6 +8,7 @@ export default function Navigation() {
     const toggleBotMenuRef = useRef(null)
     const location = useLocation().pathname
 
+    console.log(location)
 
     function handleToggle() {
         const top = toggleTopRef.current;
@@ -19,11 +20,18 @@ export default function Navigation() {
 
     }
 
+    const boxFilled = <img src={require("../resources/box-purple.png")}
+        className="marker unfilled"
+    />
+
+    const boxUnfilled = <img src={require("../resources/box-purple-filled.png")}
+        className="marker filled"
+    />
 
     return (
         <div className="navigation--container">
             <div className="main--logo">
-                <Link to="">
+                <Link to="/">
                     {
                         location === "/"
                             ?
@@ -62,13 +70,21 @@ export default function Navigation() {
                     </div>
                 </div>
                 <div className="page--markers">
-                    <img src={require("../resources/box-purple.png")}
-                        className="marker unfilled"
-                    />
+                    <Link to="/">
+                        {location === "/"
+                            ?
+                            boxFilled
+                            :
+                            boxUnfilled
+                        }
+                    </Link>
                     <Link to="/skills">
-                        <img src={require("../resources/box-purple-filled.png")}
-                            className="marker filled"
-                        />
+                        {location === "/skills"
+                            ?
+                            boxFilled
+                            :
+                            boxUnfilled
+                        }
                     </Link>
                     <img src={require("../resources/box-purple-filled.png")}
                         className="marker filled"
