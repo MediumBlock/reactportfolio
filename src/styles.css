@@ -45,13 +45,13 @@ h4 {
     width: 100%;
     position: absolute;
     display: flex;
-    height: 800px;
+    height: 35vwg;
 }
 
 
 .main--container {
     display: flex;
-    height: 800px;
+    height: 35vw;
     background: linear-gradient(90deg, var(--background-purp) 67%, var(--background-green) 33%);
 
 }
