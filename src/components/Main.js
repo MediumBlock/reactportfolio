@@ -1,10 +1,16 @@
 import React, { useState, useRef } from "react";
+import { motion } from "framer-motion";
 
 export default function Main() {
 
 
     return (
-        <div className="main--container">
+        <motion.div
+            className="main--container"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+        >
             <div className="main--left">
                 <h1>Front-end <br />  Developer<span>.</span></h1>
                 <h2>A love for creating detailed and complete frontend packages for a great end user experience.</h2>
@@ -30,6 +36,6 @@ export default function Main() {
 
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
