@@ -1,9 +1,15 @@
 import React from "react";
+import { motion } from "framer-motion";
+
 
 export default function Skills() {
 
     return (
-        <div>
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1, transition: { duration: 0.5 } }}
+            exit={{ opacity: 0 }}
+        >
             <div className="skills">
                 <div className="skills--left">
                     <img src={require("../resources/green-dots.png")}
@@ -24,6 +30,6 @@ export default function Skills() {
                     className="squiggle--skills"
                 />
             </div>
-        </div>
+        </motion.div>
     )
 }

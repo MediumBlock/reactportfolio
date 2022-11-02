@@ -2,6 +2,7 @@
     --background-green: #ccf381;
     --background-purp: #4831d4;
     --subtext-purp: #3d155f;
+    --background-white: #F9F9F9;
 }
 
 html,
@@ -9,6 +10,7 @@ body {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
     box-sizing: border-box;
+    background-color: var(--background-white);
 }
 
 h1 {
@@ -45,13 +47,13 @@ h4 {
     width: 100%;
     position: absolute;
     display: flex;
-    height: 35vwg;
+    height: 39vw;
 }
 
 
 .main--container {
     display: flex;
-    height: 35vw;
+    height: 39vw;
     background: linear-gradient(90deg, var(--background-purp) 67%, var(--background-green) 33%);
 
 }
@@ -93,7 +95,7 @@ h4 {
     height: 70%;
     width: 85%;
     left: 290%;
-    top: 5%;
+    top: -17.5%;
     background-color: white;
     transition: all 0.4s;
     opacity: 0%;
@@ -142,7 +144,7 @@ h4 {
 }
 
 .top--tile {
-    top: 12.5%;
+    top: -12.5%;
     right: -270%;
     transition: transform 0.5s;
     transform-origin: 30% 70%;
@@ -162,7 +164,7 @@ h4 {
 
 
 .bottom--tile {
-    top: 15%;
+    top: -10%;
     right: -270%;
     transition: transform 0.8s;
     transform-origin: 40% 60%;
@@ -237,12 +239,13 @@ img.whiteframe {
     position: absolute;
     width: 10%;
     height: 80%;
-    top: 40%;
+    top: 30%;
     left: -40%;
 }
 
 .skills {
     display: flex;
+    /* background: var(--background-green); */
 }
 
 
