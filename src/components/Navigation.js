@@ -6,8 +6,6 @@ export default function Navigation() {
     const toggleTopRef = useRef(null)
     const toggleBotRef = useRef(null)
     const toggleBotMenuRef = useRef(null)
-    const unFilledRef = useRef(null)
-    const filledRef = useRef(null)
     const location = useLocation()
 
 
@@ -21,25 +19,13 @@ export default function Navigation() {
 
     }
 
-    function handleTransition() {
-        const filled = filledRef.current;
-        const unFilled = unFilledRef.current;
-        filled.classList.toggle("testing--motion")
-        unFilled.classList.toggle("testing--motion")
-
-
-    }
 
     const boxFilled = <img
-        ref={unFilledRef}
-        onClick={handleTransition}
         src={require("../resources/box-purple.png")}
         className="marker unfilled"
     />
 
     const boxUnfilled = <img
-        ref={filledRef}
-        onClick={handleTransition}
         src={require("../resources/box-purple-filled.png")}
         className="marker filled"
     />
