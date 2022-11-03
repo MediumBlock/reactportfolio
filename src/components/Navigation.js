@@ -6,9 +6,10 @@ export default function Navigation() {
     const toggleTopRef = useRef(null)
     const toggleBotRef = useRef(null)
     const toggleBotMenuRef = useRef(null)
-    const location = useLocation().pathname
+    const unFilledRef = useRef(null)
+    const filledRef = useRef(null)
+    const location = useLocation()
 
-    console.log(location)
 
     function handleToggle() {
         const top = toggleTopRef.current;
@@ -20,11 +21,26 @@ export default function Navigation() {
 
     }
 
-    const boxFilled = <img src={require("../resources/box-purple.png")}
+    function handleTransition() {
+        const filled = filledRef.current;
+        const unFilled = unFilledRef.current;
+        filled.classList.toggle("testing--motion")
+        unFilled.classList.toggle("testing--motion")
+
+
+    }
+
+    const boxFilled = <img
+        ref={unFilledRef}
+        onClick={handleTransition}
+        src={require("../resources/box-purple.png")}
         className="marker unfilled"
     />
 
-    const boxUnfilled = <img src={require("../resources/box-purple-filled.png")}
+    const boxUnfilled = <img
+        ref={filledRef}
+        onClick={handleTransition}
+        src={require("../resources/box-purple-filled.png")}
         className="marker filled"
     />
 
@@ -33,7 +49,7 @@ export default function Navigation() {
             <div className="main--logo">
                 <Link to="/">
                     {
-                        location === "/"
+                        location.pathname === "/"
                             ?
                             <img src={require("../resources/logo2.png")}
                                 className="logo"
@@ -71,7 +87,7 @@ export default function Navigation() {
                 </div>
                 <div className="page--markers">
                     <Link to="/">
-                        {location === "/"
+                        {location.pathname === "/"
                             ?
                             boxFilled
                             :
@@ -79,7 +95,7 @@ export default function Navigation() {
                         }
                     </Link>
                     <Link to="/skills">
-                        {location === "/skills"
+                        {location.pathname === "/skills"
                             ?
                             boxFilled
                             :

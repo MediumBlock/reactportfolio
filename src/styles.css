@@ -118,7 +118,6 @@ h4 {
 
 .menu--dropdown {
     width: 15%;
-
     position: absolute;
     cursor: pointer;
     z-index: 2;
@@ -152,10 +151,7 @@ h4 {
     transition: transform 0.5s;
     transform-origin: 30% 70%;
     z-index: 3;
-
-
 }
-
 
 .top--tile.motion {
     transform: rotate(0deg);
@@ -217,15 +213,16 @@ img.whiteframe {
     position: absolute;
 }
 
+
 .page--markers {
     position: absolute;
     width: 4vw;
     right: -275%;
     top: 85%;
     z-index: 2;
-
-
 }
+
+
 
 .marker {
     position: relative;
@@ -233,7 +230,7 @@ img.whiteframe {
     right: -40%;
     display: block;
     margin-top: 15%;
-
+    transition: all 0.5s;
 }
 
 .filled {
@@ -243,6 +240,10 @@ img.whiteframe {
     right: -47.5%;
     text-align: center;
     cursor: pointer;
+}
+
+img.testing--motion {
+    transform: rotate(120deg);
 }
 
 
@@ -298,6 +299,7 @@ img.whiteframe {
     margin-left: 5%;
 
 }
+
 .skills--right img {
     /* border: 1px solid black; */
     right: 20%;
