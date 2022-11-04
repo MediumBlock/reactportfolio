@@ -1,5 +1,5 @@
-import React, { useRef } from "react";
-import { Link, useLocation } from "react-router-dom"
+import React, { useRef, useEffect } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom"
 
 export default function Navigation() {
 
@@ -9,6 +9,27 @@ export default function Navigation() {
     const location = useLocation()
 
 
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        window.addEventListener("wheel", (e) => handleNavigation(e));
+
+        return () => { // return a cleanup function to unregister our function since its gonna run multiple times
+            window.removeEventListener("wheel", (e) => handleNavigation(e));
+        };
+    }, []);
+
+    function handleNavigation(e) {
+        if (e.deltaY > 1) {
+            navigate("/skills")
+        } else if (e.deltaY < 1) {
+            navigate("/")
+        }
+    }
+
+
+
+
     function handleToggle() {
         const top = toggleTopRef.current;
         const bottom = toggleBotRef.current;
@@ -16,7 +37,6 @@ export default function Navigation() {
         top.classList.toggle("reverse--motion")
         bottom.classList.toggle("reverse--motion")
         menu.classList.toggle("visible")
-
     }
 
 

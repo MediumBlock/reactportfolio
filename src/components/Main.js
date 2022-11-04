@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 
 export default function Main() {
@@ -8,7 +8,7 @@ export default function Main() {
         <motion.div
             className="main--container"
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1, transition: { duration: 0.5 }}}
+            animate={{ opacity: 1, transition: { duration: 0.5 } }}
             exit={{ opacity: 0 }}
         >
             <div className="main--left">
