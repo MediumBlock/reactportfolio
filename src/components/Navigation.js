@@ -9,23 +9,6 @@ export default function Navigation() {
     const location = useLocation()
 
 
-    const navigate = useNavigate();
-
-    useEffect(() => {
-        window.addEventListener("wheel", (e) => handleNavigation(e));
-
-        return () => { // return a cleanup function to unregister our function since its gonna run multiple times
-            window.removeEventListener("wheel", (e) => handleNavigation(e));
-        };
-    }, []);
-
-    function handleNavigation(e) {
-        if (e.deltaY > 1) {
-            navigate("/skills")
-        } else if (e.deltaY < 1) {
-            navigate("/")
-        }
-    }
 
 
 

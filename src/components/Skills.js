@@ -1,8 +1,18 @@
-import React from "react";
+import React, {useContext} from "react";
 import { motion } from "framer-motion";
+import { useLocation } from "react-router-dom";
+import { Context } from "./Context";
+
 
 
 export default function Skills() {
+
+
+    const location = useLocation();
+
+    const {setComponentLocation} = useContext(Context);
+
+    setComponentLocation(location)
 
     return (
         <motion.div
