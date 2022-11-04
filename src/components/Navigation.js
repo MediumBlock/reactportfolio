@@ -23,22 +23,35 @@ export default function Navigation() {
     }
 
 
-    const boxFilled = <img
-        src={require("../resources/box-purple.png")}
-        className="marker unfilled"
-    />
+    const boxFilled = location.pathname === "/aboutme" ?
+        <img
+            src={require("../resources/box-green.png")}
+            className="marker unfilled"
+        />
+        :
+        <img
+            src={require("../resources/box-purple.png")}
+            className="marker unfilled"
+        />
 
-    const boxUnfilled = <img
-        src={require("../resources/box-purple-filled.png")}
-        className="marker filled"
-    />
+
+    const boxUnfilled = location.pathname === "/aboutme" ?
+        <img
+            src={require("../resources/box-green-filled.png")}
+            className="marker filled"
+        />
+        :
+        <img
+            src={require("../resources/box-purple-filled.png")}
+            className="marker filled"
+        />
 
     return (
         <div className="navigation--container">
             <div className="main--logo">
                 <Link to="/">
                     {
-                        location.pathname === "/"
+                        location.pathname === "/" || location.pathname === "/aboutme"
                             ?
                             <img src={require("../resources/logo2.png")}
                                 className="logo"
@@ -52,16 +65,36 @@ export default function Navigation() {
             </div>
             <div className="main--right">
                 <div>
+
                     <div onClick={handleToggle}>
-                        <img src={require("../resources/menu-dropdown.png")}
-                            className="menu--dropdown top--tile motion"
-                            ref={toggleTopRef}
-                        />
-                        <img src={require("../resources/menu-dropdown.png")}
-                            className="menu--dropdown bottom--tile motion"
-                            ref={toggleBotRef}
-                        />
+
+                        {location.pathname !== "/aboutme"
+                            ?
+                            <>
+                                < img src={require("../resources/menu-dropdown.png")}
+                                    className="menu--dropdown top--tile motion"
+                                    ref={toggleTopRef}
+                                />
+                                <img src={require("../resources/menu-dropdown.png")}
+                                    className="menu--dropdown bottom--tile motion"
+                                    ref={toggleBotRef}
+                                />
+                            </>
+                            :
+                            <>
+                                <img src={require("../resources/menu-dropdown-green.png")}
+                                    className="menu--dropdown top--tile motion"
+                                    ref={toggleTopRef}
+                                />
+                                <img src={require("../resources/menu-dropdown-green.png")}
+                                    className="menu--dropdown bottom--tile motion"
+                                    ref={toggleBotRef}
+                                />
+                            </>
+
+                        }
                     </div>
+
                     <div className="menu"
                         ref={toggleBotMenuRef}
                     >
@@ -91,9 +124,14 @@ export default function Navigation() {
                             boxUnfilled
                         }
                     </Link>
-                    <img src={require("../resources/box-purple-filled.png")}
-                        className="marker filled"
-                    />
+                    <Link to="/aboutme">
+                        {location.pathname === "/aboutme"
+                            ?
+                            boxFilled
+                            :
+                            boxUnfilled
+                        }
+                    </Link>
                     <img src={require("../resources/box-purple-filled.png")}
                         className="marker filled"
                     />

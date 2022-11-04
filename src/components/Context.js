@@ -8,7 +8,6 @@ function ContextProvider({ children }) {
     const navigate = useNavigate();
     const location = useLocation();
 
-    console.log(location)
 
     useEffect(() => {
         window.addEventListener("wheel", (e) => handleNavigation(e));
@@ -24,10 +23,13 @@ function ContextProvider({ children }) {
             navigate("/skills")
         } else if (e.deltaY < 1 && location.pathname === "/skills") {
             navigate("")
+        } else if (e.deltaY > 1 && location.pathname === "/skills") {
+            navigate("/aboutme")
+        } else if (e.deltaY < 1 && location.pathname === "/aboutme") {
+            navigate("/skills")
+
         }
-
     }
-
 
 
     return (

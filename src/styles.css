@@ -323,3 +323,8 @@ img.whiteframe {
     left: 0%;
     z-index: 1;
 }
+
+.aboutme--top {
+    background-color: var(--background-purp);
+    height: 100vh;
+}
