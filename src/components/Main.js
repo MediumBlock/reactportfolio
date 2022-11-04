@@ -1,15 +1,11 @@
 import React, { useState, useRef, useEffect, useContext } from "react";
 import { motion } from "framer-motion";
-import { Context } from "./Context";
 import { useLocation } from "react-router-dom";
 
 export default function Main() {
 
     const location = useLocation();
 
-    const {setComponentLocation} = useContext(Context);
-
-    setComponentLocation(location)
 
     return (
         <motion.div

@@ -4,12 +4,11 @@ import { useNavigate, useLocation } from "react-router-dom";
 const Context = React.createContext()
 
 function ContextProvider({ children }) {
-    const [componentLocation, setComponentLocation] = useState("");
 
-    const location = useLocation();
     const navigate = useNavigate();
+    const location = useLocation();
 
-    console.log(componentLocation)
+    console.log(location)
 
     useEffect(() => {
         window.addEventListener("wheel", (e) => handleNavigation(e));
@@ -17,21 +16,22 @@ function ContextProvider({ children }) {
         return () => {
             window.removeEventListener("wheel", (e) => handleNavigation(e));
         };
-    }, []);
+    }, [location]);
 
     function handleNavigation(e) {
+
         if (e.deltaY > 1 && location.pathname === "/") {
             navigate("/skills")
         } else if (e.deltaY < 1 && location.pathname === "/skills") {
-            navigate("/")
+            navigate("")
         }
-        console.log()
+
     }
+
 
 
     return (
         <Context.Provider value={{
-            setComponentLocation       
         }} >
             {children}
         </Context.Provider>
