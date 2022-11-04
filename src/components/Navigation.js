@@ -9,10 +9,6 @@ export default function Navigation() {
     const location = useLocation()
 
 
-
-
-
-
     function handleToggle() {
         const top = toggleTopRef.current;
         const bottom = toggleBotRef.current;
