@@ -29,6 +29,11 @@ h2 {
     font-size: 1.1vw;
 }
 
+h3 {
+    color: white;
+    font-weight: 400;
+}
+
 h4 {
     font-weight: 400;
 }
@@ -327,4 +332,23 @@ img.whiteframe {
 .aboutme--top {
     background-color: var(--background-purp);
     height: 100vh;
+}
+
+.aboutme--container {
+    display: flex;
+    position: absolute;
+    left: 20%;
+    top: 20%;
+}
+
+.aboutme--content {
+    width: 55%;
+    top: 30%;
+    position: relative;
+}
+
+.aboutme--image {
+    width: 70%;
+    position: relative;
+    top: 0%;
 }
