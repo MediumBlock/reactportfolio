@@ -11,7 +11,7 @@ body {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
     box-sizing: border-box;
-    background-color: var(--background-white);
+    /* background-color: var(--background-white); */
 }
 
 h1 {
@@ -352,4 +352,11 @@ img.whiteframe {
     width: 70%;
     position: relative;
     top: 0%;
+}
+
+.work--top { 
+    background-color: var(--background-white);
+    position: absolute;
+    height: 100vh;
+    width: 100%;
 }

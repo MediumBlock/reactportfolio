@@ -128,9 +128,14 @@ export default function Navigation() {
                             boxUnfilled
                         }
                     </Link>
-                    <img src={require("../resources/box-purple-filled.png")}
-                        className="marker filled"
-                    />
+                    <Link to="/work">
+                        {location.pathname === "/work"
+                            ?
+                            boxFilled
+                            :
+                            boxUnfilled
+                        }
+                    </Link>
                     <img src={require("../resources/box-purple-filled.png")}
                         className="marker filled"
                     />
