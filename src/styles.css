@@ -42,9 +42,9 @@ h4 {
 
 .logo {
     position: absolute;
-    top: 0%;
-    left: 1.5%;
-    width: 10%;
+    top: 10%;
+    left: 3%;
+    width: 7%;
     z-index: 2;
 
 }
@@ -359,4 +359,14 @@ img.whiteframe {
     position: absolute;
     height: 100vh;
     width: 100%;
+}
+
+.tile {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    background-color: grey;
+    width: 350px;
+    height: 350px;
+
 }

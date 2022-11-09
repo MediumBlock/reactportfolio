@@ -1,7 +1,10 @@
 import React from "react";
+import Tile from "./Tile";
 import { motion } from "framer-motion";
 
 export default function Work() {
+
+
     return (
         <motion.div
             initial={{ opacity: 0 }}
@@ -10,10 +13,9 @@ export default function Work() {
             className="work--top"
 
         >
-            <div
-            >
-                <h1>hello</h1>
-            </div>
+            <h2>/work.</h2>
+            <h4>personal projects I've worked on in the past.</h4>
+            <Tile />
         </motion.div>
     )
 }

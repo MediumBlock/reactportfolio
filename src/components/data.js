@@ -1,9 +1,22 @@
-/*
-websites to display:
-picsome
-opentrivia
-minireddit
-reactportfolio
-typespeed
-tenzies
-*/
+
+
+export const data = {
+    portfolio: {
+
+    },
+    minireddit: {
+
+    },
+    picsome: {
+
+    },
+    opentrivia: {
+
+    },
+    tenzies: {
+
+    },
+    typespeed: {
+
+    }
+}
