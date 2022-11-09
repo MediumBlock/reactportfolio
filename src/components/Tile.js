@@ -9,7 +9,7 @@ export default function Tile(props) {
                 <h4>title + logo</h4>
             </div>            
             <div className="tile--bottom">
-                <h5>name of app</h5>
+                <h5>{props.name}</h5>
             </div>
         </div>
     )

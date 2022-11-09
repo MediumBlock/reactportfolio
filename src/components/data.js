@@ -1,22 +1,47 @@
 
 
-export const data = {
-    portfolio: {
+export const data = [
 
+    {
+        link: '',
+        name: 'portfolio',
+        thumbnail: '',
+        description: '',
+        features: ''
     },
-    minireddit: {
-
+    {
+        link: '',
+        name: 'minireddit',
+        thumbnail: '',
+        description: '',
+        features: ''
     },
-    picsome: {
-
+    {
+        link: '',
+        name: 'picsome',
+        thumbnail: '',
+        description: '',
+        features: ''
     },
-    opentrivia: {
-
+    {
+        link: '',
+        name: 'opentrivia',
+        thumbnail: '',
+        description: '',
+        features: ''
     },
-    tenzies: {
-
+    {
+        link: '',
+        name: 'tenzies',
+        thumbnail: '',
+        description: '',
+        features: ''
     },
-    typespeed: {
-
+    {
+        link: '',
+        name: 'typespeed',
+        thumbnail: '',
+        description: '',
+        features: ''
     }
-}
+]

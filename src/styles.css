@@ -361,12 +361,38 @@ img.whiteframe {
     width: 100%;
 }
 
-.tile {
+.work--text {
     position: absolute;
+    left: 44%;
+    top: 15%;
+    text-align: center;
+
+}
+
+.work--text h2 {
+    color: black;
+}
+
+
+.tile--container {
+    position: absolute;
+    width: 55%;
+    height: 55%;
+    left: 20%;
+    top: 25%;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    gap: 2%;
+}
+
+.tile {
+    position: relative;
+    border-radius: 5%;
     top: 20%;
     left: 20%;
     background-color: grey;
-    width: 350px;
-    height: 350px;
+    width: 100%;
+    height: 100%;
 
 }
+
