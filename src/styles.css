@@ -2,8 +2,8 @@
     --background-green: #ccf381;
     --background-purp: #4831d4;
     --subtext-purp: #3d155f;
-    --background-white: #F9F9F9;
-    --background-work: #f5f4fc;
+    --background-white: #f5f4fc;
+    /* --background-work: #e9e6f0; */
 }
 
 html,
@@ -151,7 +151,7 @@ h4 {
     color: grey;
 }
 
-.top--tile {
+.top--menu {
     top: -12.5%;
     right: -270%;
     transition: transform 0.5s;
@@ -159,18 +159,18 @@ h4 {
     z-index: 3;
 }
 
-.top--tile.motion {
+.top--menu.motion {
     transform: rotate(0deg);
 }
 
-.top--tile.reverse--motion {
+.top--menu.reverse--motion {
     transform: rotate(45deg);
 }
 
 
 
 
-.bottom--tile {
+.bottom--menu {
     top: -10%;
     right: -270%;
     transition: transform 0.8s;
@@ -179,11 +179,11 @@ h4 {
 
 }
 
-.bottom--tile.motion {
+.bottom--menu.motion {
     transform: rotate(0deg);
 }
 
-.bottom--tile.reverse--motion {
+.bottom--menu.reverse--motion {
     transform: rotate(-45deg);
 }
 
@@ -261,8 +261,8 @@ img.whiteframe {
 
 .skills {
     display: flex;
-    /* background: var(--background-green); */
 }
+
 
 
 .skills--left {
@@ -377,22 +377,37 @@ img.whiteframe {
 .tile--container {
     position: absolute;
     width: 55%;
-    height: 55%;
-    left: 20%;
-    top: 25%;
+    height: 50%;
+    left: 23%;
+    top: 30%;
     display: grid;
-    grid-template: 1fr 1fr / 1fr 1fr 1fr;
-    gap: 2%;
+    grid-template: 1fr 1fr / repeat(3, 1fr);
+    gap: 2% 1%;
+
 }
 
 .tile {
     position: relative;
     border-radius: 5%;
-    top: 20%;
-    left: 20%;
-    background-color: grey;
-    width: 100%;
-    height: 100%;
-
+    background-color: #f9f8fd;
+    display: flex;
+    flex-direction: column;
 }
 
+.tile:hover {
+    transform: translateY(-4px);
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+
+.tile--top {
+    height: 70%;
+}
+
+.tile--bottom {
+    background-color: white;
+
+    height: 30%;
+
+}

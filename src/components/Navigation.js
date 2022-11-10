@@ -68,22 +68,22 @@ export default function Navigation() {
                             ?
                             <>
                                 < img src={require("../resources/menu-dropdown.png")}
-                                    className="menu--dropdown top--tile motion"
+                                    className="menu--dropdown top--menu motion"
                                     ref={toggleTopRef}
                                 />
                                 <img src={require("../resources/menu-dropdown.png")}
-                                    className="menu--dropdown bottom--tile motion"
+                                    className="menu--dropdown bottom--menu motion"
                                     ref={toggleBotRef}
                                 />
                             </>
                             :
                             <>
                                 <img src={require("../resources/menu-dropdown-green.png")}
-                                    className="menu--dropdown top--tile motion"
+                                    className="menu--dropdown top--menu motion"
                                     ref={toggleTopRef}
                                 />
                                 <img src={require("../resources/menu-dropdown-green.png")}
-                                    className="menu--dropdown bottom--tile motion"
+                                    className="menu--dropdown bottom--menu motion"
                                     ref={toggleBotRef}
                                 />
                             </>

@@ -25,7 +25,6 @@ export default function Work() {
                 <h2>/work.</h2>
                 <h4>personal projects I've worked on in the past.</h4>
             </div>
-
             <div className="tile--container">
                 {dataMap}
             </div>
