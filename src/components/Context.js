@@ -18,20 +18,25 @@ function ContextProvider({ children }) {
     }, [location]);
 
     function handleNavigation(e) {
-
-        if (e.deltaY > 1 && location.pathname === "/") {
-            navigate("/skills")
-        } else if (e.deltaY < 1 && location.pathname === "/skills") {
-            navigate("")
-        } else if (e.deltaY > 1 && location.pathname === "/skills") {
-            navigate("/aboutme")
-        } else if (e.deltaY < 1 && location.pathname === "/aboutme") {
-            navigate("/skills")
-        } else if (e.deltaY > 1 && location.pathname === "/aboutme") {
-            navigate("/work")
-        } else if (e.deltaY < 1 && location.pathname === "/work") {
-            navigate("/aboutme")
+        if (location.pathname.includes("/work/")) {
+            return;
+        } else {
+            if (e.deltaY > 1 && location.pathname === "/") {
+                navigate("/skills")
+            } else if (e.deltaY < 1 && location.pathname === "/skills") {
+                navigate("")
+            } else if (e.deltaY > 1 && location.pathname === "/skills") {
+                navigate("/aboutme")
+            } else if (e.deltaY < 1 && location.pathname === "/aboutme") {
+                navigate("/skills")
+            } else if (e.deltaY > 1 && location.pathname === "/aboutme") {
+                navigate("/work")
+            } else if (e.deltaY < 1 && location.pathname === "/work") {
+                navigate("/aboutme")
+            }
         }
+
+
     }
 
 

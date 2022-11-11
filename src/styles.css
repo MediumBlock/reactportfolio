@@ -3,6 +3,7 @@
     --background-purp: #4831d4;
     --subtext-purp: #3d155f;
     --background-white: #f5f4fc;
+    --background-work-tile: #f9f8fd;
     /* --background-work: #e9e6f0; */
 }
 
@@ -407,7 +408,7 @@ img.whiteframe {
 .tile {
     /* border: 1px solid black; */
     position: relative;
-    background-color: #f9f8fd;
+    background-color: var(--background-work-tile);
     display: flex;
     flex-direction: column;
 }
@@ -442,4 +443,25 @@ img.whiteframe {
 
 .elements--container {
     position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--background-white);
+}
+
+.elements--container p {
+    display: inline;
+}
+
+.elements--container img {
+    width: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.elements--content {
+    display: flex;
+
+}
+
+.elements--text {
+    width: 30%;
 }

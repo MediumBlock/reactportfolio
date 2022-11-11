@@ -105,44 +105,47 @@ export default function Navigation() {
                         </div>
                     </div>
                 </div>
-                <div className="page--markers">
-                    <Link to="/">
-                        {location.pathname === "/"
-                            ?
-                            boxFilled
-                            :
-                            boxUnfilled
-                        }
-                    </Link>
-                    <Link to="/skills">
-                        {location.pathname === "/skills"
-                            ?
-                            boxFilled
-                            :
-                            boxUnfilled
-                        }
-                    </Link>
-                    <Link to="/aboutme">
-                        {location.pathname === "/aboutme"
-                            ?
-                            boxFilled
-                            :
-                            boxUnfilled
-                        }
-                    </Link>
-                    <Link to="/work">
-                        {location.pathname === "/work"
-                            ?
-                            boxFilled
-                            :
-                            boxUnfilled
-                        }
-                    </Link>
-                    <img src={require("../resources/box-purple-filled.png")}
-                        className="marker filled"
-                    />
 
-                </div>
+                {location.pathname.includes("/work/") ? null :
+                    <div className="page--markers">
+                        <Link to="/">
+                            {location.pathname === "/"
+                                ?
+                                boxFilled
+                                :
+                                boxUnfilled
+                            }
+                        </Link>
+                        <Link to="/skills">
+                            {location.pathname === "/skills"
+                                ?
+                                boxFilled
+                                :
+                                boxUnfilled
+                            }
+                        </Link>
+                        <Link to="/aboutme">
+                            {location.pathname === "/aboutme"
+                                ?
+                                boxFilled
+                                :
+                                boxUnfilled
+                            }
+                        </Link>
+                        <Link to="/work">
+                            {location.pathname === "/work"
+                                ?
+                                boxFilled
+                                :
+                                boxUnfilled
+                            }
+                        </Link>
+                        <img src={require("../resources/box-purple-filled.png")}
+                            className="marker filled"
+                        />
+
+                    </div>
+                }
             </div>
         </div>
     )
