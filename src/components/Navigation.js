@@ -96,7 +96,9 @@ export default function Navigation() {
                     >
                         <div className="menu--text">
                             <h5>My Résumé</h5>
-                            <h5>My Projects</h5>
+                            <Link to="/work">
+                                <h5>My Projects</h5>
+                            </Link>
                             <h5 className="hello">SAY HELLO</h5>
                             <h5>m.paspaliaris@gmail.com</h5>
                             <h5>+61 420 686 886</h5>

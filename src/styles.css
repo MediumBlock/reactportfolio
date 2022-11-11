@@ -14,6 +14,18 @@ body {
     /* background-color: var(--background-white); */
 }
 
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--background-purp)
+}
+
+a:active {
+  color: purple;
+}
+
 h1 {
     color: var(--background-green);
     font-size: 3.8vw;
@@ -354,7 +366,7 @@ img.whiteframe {
     top: 0%;
 }
 
-.work--top { 
+.work--top {
     background-color: var(--background-white);
     position: absolute;
     height: 100vh;
