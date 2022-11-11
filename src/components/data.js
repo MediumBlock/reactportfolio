@@ -5,6 +5,7 @@ export const data = [
     {
         link: '',
         name: 'portfolio',
+        logo: "tenzies.png",
         thumbnail: '',
         description: '',
         features: ''
@@ -12,6 +13,7 @@ export const data = [
     {
         link: '',
         name: 'minireddit',
+        logo: "tenzies.png",
         thumbnail: '',
         description: '',
         features: ''
@@ -19,6 +21,7 @@ export const data = [
     {
         link: '',
         name: 'picsome',
+        logo: "tenzies.png",
         thumbnail: '',
         description: '',
         features: ''
@@ -26,6 +29,7 @@ export const data = [
     {
         link: '',
         name: 'opentrivia',
+        logo: "tenzies.png",
         thumbnail: '',
         description: '',
         features: ''
@@ -33,6 +37,7 @@ export const data = [
     {
         link: '',
         name: 'tenzies',
+        logo: "tenzies.png",
         thumbnail: '',
         description: '',
         features: ''
@@ -40,6 +45,7 @@ export const data = [
     {
         link: '',
         name: 'typespeed',
+        logo: "tenzies.png",
         thumbnail: '',
         description: '',
         features: ''

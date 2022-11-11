@@ -366,13 +366,19 @@ img.whiteframe {
     left: 44%;
     top: 15%;
     text-align: center;
+    font-family: source sans pro;
 
 }
 
 .work--text h2 {
-    color: black;
+    color: #474747;
+    font-size: 2.5rem;
+    font-weight: 700;
 }
 
+.work--text span {
+    color: #7c7c7e;
+}
 
 .tile--container {
     position: absolute;
@@ -410,4 +416,8 @@ img.whiteframe {
 
     height: 30%;
 
+}
+
+.tile--top img {
+    width: 10%;
 }

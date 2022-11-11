@@ -10,6 +10,7 @@ export default function Work() {
         <Tile
             name={item.name}
             key={item.name}
+            logo={item.logo}
         />
     ))
 
@@ -22,7 +23,7 @@ export default function Work() {
 
         >
             <div className="work--text">
-                <h2>/work.</h2>
+                <h2><span>/</span>work<span>.</span></h2>
                 <h4>personal projects I've worked on in the past.</h4>
             </div>
             <div className="tile--container">
