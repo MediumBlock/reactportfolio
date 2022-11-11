@@ -3,7 +3,7 @@
 export const data = [
 
     {
-        link: '',
+        link: 'https://mediumblock.github.io/',
         name: 'portfolio',
         logo: "favicon.png",
         thumbnail: '',
@@ -11,7 +11,7 @@ export const data = [
         features: ''
     },
     {
-        link: '',
+        link: 'https://mediumblock.github.io/minireddit/',
         name: 'minireddit',
         logo: "minireddit.png",
         thumbnail: '',
@@ -19,7 +19,7 @@ export const data = [
         features: ''
     },
     {
-        link: '',
+        link: 'https://mediumblock.github.io/picsome',
         name: 'picsome',
         logo: "picsome.png",
         thumbnail: '',
@@ -27,7 +27,7 @@ export const data = [
         features: ''
     },
     {
-        link: '',
+        link: 'https://mediumblock.github.io/opentrivia/',
         name: 'Quizzical',
         logo: "quizzical.png",
         thumbnail: '',
@@ -35,7 +35,7 @@ export const data = [
         features: ''
     },
     {
-        link: '',
+        link: 'https://mediumblock.github.io/tenzies/',
         name: 'tenzies',
         logo: "tenzies.png",
         thumbnail: '',
@@ -43,7 +43,7 @@ export const data = [
         features: ''
     },
     {
-        link: '',
+        link: 'https://mediumblock.github.io/typespeed/',
         name: 'typespeed',
         logo: "typespeed.png",
         thumbnail: '',
