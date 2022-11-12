@@ -33,6 +33,10 @@ function ContextProvider({ children }) {
                 navigate("/work")
             } else if (e.deltaY < 1 && location.pathname === "/work") {
                 navigate("/aboutme")
+            } else if (e.deltaY > 1 && location.pathname === "/work") {
+                navigate("/messageme")
+            } else if (e.deltaY < 1 && location.pathname === "/messageme") {
+                navigate("/work")
             }
         }
 
