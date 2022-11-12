@@ -491,7 +491,36 @@ img.whiteframe {
 
 }
 
+.messageme--title {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    text-align: center;
+}
+
+.messageme--title h2 {
+    color: var(--color-work-text);
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.messageme--title h4 {
+    color: var(--color-work-text);
+    font-weight: 400;
+    font-size: 2rem;
+}
+
 form {
     position: absolute;
     top: 50%;
+}
+
+label {
+    display: block;
+}
+
+.form--name {
+    position: absolute;
+    top: 50%;
+    left: 100%;
 }
