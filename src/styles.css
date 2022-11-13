@@ -614,6 +614,7 @@ input, textarea {
 .button:hover {
     background-position: left;
     color: white;
+    cursor: pointer;
 }
 
 
