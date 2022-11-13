@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import "./styles.css"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-import { Context, ContextProvider } from './components/Context';
+import Layout from './components/Layout';
 
 
 
@@ -11,12 +11,12 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <ContextProvider>
+      <Layout>
         <Routes>
           <Route path="*" element={<App />}>
           </Route>
         </Routes>
-      </ContextProvider>
+      </Layout>
     </BrowserRouter>
   </React.StrictMode>
 );
