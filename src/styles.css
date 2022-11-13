@@ -276,7 +276,11 @@ img.whiteframe {
 
 .skills--background {
     background-color: var(--background-white);
-    height: 100vh;
+    position:absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
 }
 
 .skills {
