@@ -576,8 +576,34 @@ input, textarea {
 
 .button {
     top: 60%;
+    left: 40%;
+    width: 20%;
     position: absolute;
+    border: 1px solid rgba(61, 21, 95, 0.5);
+
+
 }
+
+
+
+.button {
+    font: 22px Arial;
+    display: inline-block;
+    text-align: center;
+    color: white;
+    background: red; /* default color */
+
+    /* "to left" / "to right" - affects initial color */
+    background: linear-gradient(to left, salmon 50%, lightblue 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+}
+.button:hover {
+    background-position: left;
+}
+
+
+
 
 textarea:focus, input:focus{
     outline: none;
@@ -593,3 +619,8 @@ textarea {
 ::placeholder {
     font-size: 1.5rem;
 }
+
+
+
+
+  
