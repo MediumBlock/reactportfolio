@@ -603,7 +603,6 @@ input, textarea {
 }
 
 
-
 .button {
     font: 22px Arial;
     display: inline-block;
@@ -633,8 +632,6 @@ input, textarea {
 }
 
 
-
-
 textarea:focus, input:focus{
     outline: none;
 }
@@ -644,7 +641,6 @@ textarea {
     height: 4rem;
 
 }
-
 
 ::placeholder {
     font-size: 1.5rem;
