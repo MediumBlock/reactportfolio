@@ -74,8 +74,13 @@ h4 {
 
 .main--container {
     display: flex;
-    height: 39vw;
+    /* height: 39vw; */
     background: linear-gradient(90deg, var(--background-purp) 67%, var(--background-green) 33%);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 22%;
+    left: 0px;
 
 }
 
@@ -615,6 +620,16 @@ input, textarea {
     background-position: left;
     color: white;
     cursor: pointer;
+}
+
+.button--sent {
+    background: rgb(61, 21, 95);
+    color: white;
+    opacity: 0.5;
+}
+
+.button--sent:hover {
+    cursor: default;
 }
 
 
