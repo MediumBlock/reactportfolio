@@ -488,7 +488,6 @@ img.whiteframe {
 .elements--container img {
     width: 50%;
     height: 100%;
-    /* object-fit: contain; */
 
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -510,7 +509,7 @@ img.whiteframe {
 
 }
 
-.messageme--container {
+.messageme--main {
     background-color: var(--background-white);
     position:absolute;
     top:0px;
@@ -519,10 +518,17 @@ img.whiteframe {
     left:0px;
 }
 
-.messageme--title {
+.messageme--container {
     position: absolute;
     top: 20%;
-    left: 35%;
+    left: 15%;
+    width: 70%;
+    height: 60%;
+
+}
+
+.messageme--title {
+    position: relative;
     text-align: center;
 }
 
@@ -538,13 +544,25 @@ img.whiteframe {
     font-size: 1.5rem;
 }
 
+
+.form--container {
+    height: 40%;
+    margin-top: 5%;
+}
+
 form {
-    position: absolute;
-    top: 40%;
-    left: 20%;
+    position: relative;
     width: 60%;
     height: 50%;
-    /* border: 1px solid black; */
+}
+
+.form--row1 {
+    display: flex;
+    position: relative;
+    left: 30%;
+    width: 100%;
+    justify-content: space-between;
+
 }
 
 label {
@@ -555,21 +573,22 @@ label {
 }
 
 .form--name {
-    position: absolute;
-    top: 10%;
-    left: 15%;
+    position: relative;
+    margin-right: 20%;
+
+
 }
 
 .form--email {
-    position: absolute;
-    top: 10%;
-    left: 60%;
+    position: relative;
+
 }
 
 .form--message {
-    position: absolute;
+    margin-top: 5%;
+    position: relative;
     top: 35%;
-    left: 15%;
+    left: 30%;
 }
 
 .form--name input, .form--email input {
@@ -591,11 +610,17 @@ input, textarea {
 
 }
 
+textarea {
+    width: 110%;
+    height: 4rem;
+
+}
+
 .button {
-    top: 60%;
-    left: 40%;
+    top: 70%;
+    left: 73%;
     width: 20%;
-    position: absolute;
+    position: relative;
     border: 1px solid rgba(61, 21, 95, 0.5);
     height: 3rem;
 
@@ -608,9 +633,8 @@ input, textarea {
     display: inline-block;
     text-align: center;
     color: var(--background-purp);
-    background: purple; /* default color */
+    background: purple;
 
-    /* "to left" / "to right" - affects initial color */
     background: linear-gradient(to left, var(--background-white) 50%, var(--background-purp) 50%) right;
     background-size: 200%;
     transition: .3s ease-out;
@@ -636,11 +660,7 @@ textarea:focus, input:focus{
     outline: none;
 }
 
-textarea {
-    width: 345%;
-    height: 4rem;
 
-}
 
 ::placeholder {
     font-size: 1.5rem;
@@ -649,4 +669,3 @@ textarea {
 
 
 
-  
