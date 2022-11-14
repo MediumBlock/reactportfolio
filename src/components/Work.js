@@ -1,7 +1,7 @@
 import React from "react";
 import Tile from "./Tile";
 import { motion } from "framer-motion";
-import { data } from "./data"
+import { data } from "../resources/data"
 
 export default function Work() {
 

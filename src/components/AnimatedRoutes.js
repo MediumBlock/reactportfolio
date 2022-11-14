@@ -7,6 +7,7 @@ import { Routes, Route, useLocation, BrowserRouter as Router } from "react-route
 import { AnimatePresence } from "framer-motion";
 import TileElements from "./TileElements";
 import MessageMe from "./MessageMe";
+import Resume from "./Resume";
 
 
 export default function AnimatedRoutes() {
@@ -22,6 +23,7 @@ export default function AnimatedRoutes() {
                     <Route path="/work" element={<Work />} />
                     <Route path="/work/:project" element={<TileElements />} />
                     <Route path="/messageme" element={<MessageMe />} />
+                    <Route path="/resume" element={<Resume />} />
             </Routes>
         </AnimatePresence>
     )
