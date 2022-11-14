@@ -19,6 +19,7 @@ export default function Navigation() {
     }
 
 
+
     const boxFilled = location.pathname === "/aboutme" ?
         <img
             src={require("../resources/box-green.png")}
@@ -41,6 +42,16 @@ export default function Navigation() {
             src={require("../resources/box-purple-filled.png")}
             className="marker filled"
         />
+
+    const LinkArray = ["/", "/skills", "/aboutme", "/work", "/messageme"]
+    const LinkBoxes = LinkArray.map(item => (
+        <Link to={item}
+            key={item}
+        >
+            {location.pathname === item ? boxFilled : boxUnfilled}
+        </Link>
+    ))
+
 
     return (
         <div className="navigation--container">
@@ -108,47 +119,7 @@ export default function Navigation() {
 
                 {location.pathname.includes("/work/") ? null :
                     <div className="page--markers">
-                        <Link to="/">
-                            {location.pathname === "/"
-                                ?
-                                boxFilled
-                                :
-                                boxUnfilled
-                            }
-                        </Link>
-                        <Link to="/skills">
-                            {location.pathname === "/skills"
-                                ?
-                                boxFilled
-                                :
-                                boxUnfilled
-                            }
-                        </Link>
-                        <Link to="/aboutme">
-                            {location.pathname === "/aboutme"
-                                ?
-                                boxFilled
-                                :
-                                boxUnfilled
-                            }
-                        </Link>
-                        <Link to="/work">
-                            {location.pathname === "/work"
-                                ?
-                                boxFilled
-                                :
-                                boxUnfilled
-                            }
-                        </Link>
-                        <Link to="/messageme">
-                            {location.pathname === "/messageme"
-                                ?
-                                boxFilled
-                                :
-                                boxUnfilled
-                            }
-                        </Link>
-
+                        {LinkBoxes}
                     </div>
                 }
             </div>
