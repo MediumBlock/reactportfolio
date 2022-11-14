@@ -572,6 +572,10 @@ label {
 
 }
 
+.form--name, .form--email, .form--message {
+    color: var(--color-accent-purp);
+}
+
 .form--name {
     position: relative;
     margin-right: 20%;
@@ -593,6 +597,7 @@ label {
 
 .form--name input, .form--email input {
     width: 130%;
+    
 }
 
 
@@ -600,6 +605,7 @@ label {
 
 input, textarea {
     border: none;
+    color: var(--color-accent-purp);
     border-bottom: 1px solid rgba(61, 21, 95, 0.5);
     resize: none;
     background-color: var(--background-white);
@@ -613,6 +619,13 @@ input, textarea {
 textarea {
     width: 110%;
     height: 4rem;
+
+}
+
+input::placeholder, textarea::placeholder {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: var(--color-accent-purp);
+    font-weight: 200;
 
 }
 
@@ -666,6 +679,18 @@ textarea:focus, input:focus{
     font-size: 1.5rem;
 }
 
+.messageme--checkmark {
+    position: absolute;
+    z-index: 2;
+    width: 15%;
+    left: 42.5%;
+    top: 37.5%;
+    transition: all 0.3s ease-out;
+    opacity: 0;
+}
 
+.messageme--checkmark.on{
+    opacity: 1;
+}
 
 
