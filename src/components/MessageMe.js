@@ -29,11 +29,11 @@ export default function MessageMe() {
 
     return (
         <>
-                <img
-                    src={require("../resources/green-checkmark.png")}
-                    className={isCheckMarked ? "messageme--checkmark on" : "messageme--checkmark"}
-                />
-           
+            <img
+                src={require("../resources/green-checkmark.png")}
+                className={isCheckMarked ? "messageme--checkmark on" : "messageme--checkmark"}
+            />
+
             <motion.div
                 className='messageme--main'
                 initial={{ opacity: 0 }}

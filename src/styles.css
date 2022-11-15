@@ -6,7 +6,6 @@
     --background-work-tile: #f9f8fd;
     --color-work-text: #474747;
     --color-accent-purp: rgb(61, 21, 95);
-    /* --background-work: #e9e6f0; */
 }
 
 html,
@@ -14,7 +13,6 @@ body {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
     box-sizing: border-box;
-    /* background-color: var(--background-white); */
 }
 
 a {
@@ -74,14 +72,12 @@ h4 {
 
 .main--container {
     display: flex;
-    /* height: 39vw; */
     background: linear-gradient(90deg, var(--background-purp) 67%, var(--background-green) 33%);
     position: absolute;
     top: 0px;
     right: 0px;
     bottom: 22%;
     left: 0px;
-
 }
 
 .main--left {
@@ -128,9 +124,6 @@ h4 {
     opacity: 0%;
     visibility: hidden;
     z-index: 2;
-
-
-
 }
 
 .menu.visible {
@@ -139,15 +132,11 @@ h4 {
 
 }
 
-
-
-
 .menu--dropdown {
     width: 15%;
     position: absolute;
     cursor: pointer;
     z-index: 2;
-
 }
 
 .menu--text {
@@ -158,14 +147,11 @@ h4 {
     color: var(--background-purp);
     font-weight: 400;
     transition: all 0.4s;
-
 }
 
 .visible .menu--text {
     transform: translate(0px, 10%);
 }
-
-
 
 .hello {
     color: grey;
@@ -187,9 +173,6 @@ h4 {
     transform: rotate(45deg);
 }
 
-
-
-
 .bottom--menu {
     top: -10%;
     right: -270%;
@@ -206,8 +189,6 @@ h4 {
 .bottom--menu.reverse--motion {
     transform: rotate(-45deg);
 }
-
-
 
 
 .headshot {
@@ -248,8 +229,6 @@ img.whiteframe {
     z-index: 2;
 }
 
-
-
 .marker {
     position: relative;
     width: 25%;
@@ -267,9 +246,6 @@ img.whiteframe {
     text-align: center;
     cursor: pointer;
 }
-
-
-
 
 .squiggle {
     position: absolute;
@@ -292,8 +268,6 @@ img.whiteframe {
     display: flex;
     
 }
-
-
 
 .skills--left {
     position: absolute;
@@ -334,7 +308,6 @@ img.whiteframe {
 }
 
 .skills--right img {
-    /* border: 1px solid black; */
     right: 20%;
     top: -75%;
     width: 55%;
@@ -399,7 +372,7 @@ img.whiteframe {
     left: 42%;
     top: 15%;
     text-align: center;
-    font-family: source sans pro;
+    font-family: 'source sans pro';
 
 }
 
@@ -426,7 +399,6 @@ img.whiteframe {
 }
 
 .tile {
-    /* border: 1px solid black; */
     position: relative;
     background-color: var(--background-work-tile);
     display: flex;
@@ -450,7 +422,6 @@ img.whiteframe {
     font-size: 1.5rem;
     text-align: center;
     height: 30%;
-    /* border: 1px solid black; */
 
 }
 
@@ -462,10 +433,12 @@ img.whiteframe {
 }
 
 .elements--container {
-    position: absolute;
-    height: 100vh;
-    width: 100%;
     background-color: var(--background-white);
+    position: absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
 }
 
 .elements--container p {
@@ -473,7 +446,7 @@ img.whiteframe {
     color: var(--color-work-text);
     font-size: 1rem;
     line-height: 1.5rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
 }
 
 .elements--container h2 {
@@ -574,23 +547,15 @@ label {
 
 .form--name, .form--email, .form--message {
     color: var(--color-accent-purp);
+    position: relative;
 }
 
 .form--name {
-    position: relative;
     margin-right: 20%;
-
-
-}
-
-.form--email {
-    position: relative;
-
 }
 
 .form--message {
     margin-top: 5%;
-    position: relative;
     top: 35%;
     left: 30%;
 }
@@ -674,7 +639,6 @@ textarea:focus, input:focus{
 }
 
 
-
 ::placeholder {
     font-size: 1.5rem;
 }
@@ -693,4 +657,22 @@ textarea:focus, input:focus{
     opacity: 1;
 }
 
+
+.resume--container {
+    position: absolute;
+    background-color: white;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+}
+
+.resume--section {
+    position: absolute;
+    background-color: var(--background-white);
+    width: 80%;
+    left: 10%;
+    top: 15%;
+    height: 80%;
+}
 

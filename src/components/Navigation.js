@@ -106,7 +106,9 @@ export default function Navigation() {
                         ref={toggleBotMenuRef}
                     >
                         <div className="menu--text">
-                            <h5>My Résumé</h5>
+                            <Link to="/resume">
+                                <h5>My Résumé</h5>
+                            </Link>
                             <Link to="/work">
                                 <h5>My Projects</h5>
                             </Link>
@@ -117,7 +119,7 @@ export default function Navigation() {
                     </div>
                 </div>
 
-                {location.pathname.includes("/work/") ? null :
+                {location.pathname.includes("/work/") || location.pathname.includes("/resume") ? null :
                     <div className="page--markers">
                         {LinkBoxes}
                     </div>
