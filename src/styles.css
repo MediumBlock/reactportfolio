@@ -668,11 +668,13 @@ textarea:focus, input:focus{
 }
 
 .resume--section {
+    display: flex;
     position: absolute;
     background-color: var(--background-white);
     width: 80%;
     left: 10%;
     top: 15%;
     height: 80%;
+
 }
 
