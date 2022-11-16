@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom"
 
 export default function Navigation() {
@@ -7,6 +7,7 @@ export default function Navigation() {
     const toggleBotRef = useRef(null)
     const toggleBotMenuRef = useRef(null)
     const location = useLocation()
+    const [isMenuOpen, setIsMenuOpen] = useState(false)
 
 
     function handleToggle() {
@@ -16,7 +17,28 @@ export default function Navigation() {
         top.classList.toggle("reverse--motion")
         bottom.classList.toggle("reverse--motion")
         menu.classList.toggle("visible")
+        setIsMenuOpen(prev => !prev)
     }
+
+    useEffect(() => {
+        let handler = (event) => {
+            if (isMenuOpen && !toggleBotMenuRef.current.contains(event.target)) {
+                const top = toggleTopRef.current;
+                const bottom = toggleBotRef.current;
+                const menu = toggleBotMenuRef.current;
+                top.classList.toggle("reverse--motion")
+                bottom.classList.toggle("reverse--motion")
+                menu.classList.toggle("visible")
+                setIsMenuOpen(false)
+            }
+        };
+        document.addEventListener("mousedown", handler);
+
+        return () => {
+            document.removeEventListener("mousedown", handler);
+        };
+    });
+
 
 
 
@@ -51,6 +73,10 @@ export default function Navigation() {
             {location.pathname === item ? boxFilled : boxUnfilled}
         </Link>
     ))
+
+
+
+
 
 
     return (
