@@ -22,14 +22,10 @@ export default function Navigation() {
 
     useEffect(() => {
         let handler = (event) => {
-            if (isMenuOpen && !toggleBotMenuRef.current.contains(event.target)) {
-                const top = toggleTopRef.current;
-                const bottom = toggleBotRef.current;
-                const menu = toggleBotMenuRef.current;
-                top.classList.toggle("reverse--motion")
-                bottom.classList.toggle("reverse--motion")
-                menu.classList.toggle("visible")
-                setIsMenuOpen(false)
+            if (isMenuOpen && !toggleBotMenuRef.current.contains(event.target)
+                || toggleBotRef.current.contains(event.target)
+                || toggleTopRef.current.contains(event.target)) {
+                handleToggle()
             }
         };
         document.addEventListener("mousedown", handler);
@@ -98,8 +94,7 @@ export default function Navigation() {
             </div>
             <div className="main--right">
                 <div>
-
-                    <div onClick={handleToggle}>
+                    <div>
 
                         {location.pathname !== "/aboutme"
                             ?
