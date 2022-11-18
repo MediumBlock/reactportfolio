@@ -20,8 +20,9 @@ export default function Work() {
             animate={{ opacity: 1, transition: { duration: 0.5 } }}
             exit={{ opacity: 0 }}
             className="work--top"
-
         >
+
+
             <div className="work--text">
                 <h2><span>/</span>work<span>.</span></h2>
                 <h4>some of the personal projects I've worked on in the past.</h4>
@@ -30,6 +31,6 @@ export default function Work() {
                 {dataMap}
             </div>
 
-        </motion.div>
+        </motion.div >
     )
 }

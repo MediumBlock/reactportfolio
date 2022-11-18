@@ -8,11 +8,16 @@
     --color-accent-purp: rgb(61, 21, 95);
 }
 
+html::-webkit-scrollbar {
+    display: none;
+  }
+
 html,
 body {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
     box-sizing: border-box;
+    background-color: var(--background-white);
 }
 
 a {

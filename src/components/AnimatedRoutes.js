@@ -13,12 +13,15 @@ import Resume from "./Resume";
 export default function AnimatedRoutes() {
 
     const location = useLocation();
+    const testPath = location.pathname
+
+    console.log(location.pathname)
 
     return (
         <AnimatePresence>
             <Routes location={location} key={location.pathname}>
                     <Route index path="/" element={<Main />} />
-                    <Route path="/skills" element={<Skills />} />
+                    <Route path="/skills" element={<Skills path={testPath} />} />
                     <Route path="/aboutme" element={<AboutMe />} />
                     <Route path="/work" element={<Work />} />
                     <Route path="/work/:project" element={<TileElements />} />

@@ -1,21 +1,22 @@
-import React, {useContext} from "react";
+import React, { useContext } from "react";
 import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
 
 
 
-export default function Skills() {
+export default function Skills(props) {
 
 
     const location = useLocation();
 
-
+    console.log('skills', props)
 
     return (
         <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1, transition: { duration: 0.5 } }}
-            exit={{ opacity: 0 }}
+            initial={location.pathname === "/skills" ? { opacity: 1, y: 1000, transition: { duration: 0.8 } } : { opacity: 1, y: -1000, transition: { duration: 0.8 } }}
+            // animate={{ opacity: 1, transition: { duration: 0.5 } }}
+            animate={{ opacity: 1, y: 0, transition: { duration: 0.8 } }}
+            exit={location.pathname === "/skills" ? { opacity: 1, y: 1000, transition: { duration: 0.8 } } : { opacity: 1, y: 1000, transition: { duration: 0.8 } }}
             className="skills--background"
         >
             <div className="skills">

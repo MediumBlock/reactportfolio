@@ -5,7 +5,9 @@ import { Routes, Route, useLocation, BrowserRouter as Router } from "react-route
 
 
 function App() {
-  
+
+const location = useLocation();
+
   return (
     <div>
       <Navigation />
