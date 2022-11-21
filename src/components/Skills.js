@@ -1,22 +1,17 @@
-import React, { useContext } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
 
 
-
-export default function Skills(props) {
-
+export default function Skills() {
 
     const location = useLocation();
 
-    console.log('skills', props)
-
     return (
         <motion.div
-            initial={location.pathname === "/skills" ? { opacity: 1, y: 1000, transition: { duration: 0.8 } } : { opacity: 1, y: -1000, transition: { duration: 0.8 } }}
-            // animate={{ opacity: 1, transition: { duration: 0.5 } }}
+            initial={{ opacity: 0, y: 1000, transition: { duration: 0.8 } } } 
             animate={{ opacity: 1, y: 0, transition: { duration: 0.8 } }}
-            exit={location.pathname === "/skills" ? { opacity: 1, y: 1000, transition: { duration: 0.8 } } : { opacity: 1, y: 1000, transition: { duration: 0.8 } }}
+            exit= {{ opacity: 0, y: -1000, transition: { duration: 0.8 } } }
             className="skills--background"
         >
             <div className="skills">
@@ -31,7 +26,6 @@ export default function Skills(props) {
                     <img src={require("../resources/skills-right.png")} />
                     <h1>Engineering</h1>
                     <h5>In building JavaScript applications, I'm equipped with just the right tools, and can absolutely function independently of them to deliver fast, resilient solutions optimized for scale — performance and scalabilty are priorities on my radar.</h5>
-                    <img />
                 </div>
             </div>
             <div>

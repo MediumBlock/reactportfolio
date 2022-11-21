@@ -16,9 +16,9 @@ export default function Work() {
 
     return (
         <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1, transition: { duration: 0.5 } }}
-            exit={{ opacity: 0 }}
+            initial={{ opacity: 0, y: 1000, transition: { duration: 0.8 } }}
+            animate={{ opacity: 1, y: 0, transition: { duration: 0.8 } }}
+            exit={{ opacity: 0, y: -1000, transition: { duration: 0.8 } }}
             className="work--top"
         >
 

@@ -36,54 +36,54 @@ export default function MessageMe() {
 
             <motion.div
                 className='messageme--main'
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1, transition: { duration: 0.5 } }}
-                exit={{ opacity: 0 }}
+                initial={{ opacity: 0, y: 1000, transition: { duration: 0.8 } }}
+                animate={{ opacity: 1, y: 0, transition: { duration: 0.8 } }}
+                exit={{ opacity: 0, y: -1000, transition: { duration: 0.8 } }}
             >
-                    <div className='messageme--container'>
-                        <div className='messageme--title'>
-                            <h2>Send me a message!</h2>
-                            <h4>Got a question or proposal, or just want
-                                to say hello? Go ahead.</h4>
-                        </div>
-                        <div className='form--container'>
-                            <form ref={form} onSubmit={sendEmail}>
-                                <div className='form--row1'>
-                                    <div className='form--name'>
-                                        <label>Your Name</label>
-                                        <input type="text"
-                                            name="user_name"
-                                            placeholder='Enter your name'
-                                            disabled={isSubmitted}
-                                            required
-                                        />
-                                    </div>
-                                    <div className='form--email'>
-                                        <label>Your Email</label>
-                                        <input type="email"
-                                            name="user_email"
-                                            placeholder='Enter your email address'
-                                            disabled={isSubmitted}
-                                            required
-                                        />
-                                    </div>
-                                </div>
-                                <div className='form--message'>
-                                    <label>Your Message</label>
-                                    <textarea name="message"
-                                        placeholder='Hi, I would love to get in touch and talk about XY.'
+                <div className='messageme--container'>
+                    <div className='messageme--title'>
+                        <h2>Send me a message!</h2>
+                        <h4>Got a question or proposal, or just want
+                            to say hello? Go ahead.</h4>
+                    </div>
+                    <div className='form--container'>
+                        <form ref={form} onSubmit={sendEmail}>
+                            <div className='form--row1'>
+                                <div className='form--name'>
+                                    <label>Your Name</label>
+                                    <input type="text"
+                                        name="user_name"
+                                        placeholder='Enter your name'
                                         disabled={isSubmitted}
                                         required
                                     />
                                 </div>
-                                <input className={isSubmitted ? "button button--sent" : "button"}
-                                    value={isSubmitted ? "Sent!" : "Send"}
-                                    type="submit"
+                                <div className='form--email'>
+                                    <label>Your Email</label>
+                                    <input type="email"
+                                        name="user_email"
+                                        placeholder='Enter your email address'
+                                        disabled={isSubmitted}
+                                        required
+                                    />
+                                </div>
+                            </div>
+                            <div className='form--message'>
+                                <label>Your Message</label>
+                                <textarea name="message"
+                                    placeholder='Hi, I would love to get in touch and talk about XY.'
                                     disabled={isSubmitted}
+                                    required
                                 />
-                            </form>
-                        </div>
+                            </div>
+                            <input className={isSubmitted ? "button button--sent" : "button"}
+                                value={isSubmitted ? "Sent!" : "Send"}
+                                type="submit"
+                                disabled={isSubmitted}
+                            />
+                        </form>
                     </div>
+                </div>
             </motion.div>
         </>
     );
