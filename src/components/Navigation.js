@@ -7,6 +7,7 @@ export default function Navigation() {
     const toggleBotRef = useRef(null)
     const toggleBotMenuRef = useRef(null)
     const location = useLocation()
+    const navigate = useNavigate();
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
 
@@ -19,6 +20,16 @@ export default function Navigation() {
         menu.classList.toggle("visible")
         setIsMenuOpen(prev => !prev)
     }
+
+    function handleNavigate() {
+        location.pathname === "/messageme" || location.pathname === "/resume"
+        ? 
+        navigate("/work", {state:{value: -1000}})
+        :
+        navigate("/work", {state:{value: 1000}})
+
+    }
+
 
     useEffect(() => {
         let handler = (event) => {
@@ -130,9 +141,9 @@ export default function Navigation() {
                             <Link to="/resume">
                                 <h5>My Résumé</h5>
                             </Link>
-                            <Link to="/work">
+                            <div onClick={handleNavigate}>
                                 <h5>My Projects</h5>
-                            </Link>
+                            </div>
                             <h5 className="hello">SAY HELLO</h5>
                             <h5>m.paspaliaris@gmail.com</h5>
                             <h5>+61 420 686 886</h5>

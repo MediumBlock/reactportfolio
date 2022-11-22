@@ -24,7 +24,7 @@ export default function Skills() {
         window.addEventListener("wheel", handleNavigation);
 
         return () => window.removeEventListener("wheel", handleNavigation);
-    });
+    }, [pathname]);
 
     return (
         <motion.div

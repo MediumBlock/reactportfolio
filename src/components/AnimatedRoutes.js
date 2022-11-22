@@ -11,28 +11,8 @@ import Resume from "./Resume";
 
 
 export default function AnimatedRoutes() {
-    const navigate = useNavigate();
     const location = useLocation();
     const { pathname } = location;
-    const [ testUp, setTestUp] = useState(true)
-
-    console.log('testing', testUp)
-
-    useEffect(() => {
-        function handleNavigation(e) {
-            if (e.deltaY > 1 && pathname === "/aboutme") {
-                setTestUp(false);
-                navigate("/work");
-            } else if(e.deltaY < 1 && pathname === "/aboutme") {
-                setTestUp(true)
-                navigate("/skills")
-            }
-        }
-        window.addEventListener("wheel", handleNavigation);
-
-        return () => window.removeEventListener("wheel", handleNavigation);
-    });
-
 
 
     return (
@@ -40,7 +20,7 @@ export default function AnimatedRoutes() {
             <Routes location={location} key={location.pathname}>
                     <Route index path="/" element={<Main />} />
                     <Route path="/skills" element={<Skills />} />
-                    <Route path="/aboutme" element={<AboutMe direction={testUp} />} />
+                    <Route path="/aboutme" element={<AboutMe />} />
                     <Route path="/work" element={<Work />} />
                     <Route path="/work/:project" element={<TileElements />} />
                     <Route path="/messageme" element={<MessageMe />} />

@@ -16,13 +16,13 @@ export default function Main() {
             if (e.deltaY > 1) {
                 setIsUp(false)
                 navigate("/skills", {state:{value: 1000}});
-            
+        
             }
         }
         window.addEventListener("wheel", handleNavigation);
 
         return () => window.removeEventListener("wheel", handleNavigation);
-    });
+    }, [pathname]);
 
 
     return (

@@ -40,7 +40,7 @@ export default function Work() {
 
     return (
         <motion.div
-            initial={{ opacity: 0, y: location.state.value, transition: { duration: 0.8 } }}
+            initial={{ opacity: 0, y: location.state.value ? location.state.value : 0, transition: { duration: 0.8 } }}
             animate={{ opacity: 1, y: 0, transition: { duration: 0.8 } }}
             exit={{ opacity: 0, y: isUp ? 1000 : -1000, transition: { duration: 0.8 } }}
             className="work--top"
