@@ -1,14 +1,38 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import { motion } from "framer-motion";
+import { useNavigate, useLocation } from "react-router-dom";
+
 
 export default function AboutMe() {
+
+    const navigate = useNavigate();
+    const location = useLocation();
+    const { pathname } = location;
+    const [ isUp, setIsUp] = useState(false)
+
+
+    useEffect(() => {
+        function handleNavigation(e) {
+            if (e.deltaY > 1) {
+                setIsUp(false)
+                navigate("/work", {state:{value: 1000}});
+            } else if(e.deltaY < 1) {
+                setIsUp(true)
+                navigate("/skills", {state:{value: -1000}})
+            }
+        }
+        window.addEventListener("wheel", handleNavigation);
+
+        return () => window.removeEventListener("wheel", handleNavigation);
+    }, [pathname]);
+
 
     return (
         <motion.div
             className="aboutme--top"
-            initial={{ opacity: 0, y: 1000, transition: { duration: 0.8 } }}
+            initial={{ opacity: 0, y: location.state.value, transition: { duration: 0.8 } }}
             animate={{ opacity: 1, y: 0, transition: { duration: 0.8 } }}
-            exit={{ opacity: 0, y: 1000, transition: { duration: 0.8 } }}
+            exit={{ opacity: 0, y:  isUp ? 1000 : -1000, transition: { duration: 0.8 } }}
         >
             <div className="aboutme--container">
                 <div className="aboutme--content">

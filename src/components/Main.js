@@ -1,12 +1,28 @@
-import React, { useState, useRef, useEffect, useContext } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
+
 
 export default function Main() {
 
+
+    const navigate = useNavigate();
     const location = useLocation();
+    const { pathname } = location;
+    const [ isUp, setIsUp] = useState(false)
 
+    useEffect(() => {
+        function handleNavigation(e) {
+            if (e.deltaY > 1) {
+                setIsUp(false)
+                navigate("/skills", {state:{value: 1000}});
+            
+            }
+        }
+        window.addEventListener("wheel", handleNavigation);
 
+        return () => window.removeEventListener("wheel", handleNavigation);
+    });
 
 
     return (

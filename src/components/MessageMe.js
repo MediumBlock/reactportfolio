@@ -1,11 +1,30 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { useLocation, useNavigate } from "react-router-dom";
 import emailjs from '@emailjs/browser';
 import { motion } from "framer-motion";
 
 export default function MessageMe() {
     const form = useRef();
     const [isSubmitted, setIsSubmitted] = useState(false);
-    const [isCheckMarked, setIsCheckMarked] = useState(false)
+    const [isCheckMarked, setIsCheckMarked] = useState(false);
+    const navigate = useNavigate();
+    const location = useLocation();
+    const { pathname } = location;
+    const [ isUp, setIsUp] = useState(false)
+
+    useEffect(() => {
+        function handleNavigation(e) {
+            if (e.deltaY < 1) {
+                setIsUp(true)
+                navigate("/work", {state:{value: -1000}});
+            
+            }
+        }
+        window.addEventListener("wheel", handleNavigation);
+
+        return () => window.removeEventListener("wheel", handleNavigation);
+    });
+
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -38,7 +57,7 @@ export default function MessageMe() {
                 className='messageme--main'
                 initial={{ opacity: 0, y: 1000, transition: { duration: 0.8 } }}
                 animate={{ opacity: 1, y: 0, transition: { duration: 0.8 } }}
-                exit={{ opacity: 0, y: -1000, transition: { duration: 0.8 } }}
+                exit={{ opacity: 0, y: 1000, transition: { duration: 0.8 } }}
             >
                 <div className='messageme--container'>
                     <div className='messageme--title'>
