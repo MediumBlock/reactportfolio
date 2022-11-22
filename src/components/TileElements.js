@@ -1,5 +1,7 @@
 import React from "react";
 import { data } from "../resources/data";
+import { motion } from "framer-motion";
+
 import { useParams } from "react-router-dom";
 
 export default function TileElements() {
@@ -8,7 +10,12 @@ export default function TileElements() {
     const thisProject = data.find(item => item.name === project)
 
     return (
-        <div className="elements--container">
+        <motion.div
+        initial={{ opacity: 0, y: 1000, transition: { duration: 0.8 } }}
+        animate={{ opacity: 1, y: 0, transition: { duration: 0.8 } }}
+        exit={{ opacity: 0, y: 1000, transition: { duration: 0.8 } }} 
+        className="elements--container"
+        >
             <h2>{thisProject.name}</h2>
             <div className="elements--content">
                 <div className="elements--text">
@@ -20,6 +27,6 @@ export default function TileElements() {
                 <img src={require(`../resources/${thisProject.thumbnail}`)} />
             </div>
 
-        </div>
+        </motion.div>
     )
 }
