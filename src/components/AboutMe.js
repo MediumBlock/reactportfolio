@@ -36,7 +36,7 @@ export default function AboutMe() {
             className="aboutme--top"
             initial={{ opacity: 0, y: location.state.value, transition: { duration: 0.8 } }}
             animate={{ opacity: 1, y: 0, transition: { duration: 0.8 } }}
-            exit={{ opacity: 0, y:  isUp ? 1000 : -1000, transition: { duration: 0.8 } }}
+            exit={{ opacity: 0, y:  isUp ? 1300 : -1300, transition: { duration: 0.8 } }}
         >
             <div className="aboutme--container">
                 <div className="aboutme--content">
