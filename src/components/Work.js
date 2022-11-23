@@ -25,10 +25,14 @@ export default function Work() {
         function handleNavigation(e) {
             if (e.deltaY > 1) {
                 setIsUp(false)
-                navigate("/messageme", {state:{value: 1000}});
+                setTimeout(() => {
+                    navigate("/messageme", { state: { value: 1000 } });
+                }, 200)
             } else if(e.deltaY < 1) {
                 setIsUp(true)
-                navigate("/aboutme", {state:{value: -1000}})
+                setTimeout(() => {
+                    navigate("/aboutme", { state: { value: -1000 } });
+                }, 200)
             }
         }
         window.addEventListener("wheel", handleNavigation);

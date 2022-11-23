@@ -16,7 +16,9 @@ export default function MessageMe() {
         function handleNavigation(e) {
             if (e.deltaY < 1) {
                 setIsUp(true)
-                navigate("/work", {state:{value: -1000}});
+                setTimeout(() => {
+                    navigate("/work", { state: { value: -1000 } });
+                }, 200)
             
             }
         }

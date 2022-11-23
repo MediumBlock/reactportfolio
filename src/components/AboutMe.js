@@ -15,10 +15,14 @@ export default function AboutMe() {
         function handleNavigation(e) {
             if (e.deltaY > 1) {
                 setIsUp(false)
-                navigate("/work", {state:{value: 1000}});
+                setTimeout(() => {
+                    navigate("/work", { state: { value: 1000 } });
+                }, 200)
             } else if(e.deltaY < 1) {
                 setIsUp(true)
-                navigate("/skills", {state:{value: -1000}})
+                setTimeout(() => {
+                    navigate("/skills", { state: { value: -1000 } });
+                }, 200)
             }
         }
         window.addEventListener("wheel", handleNavigation);

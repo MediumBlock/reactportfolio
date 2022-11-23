@@ -15,10 +15,14 @@ export default function Skills() {
         function handleNavigation(e) {
             if (e.deltaY > 1) {
                 setIsUp(false)
-                navigate("/aboutme", {state:{value: 1000}});
+                setTimeout(() => {
+                    navigate("/aboutme", { state: { value: 1000 } });
+                }, 200)
             } else if(e.deltaY < 1) {
                 setIsUp(true)
-                navigate("/")
+                setTimeout(() => {
+                    navigate("/");
+                }, 200)
             }
         }
         window.addEventListener("wheel", handleNavigation);

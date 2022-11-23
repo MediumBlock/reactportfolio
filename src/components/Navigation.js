@@ -29,6 +29,10 @@ export default function Navigation() {
         navigate("/work", {state:{value: 1000}})
 
     }
+    
+    function handleSideBar(loc) {
+        navigate(loc, {state:{value: 1000}})
+    }
 
 
     useEffect(() => {
@@ -74,11 +78,11 @@ export default function Navigation() {
 
     const LinkArray = ["/", "/skills", "/aboutme", "/work", "/messageme"]
     const LinkBoxes = LinkArray.map(item => (
-        <Link to={item}
+        <div onClick={() => handleSideBar(item)}
             key={item}
         >
             {location.pathname === item ? boxFilled : boxUnfilled}
-        </Link>
+        </div>
     ))
 
 
