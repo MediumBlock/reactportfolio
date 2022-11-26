@@ -10,12 +10,12 @@ export const data = [
         description: {
             p1: `The portfolio you are viewing right now has been my most ambitious project to date in both content and complexity.`,
             p2: `It's used to showcase my skills as a developer by culminating most if not all of my studies since April 2022.`,
-            p3: `It incorporates React Hooks, Data management, conditional rendering, React Router as well as many different libraries `,
-            p4: `Since the data has been effectively filtered, we then made use of the Context Hook to drill the data down to the apporopriate components to display in the standard format used App wide.`,
-            p5: `The App also incorporates responsive design encompassing most phones, tablets and personal computers`
+            p3: `It incorporates React Hooks, Data management, conditional rendering, React Router as well as many different libraries for helping with page transitions and key moments`,
+            p4: `There were many difficulties to be overcome, especially in regards to the logic behind the animations between page transitions, However after many different attempts this issue was solved by having each component passing props to the next component using the useNavigate hook to allow the following to know which direction it should be moving in.`,
+            p5: `The App also incorporates responsive design encompassing most phones, tablets and personal computers, as well as extensive use of the off-platform app canva to create all the visuals used in the App.`
         },
-        features: ['React', 'React Context', 'Hooks', 'Api Manipulation'],
-        time: "7 days"
+        features: ['React', 'Hooks', 'Canva', 'React Libraries such as Framer Motion', 'React Router'],
+        time: "3 weeks"
     },
     {
         link: 'https://mediumblock.github.io/minireddit/',
