@@ -15,12 +15,14 @@ export const data = [
         name: 'minireddit',
         logo: "minireddit.png",
         thumbnail: 'minireddit-ss.png',
-        description: `hellotax is a suite of tools and services tailored at providing robust and fast VAT Registration & Returns solutions for all kinds of online traders across Europe. 
-
-        The company already had a functioning web app but needed a professional to create an entirely new experience with the latest technologies to leverage speed and provide an optimal user experience as their customers were increasing. At the core of the product is data so there was heavy data transformation and manipulation involved and they needed to make that process as fast as possible.
-        
-        With this information in mind, I examined the existing platform, started documenting flaws and identifying strategies to tackle them. We settled to use Vue as their in-house team was more familiar with it. I bootstrapped the project, and within a few weeks the designated MVP which included a partial component library optimized for accessibility was ready.'`,
-        features: " core of the product is data so there was heavy data transformation and manipulation involved and they needed to make that process as fast as possible. With this information in mind, I examined the existing platform, started documenting flaws and identifying strategies to tackle them. We settled to use Vue as their in-house team was more familiar with it. I bootstrapped the project, and within a few weeks the designated MVP which included a partial component library optimized for accessibility was ready.', features:"
+        description: {
+            p1: `MiniReddit is an app to simplify the reddit browsing experience, allowing for a larger focus on the content with less distractions than the official website.`,
+            p2: `The scope of MiniReddit was simple enough; creating a more steamlined version, but the execution proved to be more difficult, especially with regards to the reddit API.`,
+            p3: `One difficulty in dealing with the Reddit API was dealing with the different types of Media (video, image, text) and file types (.png, .gif), this issue was overcome by storing the relevant data to an object after the API call and filtering the data using conditionals to detect what format and type the data was listed in.`,
+            p4: `Since the data has been effectively filtered, we then made use of the Context Hook to drill the data down to the apporopriate components to display in the standard format used App wide.`,
+            p5: `The App also incorporates responsive design encompassing most phones, tablets and personal computers`
+        },
+        features: ['React', 'React Context', 'React Hooks', 'Api Manipulation', '7 days']
     },
     {
         link: 'https://mediumblock.github.io/picsome',

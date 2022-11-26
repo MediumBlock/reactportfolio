@@ -19,7 +19,19 @@ export default function TileElements() {
             <h2>{thisProject.name}</h2>
             <div className="elements--content">
                 <div className="elements--text">
-                    <p>{thisProject.description}</p>
+                    <p>{thisProject.description.p1}</p>
+                    <br />
+                    <br />
+                    <p>{thisProject.description.p2}</p>
+                    <br />
+                    <br />
+                    <p>{thisProject.description.p3}</p>
+                    <br />
+                    <br />
+                    <p>{thisProject.description.p4}</p>
+                    <br />
+                    <br />
+                    <p>{thisProject.description.p5}</p>
                     <br />
                     <br />
                     <p>{thisProject.features}</p>
