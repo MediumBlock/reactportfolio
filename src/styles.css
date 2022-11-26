@@ -467,6 +467,12 @@ img.whiteframe {
     font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
 }
 
+@media screen and (max-width: 1200px) {
+    .elements--container p  {
+      font-size: 0.8rem;
+    }
+  }
+
 .elements--container h2 {
     color: var(--color-work-text);
     font-size: 2rem;

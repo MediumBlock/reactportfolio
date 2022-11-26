@@ -20,7 +20,7 @@ export default function AnimatedRoutes() {
             <Routes location={location} key={location.pathname}>
                     <Route index path="/" element={<Main />} />
                     <Route path="/skills" element={<Skills />} />
-                    <Route path="/aboutme" element={<AboutMe />} />
+                    <Route path="/aboutme" element={<AboutMe d />} />
                     <Route path="/work" element={<Work />} />
                     <Route path="/work/:project" element={<TileElements />} />
                     <Route path="/messageme" element={<MessageMe />} />

@@ -2,15 +2,17 @@ import React, { useEffect, useRef, useState } from 'react';
 import { useLocation, useNavigate } from "react-router-dom";
 import emailjs from '@emailjs/browser';
 import { motion } from "framer-motion";
+import Confetti from 'react-confetti'
 
 export default function MessageMe() {
     const form = useRef();
     const [isSubmitted, setIsSubmitted] = useState(false);
     const [isCheckMarked, setIsCheckMarked] = useState(false);
+    const [isUp, setIsUp] = useState(false)
+    const [confetti, setConfetti] = useState(false)
     const navigate = useNavigate();
     const location = useLocation();
     const { pathname } = location;
-    const [ isUp, setIsUp] = useState(false)
 
     useEffect(() => {
         function handleNavigation(e) {
@@ -19,13 +21,21 @@ export default function MessageMe() {
                 setTimeout(() => {
                     navigate("/work", { state: { value: -1000 } });
                 }, 200)
-            
+
             }
         }
         window.addEventListener("wheel", handleNavigation);
 
         return () => window.removeEventListener("wheel", handleNavigation);
     });
+
+
+    function setConfettiTimer() {
+        setConfetti(true)
+        setTimeout(() => {
+            setConfetti(false)
+        }, 10000)
+    }
 
 
     const sendEmail = (e) => {
@@ -39,7 +49,9 @@ export default function MessageMe() {
             });
 
         setIsSubmitted(true);
-        setIsCheckMarked(true)
+        setIsCheckMarked(true);
+        setConfettiTimer();
+
 
         setTimeout(() => {
             setIsCheckMarked(false);
@@ -50,6 +62,9 @@ export default function MessageMe() {
 
     return (
         <>
+            {confetti && <Confetti 
+            />}
+
             <img
                 src={require("../resources/green-checkmark.png")}
                 className={isCheckMarked ? "messageme--checkmark on" : "messageme--checkmark"}
