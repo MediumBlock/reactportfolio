@@ -1,16 +1,13 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 import Tile from "./Tile";
 import { motion } from "framer-motion";
 import { data } from "../resources/data"
-import { useNavigate, useLocation } from "react-router-dom";
+import useAppDirection from "../Hooks/useAppDirection";
 
 
 export default function Work() {
 
-    const navigate = useNavigate();
-    const location = useLocation();
-    const { pathname } = location;
-    const [ isUp, setIsUp] = useState(false)
+    const { isUp, location } = useAppDirection("/messageme", "/aboutme", 1000, -1000);
 
     const dataMap = data.map(item => (
         <Tile
@@ -19,28 +16,6 @@ export default function Work() {
             logo={item.logo}
         />
     ))
-
-
-    useEffect(() => {
-        function handleNavigation(e) {
-            if (e.deltaY > 1) {
-                setIsUp(false)
-                setTimeout(() => {
-                    navigate("/messageme", { state: { value: 1000 } });
-                }, 200)
-            } else if(e.deltaY < 1) {
-                setIsUp(true)
-                setTimeout(() => {
-                    navigate("/aboutme", { state: { value: -1000 } });
-                }, 200)
-            }
-        }
-        window.addEventListener("wheel", handleNavigation);
-
-        return () => window.removeEventListener("wheel", handleNavigation);
-    }, [pathname]);
-
-
 
     return (
         <motion.div

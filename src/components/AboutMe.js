@@ -1,35 +1,12 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 import { motion } from "framer-motion";
-import { useNavigate, useLocation } from "react-router-dom";
+import useAppDirection from "../Hooks/useAppDirection";
 
 
 export default function AboutMe() {
 
-    const navigate = useNavigate();
-    const location = useLocation();
-    const { pathname } = location;
-    const [ isUp, setIsUp] = useState(false)
 
-
-    useEffect(() => {
-        function handleNavigation(e) {
-            if (e.deltaY > 1) {
-                setIsUp(false)
-                setTimeout(() => {
-                    navigate("/work", { state: { value: 1000 } });
-                }, 200)
-            } else if(e.deltaY < 1) {
-                setIsUp(true)
-                setTimeout(() => {
-                    navigate("/skills", { state: { value: -1000 } });
-                }, 200)
-            }
-        }
-        window.addEventListener("wheel", handleNavigation);
-
-        return () => window.removeEventListener("wheel", handleNavigation);
-    }, [pathname]);
-
+    const { isUp, location } = useAppDirection("/work", "/skills", 1000, -1000);
 
     return (
         <motion.div

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import {useLocation, useNavigate} from "react-router-dom"
 
-function useAppDirection(navUp, navDown, directionValue) {
+function useAppDirection(navDown, navUp, directionValueDown, directionValueUp) {
     const navigate = useNavigate();
     const location = useLocation();
     const { pathname } = location;
@@ -12,12 +12,12 @@ function useAppDirection(navUp, navDown, directionValue) {
             if (e.deltaY > 1) {
                 setIsUp(false)
                 setTimeout(() => {
-                    navigate(navDown, { state: { value: directionValue } });
+                    navigate(navDown, { state: { value: directionValueDown } });
                 }, 200)
             } else if(e.deltaY < 1) {
                 setIsUp(true)
                 setTimeout(() => {
-                    navigate(navUp);
+                    navigate(navUp, { state: { value: directionValueUp } });
                 }, 200)
             }
         }
