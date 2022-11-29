@@ -5,9 +5,9 @@ export default function Resume() {
 
     return (
         <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1, transition: { duration: 0.5 } }}
-            exit={{ opacity: 0 }}
+            initial={{ opacity: 0, y: 1000, transition: { duration: 0.8 } }}
+            animate={{ opacity: 1, y: 0, transition: { duration: 0.8 } }}
+            exit={{ opacity: 0, y: 1000, transition: { duration: 0.8 } }}
             className="resume--container">
             <div className="resume--section">
                 <div className="resume--left">
@@ -26,7 +26,8 @@ export default function Resume() {
                             <li>React</li>
                             <li>CSS</li>
                             <li>React Router</li>
-                            <li>React Redux</li>
+                            <li>Redux</li>
+                            <li>HTML</li>
                         </ul>
 
                     </div>
@@ -41,9 +42,34 @@ export default function Resume() {
                 <div className="resume--right">
                     <div className="hero--right">
                         <h1>Michael Paspa</h1>
+                        <h2>Aspiring Developer</h2>
+                        <h4>Driven with a passion for life and programming, eager to hit the ground running and see what the future holds</h4>
+                        <hr />
                     </div>
                     <div className="education--right">
-                        <p>codecademy</p>
+                        <h3>Education - Programming</h3>
+                        <h4>Codecademy | April - December 2022</h4>
+                        <h5>Course: Front-End Developer</h5>
+                        <p>Codecademy is a paid service that offers many pathways in many different programming disciplines, in the front-end developer course over 7 months I took classes, completed assignments & projects in the the following fields / learning objectives: </p>
+                        <ul>
+                            <li>Web Design (color theory etc)</li>
+                            <li>CSS + HTML</li>
+                            <li>Responsive + Animations</li>
+                            <li>Deploying websites / Github</li>
+                            <li>Javascript Fundamentals / Async / Javascript Testing</li>
+                            <li>React / JSX / Lifecycle Methods / Functional & Class Components</li>
+                            <li>Redux</li>
+                            <li>Algorithms / Data structures</li>
+                        </ul>
+                        <h4>Scrimba | July - August 2022</h4>
+                        <h5>Course: React Developer</h5>
+                        <p>Scrimba is platform that offers both paid and free interactive visual courses in many area regarding web deveopment, I enrolled and completed all react curses by Bob Ziroll upto and including Advanced.</p>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
                     </div>
                     <div className="experience--right">
 

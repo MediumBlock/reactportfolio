@@ -57,6 +57,8 @@ h4 {
     font-weight: 400;
 }
 
+/* Navigation */
+
 
 .logo {
     position: absolute;
@@ -73,50 +75,6 @@ h4 {
     display: flex;
     height: 39vw;
 }
-
-
-.main--container {
-    display: flex;
-    background: linear-gradient(90deg, var(--background-purp) 67%, var(--background-green) 33%);
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 22%;
-    left: 0px;
-}
-
-.main--left {
-    position: relative;
-    left: 15%;
-    top: 18%;
-    width: 35%;
-}
-
-.subtext {
-    font-size: 0.8vw;
-    color: #ccf381;
-    display: flex;
-    position: absolute;
-    left: 0%;
-    top: 55%;
-    width: 85%;
-}
-
-.subheading {
-    margin-right: 10%;
-    width: 70%;
-}
-
-
-.main--right {
-    position: relative;
-    left: 22%;
-    top: 18%;
-    height: 30vw;
-    width: 20%;
-    /* border: 1px black solid; */
-}
-
 
 .menu {
     position: absolute;
@@ -204,6 +162,76 @@ h4 {
     transform: rotate(-45deg);
 }
 
+.page--markers {
+    position: absolute;
+    width: 4vw;
+    right: -275%;
+    top: 85%;
+    z-index: 2;
+}
+
+.marker {
+    position: relative;
+    width: 25%;
+    right: -40%;
+    display: block;
+    margin-top: 15%;
+    transition: all 0.5s;
+}
+
+.filled {
+    margin-top: 15%;
+    transform: rotate(45deg);
+    width: 10%;
+    right: -47.5%;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Main */
+
+.main--container {
+    display: flex;
+    background: linear-gradient(90deg, var(--background-purp) 67%, var(--background-green) 33%);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 22%;
+    left: 0px;
+}
+
+.main--left {
+    position: relative;
+    left: 15%;
+    top: 18%;
+    width: 35%;
+}
+
+.subtext {
+    font-size: 0.8vw;
+    color: #ccf381;
+    display: flex;
+    position: absolute;
+    left: 0%;
+    top: 55%;
+    width: 85%;
+}
+
+.subheading {
+    margin-right: 10%;
+    width: 70%;
+}
+
+
+.main--right {
+    position: relative;
+    left: 22%;
+    top: 18%;
+    height: 30vw;
+    width: 20%;
+    /* border: 1px black solid; */
+}
+
 
 .headshot {
     position: absolute;
@@ -235,32 +263,6 @@ img.whiteframe {
 }
 
 
-.page--markers {
-    position: absolute;
-    width: 4vw;
-    right: -275%;
-    top: 85%;
-    z-index: 2;
-}
-
-.marker {
-    position: relative;
-    width: 25%;
-    right: -40%;
-    display: block;
-    margin-top: 15%;
-    transition: all 0.5s;
-}
-
-.filled {
-    margin-top: 15%;
-    transform: rotate(45deg);
-    width: 10%;
-    right: -47.5%;
-    text-align: center;
-    cursor: pointer;
-}
-
 .squiggle {
     position: absolute;
     width: 10%;
@@ -268,6 +270,9 @@ img.whiteframe {
     top: 30%;
     left: -40%;
 }
+
+
+/* Skills */
 
 .skills--background {
     background-color: var(--background-white);
@@ -347,6 +352,8 @@ img.whiteframe {
     z-index: 1;
 }
 
+/* AboutMe */
+
 .aboutme--top {
     background-color: var(--background-purp);
     position: absolute;
@@ -375,6 +382,8 @@ img.whiteframe {
     position: relative;
     top: 0%;
 }
+
+/* Work / Tile */
 
 .work--top {
     background-color: var(--background-white);
@@ -412,7 +421,7 @@ img.whiteframe {
     top: 30%;
     display: grid;
     grid-template: 1fr 1fr / repeat(3, 1fr);
-    gap: 2% 1%;
+    gap: 3% 1.5%;
 
 }
 
@@ -424,7 +433,7 @@ img.whiteframe {
 }
 
 .tile:hover {
-    transform: translateY(-4px);
+    transform: translateY(-6px);
     transition: all 0.2s;
     cursor: pointer;
 }
@@ -449,6 +458,9 @@ img.whiteframe {
     left: 35%;
     width: 30%;
 }
+
+/* TileElements */
+
 
 .elements--container {
     background-color: var(--background-white);
@@ -505,6 +517,8 @@ img.whiteframe {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
 }
+
+/* MessageMe */
 
 .messageme--main {
     background-color: var(--background-white);
@@ -681,6 +695,8 @@ textarea:focus, input:focus{
     opacity: 1;
 }
 
+/* Resume */
+
 
 .resume--container {
     position: absolute;
@@ -696,9 +712,19 @@ textarea:focus, input:focus{
     position: absolute;
     background-color: var(--background-white);
     width: 80%;
-    left: 10%;
+    margin: 0 7%;
     top: 15%;
     height: 80%;
+    padding: 3%;
 
+}
+
+
+.resume--right h1 {
+    color: var(--background-purp);
+}
+
+.resume--right h2, .resume--right h3 {
+    color: var(--color-work-text)
 }
 

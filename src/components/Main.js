@@ -20,7 +20,7 @@ export default function Main() {
                 <h2>A love for creating detailed and complete frontend packages for a great end user experience.</h2>
                 <div className="subtext">
                     <h4 className="subheading">Self-motivated and experienced in several disciplines from UI to UX and all the programming needed in between</h4>
-                    <h4>Eager to tackle any challenges and skill up in front end or back</h4>
+                    <h4>Eager to tackle any challenges and skill up front end or back</h4>
                 </div>
                 <img src={require("../resources/line.png")}
                     className="squiggle"
