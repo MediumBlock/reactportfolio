@@ -430,6 +430,7 @@ img.whiteframe {
     background-color: var(--background-work-tile);
     display: flex;
     flex-direction: column;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .tile:hover {
@@ -726,5 +727,11 @@ textarea:focus, input:focus{
 
 .resume--right h2, .resume--right h3 {
     color: var(--color-work-text)
+}
+
+.resume--right p,
+.resume--right li {
+    width: 60%;
+    min-width: 600px;
 }
 
