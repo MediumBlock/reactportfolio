@@ -42,27 +42,31 @@ export default function Resume() {
                 <div className="resume--right">
                     <div className="hero--right">
                         <h1>Michael Paspa</h1>
-                        <h2>Aspiring Developer</h2>
-                        <h4>Driven with a passion for life and programming, eager to hit the ground running and see what the future holds</h4>
+                        <h2>Aspiring Developer.</h2>
+                        <h4>Driven with a passion for life and programming, eager to hit the ground running and see what the future holds.</h4>
                         <hr />
                     </div>
                     <div className="education--right">
                         <h3>Education - Programming</h3>
-                        <h4>Codecademy | April - December 2022</h4>
-                        <h5>Course: Front-End Developer</h5>
+                        <div className="resume--date">
+                            <h4>Codecademy | Front-End Developer Course</h4>
+                            <h4>April - December 2022 </h4>
+                        </div>
                         <p>Codecademy is a paid service that offers many pathways in many different programming disciplines, in the front-end developer course over 7 months I took hundreds of classes and completed over 80 assignments & projects in the the following fields / learning objectives: </p>
                         <ul>
-                            <li>The fundamentals of Web Design: How to plan for and make a website visually appealing with topics such as colour theory, UI & Text design, site layout and how to properly plan out a website with skills such as wireframing and prototyping</li>
-                            <li>Early web programming fundamentals: How to effectively programmatically create a simple web page with HTML, as well as basic CSS stylings such as the Box Model, CSS Selectors, Display & Positioning.</li>
-                            <li>Responsive Design & CSS Animations: How to make a website resposnive by utilising CSS Grid, Flexbox, media queries, as well as how to create and implement animations using pure CSS.</li>
-                            <li>Deploying websites: Utlising GitHub for building and maintaining respositories, understanding and implementing Git operations as well as version control tools such as Branching as well as working with a team through Git</li>
-                            <li>Javascript: studied extensively over several modules from basic Javascript functionality such as loops, operators, classes, modules and methods to more advanced concepts such as Asynchronous functions and testing with suites such as Jest & Mocha.</li>
-                            <li>React: Extensively studied and created a whole slew of projects with both class based and functional components, learnt JSX, the different lifecycle methods, hooks, React Router and more.</li>
-                            <li>Redux: Learnt how to deploy Redux in React, learnt and implemented the different data flows in Redux such as the store, reducers, dispatch etc. Also learnt how to refactor with Redux toolkit and how middleware and thunks can be correctly utilised.</li>
-                            <li>Algorithms & Data structures: studied both Linear & Complex data structures such as Linked lists, Hash Maps, Heaps & Algorithms such as bubble sort and merge sort.</li>
+                            <li><b>The fundamentals of Web Design:</b> How to plan for and make a website visually appealing with topics such as colour theory, UI & Text design, site layout and how to properly plan out a website with skills such as wireframing and prototyping</li>
+                            <li><b>Early web programming fundamentals:</b> How to effectively programmatically create a simple web page with HTML, as well as basic CSS stylings such as the Box Model, CSS Selectors, Display & Positioning.</li>
+                            <li><b>Responsive Design & CSS Animations:</b> How to make a website responsive by utilising CSS Grid, Flexbox, media queries, as well as how to create and implement animations using pure CSS.</li>
+                            <li><b>Deploying websites:</b> Utlising GitHub for building and maintaining respositories, understanding and implementing Git operations as well as version control tools such as Branching as well as working with a team through Git</li>
+                            <li><b>Javascript:</b> studied extensively over several modules from basic Javascript functionality such as loops, operators, classes, modules and methods to more advanced concepts such as Asynchronous functions and testing with suites such as Jest & Mocha.</li>
+                            <li><b>React:</b> Extensively studied and created a whole slew of projects with both class based and functional components, learnt JSX, the different lifecycle methods, hooks, React Router and more.</li>
+                            <li><b>Redux:</b> Learnt how to deploy Redux in React, learnt and implemented the different data flows in Redux such as the store, reducers, dispatch etc. Also learnt how to refactor with Redux toolkit and how middleware and thunks can be correctly utilised.</li>
+                            <li><b>Algorithms & Data structures:</b> studied both Linear & Complex data structures such as Linked lists, Hash Maps, Heaps & Algorithms such as bubble sort and merge sort.</li>
                         </ul>
-                        <h4>Scrimba | July - August 2022</h4>
-                        <h5>Course: React Developer</h5>
+                        <div className="resume--date">
+                            <h4>Scrimba | React Developer Course </h4>
+                            <h4>July - August 2022</h4>
+                        </div>
                         <p>Scrimba is platform that offers both paid and free interactive visual courses in many area regarding web deveopment, I enrolled and completed all react curses by Bob Ziroll upto and including Advanced, which had me completing over 200 coding challenges and 15 projects. In this course I studied the following:</p>
                         <ul>
                             <li>Conditional Rendering, React forms, Local Storage with React, Async functions inside useEffect</li>
@@ -71,9 +75,10 @@ export default function Resume() {
                             <li>React Router, Pure JS Redux & React Redux</li>
                         </ul>
                     </div>
+                    <hr />
+
                     <div className="experience--right">
                         <h3>Work Summary</h3>
-                        <hr />
                         <h4>Foreign Investment Manager</h4>
                         <h5>Hoa Binh Construction Group | Ho Chi Minh City, Vietnam | Nov 2019 - August 2022</h5>
                         <p>Hoa Binh is Vietnam’s largest construction contracting company by revenue, it is a publicly
