@@ -107,7 +107,6 @@ export default function Navigation() {
             <div className="main--right">
                 <div>
                     <div>
-
                         {location.pathname !== "/aboutme"
                             ?
                             <>

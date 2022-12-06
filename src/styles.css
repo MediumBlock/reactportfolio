@@ -237,8 +237,15 @@ h4 {
     top: 18%;
     height: 30vw;
     width: 20%;
-    /* border: 1px black solid; */
 }
+
+/* .main--right {
+    position: relative;
+    left: 22%;
+    top: 18%;
+    height: 30vw;
+    width: 20%;
+} */
 
 
 .headshot {
@@ -819,6 +826,7 @@ input:focus {
     width: 80%;
     min-width: 600px;
     color: rgba(71, 71, 71, 0.75);
+    letter-spacing: 0.7px;
 }
 
 .resume--right p {
