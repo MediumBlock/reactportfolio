@@ -714,7 +714,6 @@ input:focus {
 /* Resume */
 
 
-
 .resume--section {
     display: flex;
     position: absolute;
@@ -722,6 +721,10 @@ input:focus {
     border: 8vw solid white;
     padding: 3%;
 
+}
+
+.resume--left {
+    width: 35%;
 }
 
 .resume--left h4 {
@@ -734,14 +737,29 @@ input:focus {
 
 }
 
+.contact--left ul {
+    list-style-type: none;
+}
+
+.resume--left ul {
+    padding: 0;
+}
+
 .resume--left li {
     font-size: 1.1rem;
     line-height: 130%;
     margin-top: 1.5%;
     color: rgba(71, 71, 71, 0.75);
-
 }
 
+.contact--left li {
+    font-size: 1.1rem;
+}
+
+
+.resume--right {
+    margin-left: 4%;
+}
 
 .resume--right h1 {
     color: var(--background-purp);
@@ -757,26 +775,6 @@ input:focus {
     font-size: 2rem;
     margin: 0;
     margin-top: 1%;
-
-}
-
-
-.hero--right h4 {
-    color: rgba(71, 71, 71, 0.75);
-    font-size: 1.5rem;
-    margin-top: 2%;
-
-}
-
-.resume--right {
-    margin-left: 8%;
-}
-
-.resume--right p,
-.resume--right li {
-    width: 80%;
-    min-width: 600px;
-    color: rgba(71, 71, 71, 0.75);
 
 }
 
@@ -810,30 +808,23 @@ input:focus {
 
 }
 
-.education--right h4,
-.experience--right h4 {
-    font-size: 1.3rem;
-    margin: 2% 0 0 0;
-    color: black;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 700;
+.hero--right h4 {
+    color: rgba(71, 71, 71, 0.75);
+    font-size: 1.5rem;
+    margin-top: 2%;
+}
+
+.resume--right p,
+.resume--right li {
+    width: 80%;
+    min-width: 600px;
+    color: rgba(71, 71, 71, 0.75);
 }
 
 .resume--right p {
     color: rgba(71, 71, 71, 0.75);
     font-size: 1.3rem;
 
-}
-
-.resume--date {
-    display: flex;
-}
-
-.resume--date>h4:nth-child(2) {
-    color: rgba(71, 71, 71, 0.75);
-    margin-left: auto;
-    margin-right: 0;
-    font-size: 1.1rem;
 }
 
 .resume--right h5 {
@@ -852,7 +843,32 @@ input:focus {
     color: rgba(71, 71, 71, 0.85);
 }
 
+
+.education--right h4,
+.experience--right h4 {
+    font-size: 1.3rem;
+    margin: 2% 0 0 0;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+
+
+.resume--date {
+    display: flex;
+}
+
+.resume--date>h4:nth-child(2) {
+    color: rgba(71, 71, 71, 0.75);
+    margin-left: auto;
+    margin-right: 0;
+    font-size: 1.1rem;
+}
+
+
+
 .education--right, .experience--right {
     margin-top: 1%;
+    margin-bottom: 2%;
 }
 
