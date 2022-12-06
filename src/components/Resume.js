@@ -20,7 +20,7 @@ export default function Resume() {
                         </ul>
                     </div>
                     <div className="tech--left">
-                        <h4>Core Technologies</h4>
+                        <h4>Technologies</h4>
                         <ul>
                             <li>Javascript</li>
                             <li>React</li>
@@ -34,8 +34,8 @@ export default function Resume() {
                     <div className="education--left">
                         <h4>Formal Education</h4>
                         <ul>
-                            <li>Bachelor of Accounting<br />University of South Australia</li>
-                            <li>Bachelor of Mechanical & Manufacturing Engineering <br />University of Melbourne(incomplete)</li>
+                            <li>Bachelor of Accounting<br />UniSA (2011-2015)</li><br/>
+                            <li>Bachelor of Mechanical & Manufacturing Engineering<br />UniMelb(incomplete) (2007-2010)</li>
                         </ul>
                     </div>
                 </div>
@@ -69,62 +69,71 @@ export default function Resume() {
                         </div>
                         <p>Scrimba is platform that offers both paid and free interactive visual courses in many area regarding web deveopment, I enrolled and completed all react curses by Bob Ziroll upto and including Advanced, which had me completing over 200 coding challenges and 15 projects. In this course I studied the following:</p>
                         <ul>
-                            <li>Conditional Rendering, React forms, Local Storage with React, Async functions inside useEffect</li>
-                            <li>React Hooks including useMemo, useContext</li>
-                            <li>Optimisation & Reusability</li>
-                            <li>React Router, Pure JS Redux & React Redux</li>
+                            <li><b>Utilising core tools</b> such as Conditional Rendering, React forms, Local Storage Asynchronous functions inside useEffect.</li>
+                            <li><b>Hooks;</b> the many variations aswell as the when and how to use them, from base Hooks such as useState, useEffect up to and including useMemo, useContext, custom Hooks and more.</li>
+                            <li><b>Optimisation & Reusability,</b> extensively looked at key ways to optimise an App in order to keep it running fast and smoothly as well as how to keep Apps modular in design to better be able to reuse functions / components and other key elements.</li>
+                            <li><b>React Router, Pure JS Redux & React Redux.</b> Took a deep dive into the many different framesworks on how to make a single page application with React Router, as well as the other frameworks / libraries to help manage and centralise state.</li>
                         </ul>
                     </div>
                     <hr />
 
                     <div className="experience--right">
                         <h3>Work Summary</h3>
-                        <h4>Foreign Investment Manager</h4>
-                        <h5>Hoa Binh Construction Group | Ho Chi Minh City, Vietnam | Nov 2019 - August 2022</h5>
+
+                        <div className="resume--date">
+                            <h4>Foreign Investment Manager</h4>
+                            <h4> Nov 2019 - August 2022</h4>
+                        </div>
+                        <h5>Hoa Binh Construction Group | Ho Chi Minh City, Vietnam</h5>
                         <p>Hoa Binh is Vietnam’s largest construction contracting company by revenue, it is a publicly
                             listed company specializing in building premium high-rise residential & commercial projects
                             for domestic & overseas clients while also engaging in property development & investment.
                             The role includes:</p>
                         <ul>
-                            <li>Major investment evaluations ranging from $2-20M USD in capital outlay; presenting
+                            <li><b>Major investment evaluations</b> ranging from $2-20M USD in capital outlay; presenting
                                 insights on viability, dangers and strategic considerations to drive management decision
                                 making and strategy, including overseas markets entry, real estate development projects,
                                 foreign company acquisitions etc</li>
-                            <li>Financial analysis & modelling to provide senior management with full financial visibility
+                            <li><b>Financial analysis & modelling</b> to provide senior management with full financial visibility
                                 and meaningful findings, e.g. labour & materials supply analysis in new foreign markets.
                             </li>
-                            <li>Foreign market research providing in-depth strategic analysis on overseas real-estate,
+                            <li><b>Foreign market research</b> providing in-depth strategic analysis on overseas real-estate,
                                 construction industry conditions and understanding of competitive advantages, and
                                 potential pitfalls.</li>
-                            <li>Preparation of board presentations and investor packs to support investment for foreign
+                            <li><b>Preparation of board presentations and investor packs</b> to support investment for foreign
                                 projects resulting in more than $2m of additional funding.</li>
-                            <li>Domestic land-acquisition aid for foreign partners entering Vietnam, including notable
+                            <li><b>Domestic land-acquisition aid</b> for foreign partners entering Vietnam, including notable
                                 Malaysian, Singaporean and Australian property developers.</li>
-                            <li>Cross-cultural team coordination between internal & foreign partner teams including
+                            <li><b>Cross-cultural team coordination</b> between internal & foreign partner teams including
                                 Samsung C&T for airport project in Taiwan, Canadian contractors for apartment project, US
                                 engineering design firms entering Vietnam</li>
-                            <li>Business Development activities in several countries (such as Canada, USA, Kuwait, and
+                            <li><b>Business Development activities</b> in several countries (such as Canada, USA, Kuwait, and
                                 more) order to further the goals of expanding Hoa Binh’s construction operations overseas</li>
                         </ul>
                         <hr />
-                        <h4>Accounts Manager</h4>
-                        <h5>JS Sourcing | Shanghai, China | July 2016 - September 2019</h5>
+
+                        <div className="resume--date">
+                            <h4>Accounts Manager</h4>
+                            <h4>July 2016 - September 2019</h4>
+                        </div>
+
+                        <h5>JS Sourcing | Shanghai, China</h5>
                         <p>JS Sourcing is one of China’s leading sourcing specialists. Their services are tailored primarily
                             to wholesalers, brands e-commerce, and smaller businesses (SMEs) who buy in bulk from
                             China for cost-efficient purchasing. Responsible for a team of 3, the role included:</p>
                         <ul>
-                            <li>Generating new business by finding the best fit for potential clients based on their
+                            <li><b>Generating new business</b> by finding the best fit for potential clients based on their
                                 requirements and the organisation’s supply network.</li>
-                            <li>Negotiating on behalf of the client to ensure best price and satisfaction.</li>
-                            <li>Conducting spot checks on manufacturing facilities to ensure quality and cost saving
+                            <li><b>Negotiating</b> on behalf of the client to ensure best price and satisfaction.</li>
+                            <li><b>Conducting spot checks</b> on manufacturing facilities to ensure quality and cost saving
                                 controls are in place to facilitate a smooth and timely delivery goods at arms’ length.
                             </li>
-                            <li>Tracking and reporting of sales targets, customer complaints and other metrics for
+                            <li><b>Tracking and reporting</b> of sales targets, customer complaints and other metrics for
                                 reporting to senior management.</li>
-                            <li>Key liaison between clients and suppliers regardless of the size of the account the entire
+                            <li><b>Key liaison</b> between clients and suppliers regardless of the size of the account the entire
                                 process was handled from start to finish.
                             </li>
-                            <li>Delegating and coordinating between various members and departments (both internal and
+                            <li><b>Delegating and coordinating</b> between various members and departments (both internal and
                                 external) based on project specifics and requirements, for example obtaining export
                                 documentation from government agencies on controlled goods.
                             </li>
