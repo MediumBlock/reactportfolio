@@ -89,7 +89,7 @@ export default function Navigation() {
 
     return (
         <div className="navigation--container">
-            <div className="main--logo">
+            <div className="nav--logo">
                 <Link to="/">
                     {
                         location.pathname === "/" || location.pathname === "/aboutme"
@@ -104,7 +104,7 @@ export default function Navigation() {
                     }
                 </Link>
             </div>
-            <div className="main--right">
+            <div className="nav--right">
                 <div>
                     <div>
                         {location.pathname !== "/aboutme"

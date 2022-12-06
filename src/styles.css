@@ -42,7 +42,7 @@ a:active {
 
 h1 {
     color: var(--background-green);
-    font-size: 3.8vw;
+    font-size: clamp(25px, 3.8vw, 60px);
     line-height: 90%;
 }
 
@@ -53,7 +53,7 @@ h1 span {
 h2 {
     color: white;
     font-weight: 400;
-    font-size: 1.1vw;
+    font-size: clamp(10px, 1.1vw, 40px);
 }
 
 h3 {
@@ -76,6 +76,15 @@ h4 {
     z-index: 2;
 
 }
+
+.nav--right {
+    position: absolute;
+    left: 22%;
+    top: 18%;
+    height: 30vw;
+    width: 20%;
+}
+
 
 .navigation--container {
     width: 100%;
@@ -216,18 +225,18 @@ h4 {
 }
 
 .subtext {
-    font-size: 0.8vw;
+    font-size: clamp(10px, 0.8vw, 18px);
     color: #ccf381;
     display: flex;
     position: absolute;
     left: 0%;
-    top: 55%;
     width: 85%;
+    margin-top: 5%;
 }
 
 .subheading {
     margin-right: 10%;
-    width: 70%;
+    width: clamp(300px, 70%, 1000px);
 }
 
 
@@ -236,16 +245,9 @@ h4 {
     left: 22%;
     top: 18%;
     height: 30vw;
-    width: 20%;
+    width: clamp(250px, 20%, 1000px);
 }
 
-/* .main--right {
-    position: relative;
-    left: 22%;
-    top: 18%;
-    height: 30vw;
-    width: 20%;
-} */
 
 
 .headshot {
