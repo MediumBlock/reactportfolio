@@ -328,8 +328,8 @@ img.whiteframe {
     color: var(--background-purp);
 }
 
-.skills--left h5 {
-    font-size: 0.7vw;
+.skills h5 {
+    font-size: clamp(10px, 0.7vw, 40px);
     font-weight: 400;
     color: var(--subtext-purp);
 }
@@ -354,11 +354,6 @@ img.whiteframe {
     color: var(--background-purp);
 }
 
-.skills--right h5 {
-    font-size: 0.7vw;
-    font-weight: 400;
-    color: var(--subtext-purp);
-}
 
 .squiggle--skills {
     position: absolute;
