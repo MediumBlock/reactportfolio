@@ -379,20 +379,30 @@ img.whiteframe {
 
     display: flex;
     position: absolute;
-    left: 20%;
+    left: 15%;
     top: 20%;
 }
 
 .aboutme--content {
-    width: 55%;
+    width: clamp(1000px, 55%, 2000px);
     top: 30%;
-    position: relative;
+}
+
+.aboutme--content h3 {
+    font-size: clamp(12px, 0.85vw, 40px);
 }
 
 .aboutme--image {
     width: 70%;
-    position: relative;
+    margin-left: 20px;
     top: 0%;
+}
+
+.aboutme--container br {
+    content: "";
+    margin: 2em;
+    display: block;
+    font-size: 24%;
 }
 
 /* Work / Tile */
