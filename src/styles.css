@@ -606,6 +606,8 @@ form {
 
 }
 
+
+
 label {
     display: block;
     font-size: 1rem;
@@ -629,6 +631,18 @@ label {
     top: 35%;
     left: 30%;
 }
+
+@media screen and (max-width: 1200px) {
+    .form--row1 {
+        left: 0%;
+        width: 160%;
+    }
+    .form--message {
+        left: 0%;
+        width: 164%;
+    }
+}
+
 
 .form--name input,
 .form--email input {
@@ -667,25 +681,19 @@ textarea::placeholder {
 
 }
 
+
 .button {
     top: 70%;
     left: 73%;
-    width: 20%;
+    width: clamp(100px, 20%, 500px);
     position: relative;
     border: 1px solid rgba(61, 21, 95, 0.5);
     height: 3rem;
-
-
-}
-
-
-.button {
     font: 22px Arial;
     display: inline-block;
     text-align: center;
     color: var(--background-purp);
     background: purple;
-
     background: linear-gradient(to left, var(--background-white) 50%, var(--background-purp) 50%) right;
     background-size: 200%;
     transition: .3s ease-out;
