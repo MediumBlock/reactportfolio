@@ -417,8 +417,7 @@ img.whiteframe {
 }
 
 .work--text {
-    position: absolute;
-    left: 42%;
+    position: relative;
     top: 15%;
     text-align: center;
     font-family: 'source sans pro';
@@ -436,11 +435,11 @@ img.whiteframe {
 }
 
 .tile--container {
-    position: absolute;
+    position: relative;
     width: 55%;
     height: 50%;
     left: 23%;
-    top: 30%;
+    top: 15%;
     display: grid;
     grid-template: 1fr 1fr / repeat(3, 1fr);
     gap: 3% 1.5%;
@@ -468,18 +467,26 @@ img.whiteframe {
 }
 
 .tile--bottom {
+    display: flex;
     background-color: white;
     font-size: 1.5rem;
     text-align: center;
     height: 30%;
+    justify-content: center;
+    align-content: center;
 
+}
+
+.tile--bottom h5 {
+    position: relative;
+    top: -20%;
 }
 
 .tile--top img {
     position: relative;
     top: 20%;
     left: 35%;
-    width: 30%;
+    width: clamp(65px, 30%, 500px);
 }
 
 /* TileElements */
