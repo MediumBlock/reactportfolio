@@ -402,13 +402,20 @@ img.whiteframe {
 }
 
 .aboutme--content h3 {
-    font-size: clamp(12px, 0.85vw, 40px);
+    font-size: clamp(10px, 0.85vw, 40px);
 }
 
 .aboutme--image {
+    position: relative;
     width: 70%;
     margin-left: 20px;
-    top: 0%;
+}
+
+@media screen and (max-width: 1000px) {
+    .aboutme--image {
+        top: 20%;
+
+    }
 }
 
 .aboutme--container br {
