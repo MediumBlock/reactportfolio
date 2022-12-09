@@ -103,7 +103,7 @@ h4 {
     transition: all 0.4s;
     opacity: 0%;
     visibility: hidden;
-    z-index: 2;
+    z-index: 3;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
@@ -117,14 +117,14 @@ h4 {
     width: clamp(40px, 15%, 200px);
     position: absolute;
     cursor: pointer;
-    z-index: 2;
+    z-index: 5;
 }
 
 .menu--text {
     position: absolute;
     margin-left: 10%;
     top: 10%;
-    font-size: 1.1vw;
+    font-size: clamp(10px, 1.1vw, 40px);
     color: var(--background-purp);
     font-weight: 400;
     transition: all 0.4s;
@@ -151,7 +151,7 @@ h4 {
     right: -270%;
     transition: transform 0.5s;
     transform-origin: 30% 70%;
-    z-index: 3;
+    z-index: 6;
 }
 
 .top--menu.motion {
@@ -166,8 +166,8 @@ h4 {
     top: -10%;
     right: -270%;
     transition: transform 0.8s;
-    transform-origin: 40% 60%;
-    z-index: 3;
+    transform-origin: 40% 90%;
+    z-index: 6;
 
 }
 
