@@ -152,6 +152,7 @@ h4 {
     transition: transform 0.5s;
     transform-origin: 30% 70%;
     z-index: 6;
+
 }
 
 .top--menu.motion {
@@ -166,8 +167,8 @@ h4 {
     top: -10%;
     right: -270%;
     transition: transform 0.8s;
-    transform-origin: 40% 90%;
-    z-index: 6;
+    transform-origin: 40% 50%;
+    z-index: 6
 
 }
 
@@ -177,6 +178,18 @@ h4 {
 
 .bottom--menu.reverse--motion {
     transform: rotate(-45deg);
+}
+
+
+@media screen and (max-width: 900px) {
+    .top--menu {
+        transform-origin: 40% 70%;
+
+    }
+    .bottom--menu {
+        transform-origin: 45% 40%;
+
+    }
 }
 
 .page--markers {
