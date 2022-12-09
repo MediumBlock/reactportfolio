@@ -466,6 +466,7 @@ img.whiteframe {
 
 }
 
+
 .tile--bottom {
     display: flex;
     background-color: white;
@@ -477,6 +478,19 @@ img.whiteframe {
 
 }
 
+@media screen and (max-width: 1000px) {
+    .tile--top {
+        height: 50%;
+    }
+    .tile--bottom {
+        height: 50%;
+    }
+    .tile--container {
+        height: 30%;
+    }
+}
+
+
 .tile--bottom h5 {
     position: relative;
     top: -20%;
@@ -484,9 +498,9 @@ img.whiteframe {
 
 .tile--top img {
     position: relative;
-    top: 20%;
+    top: 25%;
     left: 35%;
-    width: clamp(65px, 30%, 500px);
+    width: clamp(50px, 30%, 500px);
 }
 
 /* TileElements */
