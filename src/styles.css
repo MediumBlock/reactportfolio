@@ -72,7 +72,7 @@ h4 {
     position: absolute;
     top: 10%;
     left: 3%;
-    width: clamp(100px ,7%, 400px);
+    width: clamp(100px, 7%, 400px);
     z-index: 2;
 
 }
@@ -169,7 +169,6 @@ h4 {
     transition: transform 0.8s;
     transform-origin: 40% 50%;
     z-index: 6
-
 }
 
 .bottom--menu.motion {
@@ -186,6 +185,7 @@ h4 {
         transform-origin: 40% 70%;
 
     }
+
     .bottom--menu {
         transform-origin: 45% 40%;
 
@@ -502,9 +502,11 @@ img.whiteframe {
     .tile--top {
         height: 50%;
     }
+
     .tile--bottom {
         height: 50%;
     }
+
     .tile--container {
         height: 30%;
     }
@@ -543,11 +545,7 @@ img.whiteframe {
     font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
 }
 
-@media screen and (max-width: 1200px) {
-    .elements--container p {
-        font-size: 0.8rem;
-    }
-}
+
 
 .elements--container h2 {
     color: var(--color-work-text);
@@ -585,32 +583,25 @@ img.whiteframe {
 }
 
 @media screen and (max-width: 1200px) {
+    .elements--container p {
+        font-size: 0.8rem;
+    }
 
-    
-.elements--text {
-    margin-right: 2%;
-    padding: 1%;
+    .elements--container img {
+        position: relative;
+        top: 150px;
+    }
 
-}
+    .elements--content {
+        display: flex;
+        position: absolute;
+        top: 20%;
+        left: 5%;
+    }
 
-.elements--content {
-    display: flex;
-    position: absolute;
-    top: 20%;
-    left: 5%;
-}
-
-.elements--container img {
-    position: relative;
-    top: 150px;
-}
-
-
-
-
-
-
-
+    .elements--text {
+        margin-right: 2%;
+    }
 
 }
 
@@ -704,6 +695,7 @@ label {
         left: 0%;
         width: 160%;
     }
+
     .form--message {
         left: 0%;
         width: 164%;
@@ -964,8 +956,8 @@ input:focus {
 
 
 
-.education--right, .experience--right {
+.education--right,
+.experience--right {
     margin-top: 1%;
     margin-bottom: 2%;
 }
-
