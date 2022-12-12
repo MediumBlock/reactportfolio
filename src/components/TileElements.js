@@ -1,12 +1,14 @@
-import React from "react";
+import React, {useContext} from "react";
 import { data } from "../resources/data";
 import { motion } from "framer-motion";
+import { Context } from "../Hooks/Context";
 
 import { useParams } from "react-router-dom";
 
 export default function TileElements() {
 
     const { project } = useParams();
+    const {width, breakpoint} = useContext(Context)
     const thisProject = data.find(item => item.name === project)
 
     return (
