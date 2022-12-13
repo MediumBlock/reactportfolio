@@ -616,6 +616,7 @@ img.whiteframe {
         left: 0;
         width: 100px;
         margin: 0 auto;
+        padding-right: 10%;
     }
 
     .elements--container img {
@@ -641,6 +642,8 @@ img.whiteframe {
 
 }
 
+.gay-g img {
+}
 
 /* MessageMe */
 

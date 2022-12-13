@@ -1,14 +1,14 @@
-import React, {useContext} from "react";
+import React, { useContext } from "react";
 import { data } from "../resources/data";
 import { motion } from "framer-motion";
 import { Context } from "../Hooks/Context";
 
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 export default function TileElements() {
 
     const { project } = useParams();
-    const {width, breakpoint} = useContext(Context)
+    const { width, breakpoint } = useContext(Context)
     const thisProject = data.find(item => item.name === project)
 
     return (
@@ -38,7 +38,13 @@ export default function TileElements() {
                     <p>{thisProject.time}</p>
 
                 </div>
-                <img src={require(`../resources/${thisProject.thumbnail}`)} />
+                <a class='elements--image'
+                    href="https://github.com"
+                    target='_blank'
+                    rel="noopener"
+                    aria-label='Github'>
+                    <img src={require(`../resources/${thisProject.thumbnail}`)} />
+                </a>
             </div>
 
         </motion.div>
