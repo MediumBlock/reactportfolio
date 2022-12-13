@@ -579,12 +579,16 @@ img.whiteframe {
     padding: 1%;
     border-radius: 5%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
 }
 
 @media screen and (max-width: 1200px) {
-    .elements--container p {
+    .elements--container p, .elements--container li, .elements--container ul {
         font-size: 0.8rem;
+    }
+    
+    .elements--container h4 {
+        font-size: 1rem;
+
     }
 
     .elements--container img {
@@ -601,6 +605,38 @@ img.whiteframe {
 
     .elements--text {
         margin-right: 2%;
+    }
+
+}
+
+@media screen and (max-width: 760px) { 
+
+    .elements--container h2 {
+        position: relative;
+        left: 0;
+        width: 100px;
+        margin: 0 auto;
+    }
+
+    .elements--container img {
+        position: relative;
+        top: -15px;
+        width: 92%;
+        margin: 0 auto;
+    }
+
+    .elements--content {
+        flex-direction: column-reverse;
+        left: 0;
+    }
+
+    .elements--text {
+        width: clamp(200px, 92%, 1200px);
+        padding: 2%;
+        border-radius: 3%;
+        margin: 0 auto;
+
+
     }
 
 }
