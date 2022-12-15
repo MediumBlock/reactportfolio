@@ -558,33 +558,21 @@ img.whiteframe {
 
 .elements--content img {
     width: 100%;
-    /* height: 100%; */
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin-right: 25px;
 }
 
 .elements--content a {
-    /* border: 3px solid black; */
+    margin-right: 15%;
     width: 50%;
     height: 100%;
 }
-
-/* .elements--image img {
-    width: 50%;
-    height: 100%;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    margin-right: 25px;
-} */
-
-
-
 
 .elements--content {
     display: flex;
     position: absolute;
     top: 20%;
-    left: 15%;
-    /* border: 2px solid blue; */
+    margin-left: 15%;
 
 }
 
@@ -608,21 +596,20 @@ img.whiteframe {
 
     .elements--content a {
         position: relative;
-        /* top: 150px; */
-        margin-right: 2%;
+        margin-right: 5%;
     }
 
     .elements--content {
-        border: 1px solid black;
         display: flex;
         position: absolute;
         top: 20%;
-        left: 5%;
+        margin-left: 5%;
 
     }
 
     .elements--text {
         margin-right: 2%;
+        padding: 2%;
     }
 
 
