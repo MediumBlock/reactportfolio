@@ -625,30 +625,26 @@ img.whiteframe {
         padding-right: 10%;
     }
 
-    .elements--container img {
-        position: relative;
-        top: -15px;
-        width: 92%;
-        margin: 0 auto;
-    }
-
     .elements--content {
         flex-direction: column-reverse;
-        left: 0;
+        margin-left: 0;
+    }
+
+    .elements--content a {
+        width: 80%;
+        margin: 0 auto;
+        top: -25px;
     }
 
     .elements--text {
-        width: clamp(200px, 92%, 1200px);
-        padding: 2%;
+        width: clamp(200px, 84%, 1200px);
+        padding: 4%;
         border-radius: 3%;
         margin: 0 auto;
 
 
     }
 
-}
-
-.gay-g img {
 }
 
 /* MessageMe */
