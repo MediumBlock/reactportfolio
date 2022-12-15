@@ -584,7 +584,7 @@ img.whiteframe {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1600px) {
     .elements--container p, .elements--container li, .elements--container ul {
         font-size: 0.8rem;
     }
@@ -615,7 +615,7 @@ img.whiteframe {
 
 }
 
-@media screen and (max-width: 760px) { 
+@media screen and (max-width: 1000px) { 
 
     .elements--container h2 {
         position: relative;

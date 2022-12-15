@@ -39,7 +39,7 @@ export default function TileElements() {
 
                 </div>
                 <a class='elements--image'
-                    href="https://github.com"
+                    href={thisProject.link}
                     target='_blank'
                     rel="noopener"
                     aria-label='Github'>
