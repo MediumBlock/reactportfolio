@@ -38,11 +38,10 @@ export default function TileElements() {
                     <p>{thisProject.time}</p>
 
                 </div>
-                <a class='elements--image'
-                    href={thisProject.link}
+                <a href={thisProject.link}
                     target='_blank'
                     rel="noopener"
-                    aria-label='Github'>
+                    aria-label={thisProject.name}>
                     <img src={require(`../resources/${thisProject.thumbnail}`)} />
                 </a>
             </div>
