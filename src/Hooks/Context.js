@@ -7,7 +7,7 @@ function ContextProvider({ children }) {
 
     const [width, setWidth] = useState(window.innerWidth)
     
-    const breakpoint = 760;
+    const breakpoint = 800;
 
     useEffect(() => {
         const handleWindowResize = () => setWidth(window.innerWidth)

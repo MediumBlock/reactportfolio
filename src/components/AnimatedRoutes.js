@@ -1,18 +1,22 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect, useState, useContext} from "react";
 import Skills from "./Skills";
 import Main from "./Main";
 import AboutMe from "./AboutMe";
 import Work from "./Work";
+import { Context } from "../Hooks/Context";
 import { Routes, Route, useNavigate, useLocation, BrowserRouter as Router } from "react-router-dom"
 import { AnimatePresence } from "framer-motion";
 import TileElements from "./TileElements";
 import MessageMe from "./MessageMe";
 import Resume from "./Resume";
+import MobileNav from "./MobileNav";
 
 
 export default function AnimatedRoutes() {
     const location = useLocation();
     const { pathname } = location;
+    const { breakpoint, width } = useContext(Context);
+
 
 
     return (
@@ -26,6 +30,7 @@ export default function AnimatedRoutes() {
                     <Route path="/messageme" element={<MessageMe />} />
                     <Route path="/resume" element={<Resume />} />
             </Routes>
+            {width < breakpoint && <MobileNav />}
         </AnimatePresence>
     )
 }

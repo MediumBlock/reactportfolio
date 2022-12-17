@@ -1010,3 +1010,36 @@ input:focus {
     margin-bottom: 2%;
 }
 
+/* MobileNav */
+
+.mobile--bottom {
+    /* background-color: darkblue; */
+    position: absolute;
+    top: 95%;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+.mobile--bottom img {
+    position: absolute;
+    width: 7%;
+    top: -5%;
+    left: 46%;
+}
+
+.mobile--top {
+    position: absolute;
+    top: 0%;
+    right: 0px;
+    bottom: 95px;
+    left: 0px;
+}
+
+.mobile--top img {
+    position: absolute;
+    width: 7%;
+    left: 46%;
+    top: 1%;
+    transform: rotate(180deg);
+}
