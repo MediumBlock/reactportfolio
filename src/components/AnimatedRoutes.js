@@ -30,7 +30,7 @@ export default function AnimatedRoutes() {
                     <Route path="/messageme" element={<MessageMe />} />
                     <Route path="/resume" element={<Resume />} />
             </Routes>
-            {width < breakpoint && <MobileNav />}
+            {/* {width < breakpoint && <MobileNav />} */}
         </AnimatePresence>
     )
 }

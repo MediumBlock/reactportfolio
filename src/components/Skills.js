@@ -1,11 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 import useAppDirection from "../Hooks/useAppDirection";
+import ResponsiveScreen from "../Hooks/ResponsiveScreen";
 
 
 export default function Skills() {
 
-    const { isUp, location } = useAppDirection("/aboutme", "/", 1000);
+    const { isUp, location, navArrows } = useAppDirection("/aboutme", "/", 1000);
 
 
     return (
@@ -15,6 +16,7 @@ export default function Skills() {
             exit={{ opacity: 0, y: isUp ? 1000 : -1000, transition: { duration: 0.8 } }}
             className="skills--background"
         >
+            {navArrows}
             <div className="skills">
                 <div className="skills--left">
                     <img src={require("../resources/green-dots.png")}

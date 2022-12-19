@@ -37,11 +37,7 @@ export default function MobileNav() {
 
     return (
         <div className="mobile--container">
-            <div className="mobile--top"
-                onClick={
-                    () => navigate(nav)
-                }
-            >
+            <div className="mobile--top">
                 {
                     location.pathname === "/aboutme"
                         ?
