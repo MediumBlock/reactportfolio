@@ -9,7 +9,6 @@ import { AnimatePresence } from "framer-motion";
 import TileElements from "./TileElements";
 import MessageMe from "./MessageMe";
 import Resume from "./Resume";
-import MobileNav from "./MobileNav";
 
 
 export default function AnimatedRoutes() {
@@ -30,7 +29,6 @@ export default function AnimatedRoutes() {
                     <Route path="/messageme" element={<MessageMe />} />
                     <Route path="/resume" element={<Resume />} />
             </Routes>
-            {/* {width < breakpoint && <MobileNav />} */}
         </AnimatePresence>
     )
 }
