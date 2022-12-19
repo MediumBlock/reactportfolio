@@ -1013,7 +1013,6 @@ input:focus {
 /* MobileNav */
 
 .mobile--bottom {
-    /* background-color: darkblue; */
     position: absolute;
     top: 95%;
     right: 0px;

@@ -6,6 +6,7 @@ function useAppDirection(navDown, navUp, directionValueDown, directionValueUp) {
     const location = useLocation();
     const { pathname } = location;
     const [isUp, setIsUp] = useState(false);
+    const [isTransitioning, setIsTransitioning] = useState(false);
 
     useEffect(() => {
         function handleNavigation(e) {
@@ -27,20 +28,23 @@ function useAppDirection(navDown, navUp, directionValueDown, directionValueUp) {
     }, [pathname]);
 
     function handleNavArrowsUp() {
-        setIsUp(true)
+        setIsUp(true);
+        setIsTransitioning(true);
         setTimeout(() => {
             navigate(navUp, { state: { value: directionValueUp } });
         }, 200)
+
     }
 
     function handleNavArrowsDown() {
         setIsUp(false)
+        setIsTransitioning(true);
         setTimeout(() => {
             navigate(navDown, { state: { value: directionValueDown } });
         }, 200)
     }
 
-    const navArrows = <div className="mobile--container">
+    const navArrows = !isTransitioning && <div className="mobile--container">
         <div className="mobile--top">
             {
                 location.pathname === "/aboutme"
