@@ -7,7 +7,7 @@ import useAppDirection from "../Hooks/useAppDirection";
 
 export default function Work() {
 
-    const { isUp, location } = useAppDirection("/messageme", "/aboutme", 1000, -1000);
+    const { isUp, location, navArrows } = useAppDirection("/messageme", "/aboutme", 1000, -1000);
 
     const dataMap = data.map(item => (
         <Tile
@@ -24,6 +24,7 @@ export default function Work() {
             exit={{ opacity: 0, y: isUp ? 1000 : -1000, transition: { duration: 0.8 } }}
             className="work--top"
         >
+            {navArrows}
             <div className="work--text">
                 <h2><span>/</span>work<span>.</span></h2>
                 <h4>some of the personal projects I've worked on in the past.</h4>

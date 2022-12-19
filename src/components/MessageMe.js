@@ -5,7 +5,7 @@ import Confetti from 'react-confetti'
 import useAppDirection from '../Hooks/useAppDirection';
 
 export default function MessageMe() {
-    const { isUp, location } = useAppDirection("/messageme", "/work", 1000, -1000);
+    const { isUp, location, navArrows } = useAppDirection("/messageme", "/work", 1000, -1000);
     const form = useRef();
     const [isSubmitted, setIsSubmitted] = useState(false);
     const [isCheckMarked, setIsCheckMarked] = useState(false);
@@ -58,6 +58,7 @@ export default function MessageMe() {
                 animate={{ opacity: 1, y: 0, transition: { duration: 0.8 } }}
                 exit={{ opacity: 0, y: 1000, transition: { duration: 0.8 } }}
             >
+                {navArrows}
                 <div className='messageme--container'>
                     <div className='messageme--title'>
                         <h2>Send me a message!</h2>

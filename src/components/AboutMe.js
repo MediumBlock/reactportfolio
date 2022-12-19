@@ -4,7 +4,7 @@ import useAppDirection from "../Hooks/useAppDirection";
 
 
 export default function AboutMe() {
-    const { isUp, location } = useAppDirection("/work", "/skills", 1000, -1000);
+    const { isUp, location, navArrows } = useAppDirection("/work", "/skills", 1000, -1000);
 
     return (
         <motion.div
@@ -13,6 +13,7 @@ export default function AboutMe() {
             animate={{ opacity: 1, y: 0, transition: { duration: 0.8 } }}
             exit={{ opacity: 0, y:  isUp ? 1300 : -1300, transition: { duration: 0.8 } }}
         >
+            {navArrows}
             <div className="aboutme--container">
                 <div className="aboutme--content">
                     <h1>Over the past year<span>,</span></h1>

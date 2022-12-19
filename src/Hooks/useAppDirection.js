@@ -46,6 +46,7 @@ function useAppDirection(navDown, navUp, directionValueDown, directionValueUp) {
                 location.pathname === "/aboutme"
                     ?
                     <img src={require("../resources/mobilenavgreen.png")}
+                        onClick={handleNavArrowsUp}
                     />
                     :
                     <img src={require("../resources/mobilenavpurp.png")}
@@ -58,6 +59,7 @@ function useAppDirection(navDown, navUp, directionValueDown, directionValueUp) {
                 location.pathname === "/aboutme"
                     ?
                     <img src={require("../resources/mobilenavgreen.png")}
+                        onClick={handleNavArrowsDown}
                     />
                     :
                     <img src={require("../resources/mobilenavpurp.png")}

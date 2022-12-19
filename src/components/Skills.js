@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import useAppDirection from "../Hooks/useAppDirection";
-import ResponsiveScreen from "../Hooks/ResponsiveScreen";
 
 
 export default function Skills() {

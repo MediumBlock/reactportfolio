@@ -5,7 +5,7 @@ import useAppDirection from "../Hooks/useAppDirection";
 
 export default function Main() {
 
-    const { isUp, location } = useAppDirection("/skills", "/", 1000);
+    const { isUp, location, navArrows } = useAppDirection("/skills", "/", 1000);
 
 
     return (
@@ -15,6 +15,7 @@ export default function Main() {
             animate={{ opacity: 1, y: 0, transition: { duration: 0.8 } }}
             exit={{ opacity: 0, y: -1000, transition: { duration: 0.8 } }}
         >
+            {navArrows}
             <div className="main--left">
                 <h1>Front-end <br />  Developer<span>.</span></h1>
                 <h2>A love for creating detailed and complete frontend packages for a great end user experience.</h2>
