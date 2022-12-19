@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Context } from "../Hooks/Context";
 import { Link, useLocation, useNavigate } from "react-router-dom"
 
@@ -6,30 +6,32 @@ import { Link, useLocation, useNavigate } from "react-router-dom"
 
 export default function MobileNav() {
 
+    const [nav, setNav] = useState("")
     const { breakpoint, width } = useContext(Context);
     const navigate = useNavigate();
     const location = useLocation();
-    const { pathname } = location
+    const { pathname } = location;
 
-    function navUp() {
+
+    useEffect(() => {
         switch (pathname) {
             case "/skills":
-                return "/";
+                setNav("/");
                 break;
             case "/aboutme":
-                return "/skills";
+                setNav("/skills");
                 break;
             case "/work":
-                return "/aboutme";
+                setNav("/aboutme");
                 break;
             case "/messageme":
-                return "/work";
+                setNav("/work");
                 break;
         }
-    }
+    }, [pathname, nav])
 
 
-    console.log("hello", navUp());
+    console.log("hello", nav);
 
 
 
@@ -37,7 +39,7 @@ export default function MobileNav() {
         <div className="mobile--container">
             <div className="mobile--top"
                 onClick={
-                    () => navigate("/")
+                    () => navigate(nav)
                 }
             >
                 {

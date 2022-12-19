@@ -26,6 +26,7 @@ function useAppDirection(navDown, navUp, directionValueDown, directionValueUp) {
         return () => window.removeEventListener("wheel", handleNavigation);
     }, [pathname]);
 
+
     return {location, isUp}
 }
 
