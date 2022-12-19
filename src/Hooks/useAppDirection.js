@@ -1,5 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { useLocation, useNavigate } from "react-router-dom"
+import { Context } from "./Context";
 
 function useAppDirection(navDown, navUp, directionValueDown, directionValueUp) {
     const navigate = useNavigate();
@@ -7,6 +8,8 @@ function useAppDirection(navDown, navUp, directionValueDown, directionValueUp) {
     const { pathname } = location;
     const [isUp, setIsUp] = useState(false);
     const [isTransitioning, setIsTransitioning] = useState(false);
+    const { breakpoint, width } = useContext(Context);
+
 
     useEffect(() => {
         function handleNavigation(e) {
@@ -44,33 +47,37 @@ function useAppDirection(navDown, navUp, directionValueDown, directionValueUp) {
         }, 200)
     }
 
-    const navArrows = !isTransitioning && <div className="mobile--container">
-        <div className="mobile--top">
-            {
-                location.pathname === "/aboutme"
-                    ?
-                    <img src={require("../resources/mobilenavgreen.png")}
-                        onClick={handleNavArrowsUp}
-                    />
-                    :
-                    <img src={require("../resources/mobilenavpurp.png")}
-                        onClick={handleNavArrowsUp}
-                    />
-            }
-        </div>
-        <div className="mobile--bottom">
-            {
-                location.pathname === "/aboutme"
-                    ?
-                    <img src={require("../resources/mobilenavgreen.png")}
-                        onClick={handleNavArrowsDown}
-                    />
-                    :
-                    <img src={require("../resources/mobilenavpurp.png")}
-                        onClick={handleNavArrowsDown}
-                    />
-            }
-        </div>
+    const navArrows = !isTransitioning && width < breakpoint && <div className="mobile--container">
+        {pathname !== "/" &&
+            <div className="mobile--top">
+                {
+                    pathname === "/aboutme"
+                        ?
+                        <img src={require("../resources/mobilenavgreen.png")}
+                            onClick={handleNavArrowsUp}
+                        />
+                        :
+                        <img src={require("../resources/mobilenavpurp.png")}
+                            onClick={handleNavArrowsUp}
+                        />
+                }
+            </div>
+        }
+        {pathname !== "/messageme" &&
+            <div className="mobile--bottom">
+                {
+                    pathname === "/aboutme"
+                        ?
+                        <img src={require("../resources/mobilenavgreen.png")}
+                            onClick={handleNavArrowsDown}
+                        />
+                        :
+                        <img src={require("../resources/mobilenavpurp.png")}
+                            onClick={handleNavArrowsDown}
+                        />
+                }
+            </div>
+        }
     </div>
 
 
