@@ -36,7 +36,6 @@ function useAppDirection(navDown, navUp, directionValueDown, directionValueUp) {
         setTimeout(() => {
             navigate(navUp, { state: { value: directionValueUp } });
         }, 200)
-
     }
 
     function handleNavArrowsDown() {
