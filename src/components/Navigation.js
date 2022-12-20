@@ -1,5 +1,6 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect, useState, useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom"
+import { Context } from "../Hooks/Context";
 
 export default function Navigation() {
 
@@ -8,7 +9,8 @@ export default function Navigation() {
     const toggleBotMenuRef = useRef(null)
     const location = useLocation()
     const navigate = useNavigate();
-    const [isMenuOpen, setIsMenuOpen] = useState(false)
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const {width, breakpoint} = useContext(Context);
 
 
     function handleToggle() {
@@ -151,7 +153,7 @@ export default function Navigation() {
                     </div>
                 </div>
 
-                {location.pathname.includes("/work/") || location.pathname.includes("/resume") ? null :
+                {location.pathname.includes("/work/") || location.pathname.includes("/resume") || width < breakpoint ? null :
                     <div className="page--markers">
                         {LinkBoxes}
                     </div>
