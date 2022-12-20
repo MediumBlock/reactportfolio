@@ -71,7 +71,7 @@ h4 {
     top: 10%;
     left: 3%;
     width: clamp(100px, 7%, 400px);
-    z-index: 2;
+    z-index: 4;
 
 }
 
@@ -188,6 +188,19 @@ h4 {
         transform-origin: 45% 40%;
 
     }
+}
+
+@media screen and (max-width: 800px) {
+    .menu {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        height: 100vh;
+        width: 100vw;
+    }
+
 }
 
 .page--markers {

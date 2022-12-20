@@ -10,49 +10,31 @@ export default function Navigation() {
     const location = useLocation()
     const navigate = useNavigate();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const {width, breakpoint} = useContext(Context);
+    const { width, breakpoint } = useContext(Context);
 
+    const menuCrossPurp =
+        <>
+            <img src={require("../resources/menu-dropdown.png")}
+                className="menu--dropdown top--menu motion"
+                ref={toggleTopRef}
+            />
+            <img src={require("../resources/menu-dropdown.png")}
+                className="menu--dropdown bottom--menu motion"
+                ref={toggleBotRef}
+            />
+        </>
 
-    function handleToggle() {
-        const top = toggleTopRef.current;
-        const bottom = toggleBotRef.current;
-        const menu = toggleBotMenuRef.current;
-        top.classList.toggle("reverse--motion")
-        bottom.classList.toggle("reverse--motion")
-        menu.classList.toggle("visible")
-        setIsMenuOpen(prev => !prev)
-    }
-
-    function handleNavigate() {
-        location.pathname === "/messageme" || location.pathname === "/resume"
-        ? 
-        navigate("/work", {state:{value: -1000}})
-        :
-        navigate("/work", {state:{value: 1000}})
-
-    }
-    
-    function handleSideBar(loc) {
-        navigate(loc, {state:{value: 1000}})
-    }
-
-
-    useEffect(() => {
-        let handler = (event) => {
-            if (isMenuOpen && !toggleBotMenuRef.current.contains(event.target)
-                || toggleBotRef.current.contains(event.target)
-                || toggleTopRef.current.contains(event.target)) {
-                handleToggle()
-            }
-        };
-        document.addEventListener("mousedown", handler);
-
-        return () => {
-            document.removeEventListener("mousedown", handler);
-        };
-    });
-
-
+    const menuCrossGreen =
+        <>
+            <img src={require("../resources/menu-dropdown-green.png")}
+                className="menu--dropdown top--menu motion"
+                ref={toggleTopRef}
+            />
+            <img src={require("../resources/menu-dropdown-green.png")}
+                className="menu--dropdown bottom--menu motion"
+                ref={toggleBotRef}
+            />
+        </>
 
 
     const boxFilled = location.pathname === "/aboutme" ?
@@ -88,12 +70,66 @@ export default function Navigation() {
     ))
 
 
+    function handleToggle() {
+        const top = toggleTopRef.current;
+        const bottom = toggleBotRef.current;
+        const menu = toggleBotMenuRef.current;
+        top.classList.toggle("reverse--motion")
+        bottom.classList.toggle("reverse--motion")
+        menu.classList.toggle("visible")
+        setIsMenuOpen(prev => !prev)
+    }
+
+    function handleNavigate() {
+        location.pathname === "/messageme" || location.pathname === "/resume"
+            ?
+            navigate("/work", { state: { value: -1000 } })
+            :
+            navigate("/work", { state: { value: 1000 } })
+
+    }
+
+    function handleSideBar(loc) {
+        navigate(loc, { state: { value: 1000 } })
+    }
+
+    function menuSwitch(param) {
+        switch (param) {
+            case 'foo':
+                return 'bar';
+            default:
+                return 'foo';
+        }
+    }
+
+
+    useEffect(() => {
+        let handler = (event) => {
+            if (isMenuOpen && !toggleBotMenuRef.current.contains(event.target)
+                || toggleBotRef.current.contains(event.target)
+                || toggleTopRef.current.contains(event.target)) {
+                handleToggle()
+            }
+        };
+        document.addEventListener("mousedown", handler);
+
+        return () => {
+            document.removeEventListener("mousedown", handler);
+        };
+    });
+
+
+
 
     return (
         <div className="navigation--container">
             <div className="nav--logo">
                 <Link to="/">
-                    {
+                    {isMenuOpen && width < breakpoint ?
+                        <img src={require("../resources/logo-purp.png")}
+                            className="logo"
+                        />
+                        :
                         location.pathname === "/" || location.pathname === "/aboutme"
                             ?
                             <img src={require("../resources/logo2.png")}
@@ -109,33 +145,30 @@ export default function Navigation() {
             <div className="nav--right">
                 <div>
                     <div>
-                        {location.pathname !== "/aboutme"
-                            ?
-                            <>
-                                < img src={require("../resources/menu-dropdown.png")}
-                                    className="menu--dropdown top--menu motion"
-                                    ref={toggleTopRef}
-                                />
-                                <img src={require("../resources/menu-dropdown.png")}
-                                    className="menu--dropdown bottom--menu motion"
-                                    ref={toggleBotRef}
-                                />
-                            </>
-                            :
-                            <>
-                                <img src={require("../resources/menu-dropdown-green.png")}
-                                    className="menu--dropdown top--menu motion"
-                                    ref={toggleTopRef}
-                                />
-                                <img src={require("../resources/menu-dropdown-green.png")}
-                                    className="menu--dropdown bottom--menu motion"
-                                    ref={toggleBotRef}
-                                />
-                            </>
-
+                        {
+                            location.pathname !== "/aboutme"
+                                ?
+                                location.pathname === "/"
+                                    ?
+                                    width < breakpoint
+                                        ?
+                                        isMenuOpen
+                                            ?
+                                            menuCrossPurp
+                                            :
+                                            menuCrossGreen
+                                        :
+                                        menuCrossPurp
+                                    :
+                                    menuCrossPurp
+                                :
+                                isMenuOpen
+                                    ?
+                                    menuCrossPurp
+                                    :
+                                    menuCrossGreen
                         }
                     </div>
-
                     <div className="menu"
                         ref={toggleBotMenuRef}
                     >
