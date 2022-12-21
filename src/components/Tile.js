@@ -9,7 +9,6 @@ export default function Tile(props) {
             <div className="tile--top">
                 <img src={require(`../resources/${props.logo}`)} />
             </div>
-
             <div className="tile--bottom">
                 <h5>{props.name}</h5>
             </div>
