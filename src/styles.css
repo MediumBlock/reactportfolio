@@ -409,7 +409,6 @@ img.whiteframe {
 
 .skills {
     display: flex;
-
 }
 
 .skills--left {
@@ -447,7 +446,6 @@ img.whiteframe {
     left: 50%;
     width: 27vw;
     margin-left: 5%;
-
 }
 
 .skills--right img {
@@ -469,6 +467,50 @@ img.whiteframe {
     top: -20%;
     left: 0%;
     z-index: 1;
+}
+
+@media screen and (max-width: 800px) {
+    .skills {
+        position: absolute;
+        /* border: 1px solid blue; */
+        top: 10%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 80%
+        
+    }
+
+    .skills--left {
+        position: relative;
+        width: 70%;
+        /* border: 1px solid black; */
+        top: 0;
+        left: 0;
+        margin-top: 5%;
+    }
+
+    .skills--right {
+        position: relative;
+        width: 70%;
+        /* border: 1px solid red; */
+        top: 0;
+        left: 0;
+        margin-left: 0;
+        margin-bottom: 5%;
+    }
+
+    .skills h1 {
+        font-size: clamp(32px, 5vw, 50px);
+    }
+
+
+    .skills h5 {
+        font-size: clamp(11px, 2vw, 40px);
+    }
+
+
+
 }
 
 /* AboutMe */
