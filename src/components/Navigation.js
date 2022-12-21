@@ -93,14 +93,6 @@ export default function Navigation() {
         navigate(loc, { state: { value: 1000 } })
     }
 
-    function menuSwitch(param) {
-        switch (param) {
-            case 'foo':
-                return 'bar';
-            default:
-                return 'foo';
-        }
-    }
 
 
     useEffect(() => {
@@ -117,8 +109,6 @@ export default function Navigation() {
             document.removeEventListener("mousedown", handler);
         };
     });
-
-
 
 
     return (

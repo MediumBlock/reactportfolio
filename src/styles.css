@@ -150,7 +150,6 @@ h4 {
     transition: transform 0.5s;
     transform-origin: 30% 70%;
     z-index: 6;
-
 }
 
 .top--menu.motion {
@@ -178,30 +177,6 @@ h4 {
 }
 
 
-@media screen and (max-width: 900px) {
-    .top--menu {
-        transform-origin: 40% 70%;
-
-    }
-
-    .bottom--menu {
-        transform-origin: 45% 40%;
-
-    }
-}
-
-@media screen and (max-width: 800px) {
-    .menu {
-        position: fixed;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        height: 100vh;
-        width: 100vw;
-    }
-
-}
 
 .page--markers {
     position: absolute;
@@ -228,6 +203,65 @@ h4 {
     text-align: center;
     cursor: pointer;
 }
+
+@media screen and (max-width: 900px) {
+    .top--menu {
+        transform-origin: 30% 140%;
+
+    }
+
+    .bottom--menu {
+        transform-origin: 45% 0%;
+
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .menu {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        height: 100vh;
+        width: 100vw;
+        z-index: 3;
+    }
+
+    .top--menu {
+        top: -15%;
+    }
+
+    .bottom--menu {
+        top: -10%;
+    }
+
+    .menu--text {
+        position: absolute;
+        margin-left: 15%;
+        top: 5%;
+        font-size: clamp(25px, 6vw, 50px);
+    }
+
+    .hello {
+        padding-top: 40%;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .top--menu {
+        transform-origin: 30% 120%;
+
+    }
+
+    .bottom--menu {
+        transform-origin: 55% 60%;
+
+    }
+}
+
+
 
 /* Main */
 
@@ -338,8 +372,8 @@ img.whiteframe {
         font-size: clamp(14px, 1.8vw, 20px);
 
     }
-    
-    .main--left h4  {
+
+    .main--left h4 {
         font-size: clamp(10px, 1.3vw, 20px);
     }
 
@@ -350,6 +384,14 @@ img.whiteframe {
 
     }
 }
+
+@media screen and (max-width: 400px) {
+    .main--right {
+        top: 12%;
+
+    }
+}
+
 
 
 
@@ -1072,6 +1114,7 @@ input:focus {
     right: 0px;
     bottom: 0px;
     left: 0px;
+    z-index: 2;
 }
 
 .mobile--bottom img {
@@ -1088,6 +1131,7 @@ input:focus {
     right: 0px;
     bottom: 95px;
     left: 0px;
+    z-index: 2;
 }
 
 .mobile--top img {
