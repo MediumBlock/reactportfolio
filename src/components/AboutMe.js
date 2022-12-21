@@ -27,14 +27,10 @@ export default function AboutMe() {
                     </h3>
 
                 </div>
-                {/* <div> */}
                     <img
                         src={require("../resources/transparency8.png")}
                         className="aboutme--image"
                     />
-
-                {/* </div> */}
-
             </div>
         </motion.div >
     )
