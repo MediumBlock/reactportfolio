@@ -166,7 +166,8 @@ export default function Navigation() {
                             <Link to="/resume">
                                 <h5>My Résumé</h5>
                             </Link>
-                            <div onClick={handleNavigate}>
+                            <div onClick={handleNavigate}
+                            className="menu--projects">
                                 <h5>My Projects</h5>
                             </div>
                             <h5 className="hello">SAY HELLO</h5>

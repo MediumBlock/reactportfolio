@@ -128,7 +128,7 @@ h4 {
     transition: all 0.4s;
 }
 
-.menu h5 {
+.menu--projects {
     cursor: pointer;
 }
 
