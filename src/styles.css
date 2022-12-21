@@ -378,16 +378,17 @@ img.whiteframe {
     }
 
     .main--right {
-        left: 0;
-        top: 26%;
+        left: -2%;
         width: clamp(230px, 42%, 1000px);
+        top: 24%;
 
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-height: 700px) {
     .main--right {
-        top: 12%;
+        top: 15%;
+        width: clamp(210px, 42%, 1000px);
 
     }
 }
