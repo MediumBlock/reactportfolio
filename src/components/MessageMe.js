@@ -10,7 +10,7 @@ export default function MessageMe() {
     const [isSubmitted, setIsSubmitted] = useState(false);
     const [isCheckMarked, setIsCheckMarked] = useState(false);
     const [confetti, setConfetti] = useState(false)
-    
+
 
     function setConfettiTimer() {
         setConfetti(true)
@@ -44,7 +44,7 @@ export default function MessageMe() {
 
     return (
         <>
-            {confetti && <Confetti 
+            {confetti && <Confetti
             />}
 
             <img
@@ -95,11 +95,13 @@ export default function MessageMe() {
                                     required
                                 />
                             </div>
-                            <input className={isSubmitted ? "button button--sent" : "button"}
-                                value={isSubmitted ? "Sent!" : "Send"}
-                                type="submit"
-                                disabled={isSubmitted}
-                            />
+                            <div className='button--container'>
+                                <input className={isSubmitted ? "button button--sent" : "button"}
+                                    value={isSubmitted ? "Sent!" : "Send"}
+                                    type="submit"
+                                    disabled={isSubmitted}
+                                />
+                            </div>
                         </form>
                     </div>
                 </div>
