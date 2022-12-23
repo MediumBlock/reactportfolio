@@ -676,7 +676,6 @@ img.whiteframe {
     
 }
 
-
 .tile--top {
     height: 70%;
 }
@@ -689,8 +688,6 @@ img.whiteframe {
     height: 30%;
     bottom: 0;
     width: 100%;
-
-
 }
 
 .tile--bottom h5 {
@@ -706,21 +703,28 @@ img.whiteframe {
     left: 30%;
     right: 30%;
     width: clamp(50px, 40%, 160px);
-    margin-bottom: 25%;
+    margin-bottom: 20%;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
+
+    .work--container {
+        height: 90%;
+        width: 90%;
+        top: 5%;
+    }
 
     .tile--container {
-        border: 1px solid black;
-        width: 75%;
-        height: 90%;
-        left: 15%;
-        top: 15%;
+        width: 90%;
+        left: 5%;
+        top: 5%;
         display: grid;
         grid-template: repeat(3, 1fr) / 1fr 1fr;
         gap: 5% 4%;
+        height: 60%;
+
     }
+
 
     .tile {
         display: flex;
@@ -737,13 +741,16 @@ img.whiteframe {
     }
 
     .tile--bottom h5 {
-        position: relative;
-        top: -30%;
+        font-size: clamp(13px, 3vw, 24px);
+
     }
 
-    .tile--container {
-        height: 40%;
+    .tile--subcontainer {
+        height: 100%;
+        width: 100%;
+        
     }
+
 
 
 }
