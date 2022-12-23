@@ -5,7 +5,7 @@ export const data = [
     {
         link: 'https://mediumblock.github.io/',
         name: 'Portfolio',
-        logo: "favicon.png",
+        logo: "profile.png",
         thumbnail: 'portfolio-ss.png',
         description: {
             p1: `The portfolio you are viewing right now has been my most ambitious project to date in both content and complexity.`,

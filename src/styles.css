@@ -370,11 +370,10 @@ img.whiteframe {
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        /* border: 1px solid black; */
         height: 90%;
         top: 0%;
     }
-    
+
 
     .main--left {
         left: 0;
@@ -404,8 +403,8 @@ img.whiteframe {
     .main--right {
         width: clamp(200px, 42%, 1000px);
 
-    } 
- }
+    }
+}
 
 
 
@@ -491,7 +490,6 @@ img.whiteframe {
         align-items: center;
         justify-content: space-around;
         height: 80%
-        
     }
 
     .skills--left {
@@ -557,9 +555,7 @@ img.whiteframe {
     width: clamp(400px, 45%, 1000px);
     margin-left: 20px;
     object-fit: contain;
-
 }
-
 
 .aboutme--container br {
     content: "";
@@ -568,11 +564,9 @@ img.whiteframe {
     font-size: 24%;
 }
 
-
 @media screen and (max-width: 1000px) {
     .aboutme--image {
         top: 20%;
-
     }
 }
 
@@ -594,6 +588,10 @@ img.whiteframe {
         top: 0;
     }
 
+    .aboutme--content h1 {
+        font-size: clamp(28px, 5.5vw, 50px);
+    }
+
     .aboutme--content h3 {
         font-size: clamp(11px, 3vw, 15px);
     }
@@ -604,7 +602,7 @@ img.whiteframe {
         width: 80%;
         top: 0;
     }
-    
+
 
 }
 
@@ -619,9 +617,17 @@ img.whiteframe {
     left: 0px;
 }
 
+.work--container {
+    position: absolute;
+    height: 80%;
+    width: 90%;
+    top: 10%;
+    left: 5%;
+}
+
 .work--text {
     position: relative;
-    top: 15%;
+    top: 5%;
     text-align: center;
     font-family: 'source sans pro';
 
@@ -639,13 +645,14 @@ img.whiteframe {
 
 .tile--container {
     position: relative;
-    width: 55%;
-    height: 50%;
-    left: 23%;
-    top: 15%;
     display: grid;
     grid-template: 1fr 1fr / repeat(3, 1fr);
     gap: 3% 1.5%;
+    width: 55%;
+    height: 60%;
+    left: 23%;
+    top: 10%;
+
 
 }
 
@@ -663,50 +670,84 @@ img.whiteframe {
     cursor: pointer;
 }
 
+.tile--subcontainer {
+    position: relative;
+    height: 100%;
+    
+}
+
 
 .tile--top {
     height: 70%;
-
 }
-
 
 .tile--bottom {
-    display: flex;
+    display: table;
+    position: absolute;
     background-color: white;
     font-size: 1.5rem;
-    text-align: center;
     height: 30%;
-    justify-content: center;
-    align-content: center;
+    bottom: 0;
+    width: 100%;
+
 
 }
-
-@media screen and (max-width: 1000px) {
-    .tile--top {
-        height: 50%;
-    }
-
-    .tile--bottom {
-        height: 50%;
-    }
-
-    .tile--container {
-        height: 30%;
-    }
-}
-
 
 .tile--bottom h5 {
-    position: relative;
-    top: -20%;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+
 }
 
 .tile--top img {
     position: relative;
-    top: 25%;
-    left: 35%;
-    width: clamp(50px, 30%, 500px);
+    top: 5%;
+    left: 30%;
+    right: 30%;
+    width: clamp(50px, 40%, 160px);
+    margin-bottom: 25%;
 }
+
+@media screen and (max-width: 800px) {
+
+    .tile--container {
+        border: 1px solid black;
+        width: 75%;
+        height: 90%;
+        left: 15%;
+        top: 15%;
+        display: grid;
+        grid-template: repeat(3, 1fr) / 1fr 1fr;
+        gap: 5% 4%;
+    }
+
+    .tile {
+        display: flex;
+        flex-direction: column;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .tile--top {
+        height: 70%;
+    }
+
+    .tile--bottom {
+        height: 30%;
+    }
+
+    .tile--bottom h5 {
+        position: relative;
+        top: -30%;
+    }
+
+    .tile--container {
+        height: 40%;
+    }
+
+
+}
+
 
 /* TileElements */
 
