@@ -46,12 +46,10 @@ export default function MessageMe() {
         <>
             {confetti && <Confetti
             />}
-
             <img
                 src={require("../resources/green-checkmark.png")}
                 className={isCheckMarked ? "messageme--checkmark on" : "messageme--checkmark"}
             />
-
             <motion.div
                 className='messageme--main'
                 initial={{ opacity: 0, y: 1000, transition: { duration: 0.8 } }}

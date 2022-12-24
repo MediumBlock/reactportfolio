@@ -747,6 +747,13 @@ img.whiteframe {
         width: 100%;
     }
 
+    
+.tile--top img {
+    width: clamp(50px, 40%, 100px);
+    left: 33%;
+
+}
+
 }
 
 

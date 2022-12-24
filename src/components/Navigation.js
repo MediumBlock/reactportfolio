@@ -86,13 +86,28 @@ export default function Navigation() {
             navigate("/work", { state: { value: -1000 } })
             :
             navigate("/work", { state: { value: 1000 } })
-
+            handleToggle();
     }
 
     function handleSideBar(loc) {
         navigate(loc, { state: { value: 1000 } })
     }
 
+    function navArrowSwitch() {
+        if(location.pathname !== "/aboutme" && location.pathname === "/" && width < breakpoint && isMenuOpen) {
+            return menuCrossPurp;
+        } else if (location.pathname !== "/aboutme" && location.pathname === "/" && width < breakpoint && !isMenuOpen) {
+            return menuCrossGreen;
+        } else if (location.pathname !== "/aboutme" && location.pathname === "/" && width > breakpoint) {
+            return menuCrossPurp;
+        } else if (location.pathname !== "/aboutme" && location.pathname !== "/") {
+            return menuCrossPurp;
+        } else if (location.pathname === "/aboutme" && isMenuOpen) {
+            return menuCrossPurp;
+        } else if (location.pathname === "/aboutme" && !isMenuOpen) {
+            return menuCrossGreen;
+        }
+    }
 
 
     useEffect(() => {
@@ -135,39 +150,18 @@ export default function Navigation() {
             <div className="nav--right">
                 <div>
                     <div>
-                        {
-                            location.pathname !== "/aboutme"
-                                ?
-                                location.pathname === "/"
-                                    ?
-                                    width < breakpoint
-                                        ?
-                                        isMenuOpen
-                                            ?
-                                            menuCrossPurp
-                                            :
-                                            menuCrossGreen
-                                        :
-                                        menuCrossPurp
-                                    :
-                                    menuCrossPurp
-                                :
-                                isMenuOpen
-                                    ?
-                                    menuCrossPurp
-                                    :
-                                    menuCrossGreen
-                        }
+                        {navArrowSwitch()}
                     </div>
                     <div className="menu"
                         ref={toggleBotMenuRef}
                     >
                         <div className="menu--text">
-                            <Link to="/resume">
+                            <Link to="/resume"
+                            onClick={handleToggle}>
                                 <h5>My Résumé</h5>
                             </Link>
                             <div onClick={handleNavigate}
-                            className="menu--projects">
+                                className="menu--projects">
                                 <h5>My Projects</h5>
                             </div>
                             <h5 className="hello">SAY HELLO</h5>
