@@ -86,27 +86,11 @@ export default function Navigation() {
             navigate("/work", { state: { value: -1000 } })
             :
             navigate("/work", { state: { value: 1000 } })
-            handleToggle();
+        handleToggle();
     }
 
     function handleSideBar(loc) {
         navigate(loc, { state: { value: 1000 } })
-    }
-
-    function navArrowSwitch() {
-        if(location.pathname !== "/aboutme" && location.pathname === "/" && width < breakpoint && isMenuOpen) {
-            return menuCrossPurp;
-        } else if (location.pathname !== "/aboutme" && location.pathname === "/" && width < breakpoint && !isMenuOpen) {
-            return menuCrossGreen;
-        } else if (location.pathname !== "/aboutme" && location.pathname === "/" && width > breakpoint) {
-            return menuCrossPurp;
-        } else if (location.pathname !== "/aboutme" && location.pathname !== "/") {
-            return menuCrossPurp;
-        } else if (location.pathname === "/aboutme" && isMenuOpen) {
-            return menuCrossPurp;
-        } else if (location.pathname === "/aboutme" && !isMenuOpen) {
-            return menuCrossGreen;
-        }
     }
 
 
@@ -150,14 +134,24 @@ export default function Navigation() {
             <div className="nav--right">
                 <div>
                     <div>
-                        {navArrowSwitch()}
+                        {
+                            location.pathname !== "/aboutme" && location.pathname === "/" && width < breakpoint && !isMenuOpen
+                                ?
+                                menuCrossGreen
+                                :
+                                location.pathname === "/aboutme" && !isMenuOpen
+                                    ?
+                                    menuCrossGreen
+                                    :
+                                    menuCrossPurp
+                        }
                     </div>
                     <div className="menu"
                         ref={toggleBotMenuRef}
                     >
                         <div className="menu--text">
                             <Link to="/resume"
-                            onClick={handleToggle}>
+                                onClick={handleToggle}>
                                 <h5>My Résumé</h5>
                             </Link>
                             <div onClick={handleNavigate}
