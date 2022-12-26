@@ -8,7 +8,7 @@
     --color-accent-purp: rgb(61, 21, 95);
     --underline-intrinsic-width: 8;
     --underline-width: 12;
-    --underline-color: #f1a1e3;
+    --underline-color: var(--background-green);
     --underline-cap-width: 4px;
     --underline-offset-y: -2px;
     --underline-padding-x: 0.12em;
@@ -747,12 +747,12 @@ img.whiteframe {
         width: 100%;
     }
 
-    
-.tile--top img {
-    width: clamp(50px, 40%, 100px);
-    left: 33%;
 
-}
+    .tile--top img {
+        width: clamp(50px, 40%, 100px);
+        left: 33%;
+
+    }
 
 }
 
@@ -1241,7 +1241,6 @@ input:focus {
     font-size: 2rem;
     margin: 0;
     margin-top: 1%;
-
 }
 
 .resume--right h3 {
@@ -1250,7 +1249,7 @@ input:focus {
     padding: 0 calc(var(--underline-padding-x) + calc(var(--underline-cap-width) * var(--underline-width-scale)));
     box-decoration-break: clone;
     background-repeat: no-repeat;
-    color: #850175;
+    color: var(--background-purp);
     background-image:
         linear-gradient(180deg, var(--underline-color), var(--underline-color)),
         var(--cap-image-left),
@@ -1268,14 +1267,12 @@ input:focus {
     font-weight: bold;
     --underline-width: 20;
     --underline-offset-y: -2px;
-    --cap-image-left: url(https://files-6lc03kjqt.now.sh/left-2.svg);
-    --cap-image-right: url(https://files-e7gkh52mq.now.sh/right-2.svg);
-
+    --cap-image-left: url(https://github.com/MediumBlock/reactportfolio/blob/612c0dd53a964b434c6f3bfefd0e99758229ce7e/src/resources/left.svg?raw=true);
+    --cap-image-right: url(https://github.com/MediumBlock/reactportfolio/blob/612c0dd53a964b434c6f3bfefd0e99758229ce7e/src/resources/right.svg?raw=true);
 }
 
 .hero--right h1 {
-    font-size: clamp(84px, 6vw, 124px);
-
+    font-size: clamp(82px, 5vw, 100px);
 }
 
 .hero--right h2 {
@@ -1287,14 +1284,11 @@ input:focus {
     color: rgba(71, 71, 71, 0.75);
     font-size: clamp(12px, 1.5rem, 25px);
     margin-top: clamp(20px, 10%, 50px);
-
 }
 
 .resume--right hr {
     margin-bottom: clamp(15px, 7%, 30px);
     margin-top: clamp(15px, 7%, 30px);
-
-
 }
 
 .resume--right p,
@@ -1327,8 +1321,6 @@ input:focus {
     color: rgba(71, 71, 71, 0.85);
 }
 
-
-
 .education--right h4,
 .experience--right h4 {
     font-size: 1.3rem;
@@ -1337,7 +1329,6 @@ input:focus {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 700;
 }
-
 
 .resume--date {
     display: flex;
@@ -1349,7 +1340,6 @@ input:focus {
     margin-right: 0;
     font-size: 1.1rem;
 }
-
 
 
 .education--right,
@@ -1364,11 +1354,59 @@ input:focus {
         border: 0;
         padding: 10% 6% 10% 4%;
     }
+}
+
+@media screen and (max-width: 800px) {
+    .resume--section {
+        display: block;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .resume--left {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        margin-top: clamp(7px, 3%, 10px);
+    }
+
+    .resume--left>div {
+        margin-left: 5%;
+    }
+
+    .resume--left ul {
+        padding-left: 15px;
+    }
+
+    .resume--left h4 {
+        font-size: clamp(15px, 2vw, 32px);
+    }
+
+    .resume--left li {
+        font-size: clamp(14px, 1.5vw, 32px);
+    }
+
+    .education--left {
+        width: 40%;
+    }
+
+    .contact--left ul {
+        padding-left: 0;
+    }
+
+    .resume--right p,
+    .resume--right li {
+        width: 100%;
+        min-width: none;
+    }
 
     .resume--right {
-        /* margin-right: 10%; */
+        margin-left: 0;
+        margin-right: 0;
     }
+
 }
+
 
 
 /* MobileNav */

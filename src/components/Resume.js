@@ -12,7 +12,7 @@ export default function Resume() {
             <div className="resume--section">
                 <div className="resume--left">
                     <div className="contact--left">
-                        <h4>Details</h4>
+                        <h4>Contact Details</h4>
                         <ul>
                             <li>Melbourne, Australia</li>
                             <li>+61 420 686 886</li>
