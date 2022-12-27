@@ -1283,7 +1283,7 @@ input:focus {
 .hero--right h4 {
     color: rgba(71, 71, 71, 0.75);
     font-size: clamp(12px, 1.5rem, 25px);
-    margin-top: clamp(20px, 10%, 50px);
+    margin-top: clamp(28px, 5%, 40px);
 }
 
 .resume--right hr {
@@ -1359,8 +1359,8 @@ input:focus {
 @media screen and (max-width: 800px) {
     .resume--section {
         display: block;
-        padding-left: 4%;
-        padding-right: 4%;
+        padding-left: 7%;
+        padding-right: 7%;
     }
 
     .resume--left {
@@ -1398,9 +1398,6 @@ input:focus {
         width: 30%;
     }
 
-    .contact--left h4 {
-
-    }
 
     .contact--left ul {
         padding-left: 0;
@@ -1423,7 +1420,6 @@ input:focus {
     }
 
     .resume--date {
-        /* display: block; */
         flex-direction: column;
     }
 
