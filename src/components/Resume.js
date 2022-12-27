@@ -16,7 +16,14 @@ export default function Resume() {
                         <ul>
                             <li>Melbourne, Australia</li>
                             <li>+61 420 686 886</li>
-                            <li>m.paspaliaris@gmail.com</li>
+                            <li>m.paspalaris@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div className="education--left">
+                        <h4>Formal Education</h4>
+                        <ul>
+                            <li>Bachelor of Accounting<br />UniSA (2011-2015)</li>
+                            <li>Bachelor of Mechanical & Manufacturing Engineering<br />UniMelb(incomplete) (2007-2010)</li>
                         </ul>
                     </div>
                     <div className="tech--left">
@@ -28,14 +35,6 @@ export default function Resume() {
                             <li>React Router</li>
                             <li>Redux</li>
                             <li>HTML</li>
-                        </ul>
-
-                    </div>
-                    <div className="education--left">
-                        <h4>Formal Education</h4>
-                        <ul>
-                            <li>Bachelor of Accounting<br />UniSA (2011-2015)</li><br/>
-                            <li>Bachelor of Mechanical & Manufacturing Engineering<br />UniMelb(incomplete) (2007-2010)</li>
                         </ul>
                     </div>
                 </div>

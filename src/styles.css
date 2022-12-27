@@ -1366,44 +1366,76 @@ input:focus {
     .resume--left {
         display: flex;
         width: 100%;
-        justify-content: space-around;
         margin-top: clamp(7px, 3%, 10px);
     }
 
     .resume--left>div {
-        margin-left: 5%;
+        margin-left: 2%;
     }
 
     .resume--left ul {
-        padding-left: 15px;
+        padding-left: 25px;
+        margin-top: 5px;
     }
 
     .resume--left h4 {
-        font-size: clamp(15px, 2vw, 32px);
+        font-size: clamp(13px, 2.5vw, 32px);
     }
 
     .resume--left li {
-        font-size: clamp(14px, 1.5vw, 32px);
+        font-size: clamp(11px, 1.9vw, 32px);
     }
 
-    .education--left {
+    .education--left  {
         width: 40%;
+    }
+
+    .tech--left {
+        width: 20%;
+    }
+
+    .contact--left {
+        width: 30%;
+    }
+
+    .contact--left h4 {
+
     }
 
     .contact--left ul {
         padding-left: 0;
     }
 
-    .resume--right p,
-    .resume--right li {
-        width: 100%;
-        min-width: none;
-    }
-
     .resume--right {
         margin-left: 0;
         margin-right: 0;
     }
+
+    .resume--right p,
+    .resume--right li {
+        width: 100%;
+        min-width: auto;
+        line-height: 150%;
+    }
+
+    .education--right h4, .experience--right h4 {
+        margin-top: clamp(10px, 10%, 30px);
+    }
+
+    .resume--date {
+        /* display: block; */
+        flex-direction: column;
+    }
+
+    .resume--date>h4:nth-child(2) {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        font-size: 0.9rem;
+    }
+    
+    
 
 }
 
