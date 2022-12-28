@@ -517,9 +517,6 @@ img.whiteframe {
     .skills h5 {
         font-size: clamp(11px, 2vw, 40px);
     }
-
-
-
 }
 
 /* AboutMe */
@@ -602,8 +599,6 @@ img.whiteframe {
         width: 80%;
         top: 0;
     }
-
-
 }
 
 /* Work / Tile */
@@ -652,8 +647,6 @@ img.whiteframe {
     height: 60%;
     left: 23%;
     top: 10%;
-
-
 }
 
 .tile {
@@ -673,7 +666,6 @@ img.whiteframe {
 .tile--subcontainer {
     position: relative;
     height: 100%;
-
 }
 
 .tile--top {
@@ -694,7 +686,6 @@ img.whiteframe {
     text-align: center;
     display: table-cell;
     vertical-align: middle;
-
 }
 
 .tile--top img {
@@ -751,9 +742,7 @@ img.whiteframe {
     .tile--top img {
         width: clamp(50px, 40%, 100px);
         left: 33%;
-
     }
-
 }
 
 
@@ -1025,7 +1014,6 @@ textarea::placeholder {
 }
 
 
-
 .button {
     top: 70%;
     left: 30%;
@@ -1173,8 +1161,6 @@ input:focus {
         font: 22px Arial;
         position: relative;
     }
-
-
 }
 
 
@@ -1369,8 +1355,6 @@ input:focus {
 }
 
 
-
-
 @media screen and (max-width: 1200px) {
     .resume--section {
         border: 0;
@@ -1467,10 +1451,7 @@ input:focus {
         right: 5%;
         top: 1vw;
     }
-
-
 }
-
 
 
 /* MobileNav */
