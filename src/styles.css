@@ -1348,19 +1348,50 @@ input:focus {
     margin-bottom: 2%;
 }
 
+.resume--download {
+    align-items: center;
+    position: absolute;
+    right: 2%;
+    top: 1%;
+    z-index: 2;
+    display: flex;
+    width: 90px;
+    height: 30px;
+}
+
+.resume--download img {
+    width: 20%;
+    height: 60%;
+}
+
+.resume--section a {
+    color: #474747;
+}
+
+
+
 
 @media screen and (max-width: 1200px) {
     .resume--section {
         border: 0;
         padding: 10% 6% 10% 4%;
     }
+
+    .resume--download {
+        right: 5%;
+        top: 30px;
+    }
+
+    .resume--download h6 {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 800px) {
     .resume--section {
         display: block;
-        padding-left: 7%;
-        padding-right: 7%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
     .resume--left {
@@ -1386,7 +1417,7 @@ input:focus {
         font-size: clamp(11px, 1.9vw, 32px);
     }
 
-    .education--left  {
+    .education--left {
         width: 40%;
     }
 
@@ -1415,7 +1446,8 @@ input:focus {
         line-height: 150%;
     }
 
-    .education--right h4, .experience--right h4 {
+    .education--right h4,
+    .experience--right h4 {
         margin-top: clamp(10px, 10%, 30px);
     }
 
@@ -1430,8 +1462,12 @@ input:focus {
         margin-bottom: 10px;
         font-size: 0.9rem;
     }
-    
-    
+
+    .resume--download {
+        right: 5%;
+        top: 1vw;
+    }
+
 
 }
 

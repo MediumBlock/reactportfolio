@@ -9,7 +9,14 @@ export default function Resume() {
             animate={{ opacity: 1, y: 0, transition: { duration: 0.8 } }}
             exit={{ opacity: 0, y: 1000, transition: { duration: 0.8 } }}
             className="resume--container">
+
             <div className="resume--section">
+                <a href="https://github.com/MediumBlock/reactportfolio/blob/18a43edab39738e7ec18b0537959d1acfafb79f4/src/resources/Michael%20Paspaliaris%20Resume.pdf?raw=true">
+                    <div className="resume--download">
+                        <img src={require("../resources/icloud-download-475016.webp")} />
+                        <h6>Download</h6>
+                    </div>
+                </a>
                 <div className="resume--left">
                     <div className="contact--left">
                         <h4>Contact Details</h4>
