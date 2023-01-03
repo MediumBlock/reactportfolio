@@ -5,9 +5,9 @@ export default function Resume() {
 
     return (
         <motion.div
-            initial={{ opacity: 0, y: 1000, transition: { duration: 0.8 } }}
-            animate={{ opacity: 1, y: 0, transition: { duration: 0.8 } }}
-            exit={{ opacity: 0, y: 1000, transition: { duration: 0.8 } }}
+            initial={{ opacity: 0, y: 1000, transition: { duration: 0.65 } }}
+            animate={{ opacity: 1, y: 0, transition: { duration: 0.65 } }}
+            exit={{ opacity: 0, y: 1000, transition: { duration: 0.65 } }}
             className="resume--container">
 
             <div className="resume--section">

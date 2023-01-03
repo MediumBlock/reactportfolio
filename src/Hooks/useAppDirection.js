@@ -1,5 +1,6 @@
 import { useState, useEffect, useContext } from "react";
 import { useLocation, useNavigate } from "react-router-dom"
+import { debounce } from "lodash";
 import { Context } from "./Context";
 
 function useAppDirection(navDown, navUp, directionValueDown, directionValueUp) {
@@ -12,22 +13,19 @@ function useAppDirection(navDown, navUp, directionValueDown, directionValueUp) {
 
 
     useEffect(() => {
-        function handleNavigation(e) {
+        const debouncedEvent = debounce(function handleNavigation(e) {
             if (e.deltaY > 1) {
                 setIsUp(false)
-                setTimeout(() => {
-                    navigate(navDown, { state: { value: directionValueDown } });
-                }, 200)
+                    navigate(navDown, { state: { value: directionValueDown } });   
             } else if (e.deltaY < 1) {
                 setIsUp(true)
-                setTimeout(() => {
                     navigate(navUp, { state: { value: directionValueUp } });
-                }, 200)
             }
-        }
-        window.addEventListener("wheel", handleNavigation);
+        }, 300)
+        
+        window.addEventListener("wheel", debouncedEvent);
 
-        return () => window.removeEventListener("wheel", handleNavigation);
+        return () => window.removeEventListener("wheel", debouncedEvent);
     }, [pathname]);
 
     function handleNavArrowsUp() {
@@ -45,8 +43,6 @@ function useAppDirection(navDown, navUp, directionValueDown, directionValueUp) {
             navigate(navDown, { state: { value: directionValueDown } });
         }, 200)
     }
-
-
 
 
     const navArrows = !isTransitioning && width < breakpoint && <div className="mobile--container">

@@ -13,9 +13,9 @@ export default function Main() {
     return (
         <motion.div
             className="main--container"
-            initial={{ opacity: 0, y: -1000, transition: { duration: 0.8 } }}
-            animate={{ opacity: 1, y: 0, transition: { duration: 0.8 } }}
-            exit={{ opacity: 0, y: -1000, transition: { duration: 0.8 } }}
+            initial={{ opacity: 0, y: -1000, transition: { duration: 0.65 } }}
+            animate={{ opacity: 1, y: 0, transition: { duration: 0.65 } }}
+            exit={{ opacity: 0, y: -1000, transition: { duration: 0.65 } }}
         >
             {navArrows}
             <div className="main--content">
