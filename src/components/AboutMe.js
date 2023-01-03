@@ -25,7 +25,6 @@ export default function AboutMe() {
                         <br />
                         Utilising learning platforms such as Codecademy and Scrimba I am entirely self-taught and self-motivated, nothing gives me more satisfaction than building a new app or idea, or finding the solution to that one bug in the code that has been paining me for hours.
                     </h3>
-
                 </div>
                     <img
                         src={require("../resources/transparency8.png")}

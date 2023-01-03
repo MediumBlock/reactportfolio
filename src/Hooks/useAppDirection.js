@@ -46,6 +46,9 @@ function useAppDirection(navDown, navUp, directionValueDown, directionValueUp) {
         }, 200)
     }
 
+
+
+
     const navArrows = !isTransitioning && width < breakpoint && <div className="mobile--container">
         {pathname !== "/" &&
             <div className="mobile--top">

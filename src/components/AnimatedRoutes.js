@@ -15,8 +15,6 @@ export default function AnimatedRoutes() {
     const { pathname } = location;
  
 
-
-
     return (
         <AnimatePresence>
             <Routes location={location} key={pathname}>
