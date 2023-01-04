@@ -35,16 +35,20 @@ export default function Main() {
                     <div className="sub--main">
                         <img src={require("../resources/headshot.png")}
                             className="headshot"
+                            alt="developer headshot"
                         />
                         <img src={require("../resources/whiteframe.png")}
                             className="whiteframe"
+                            alt="background graphic"
                         />
                         {breakpoint < width ? <img src={require("../resources/mainimg.png")}
                             className="main--img"
+                            alt="background graphic"
                         />
                             :
                             <img src={require("../resources/mainimg-mobile.png")}
                                 className="main--img"
+                                alt="background graphic"
                             />}
 
                     </div>

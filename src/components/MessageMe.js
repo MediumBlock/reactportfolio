@@ -1,23 +1,13 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { motion } from "framer-motion";
-import Confetti from 'react-confetti'
 import useAppDirection from '../Hooks/useAppDirection';
 
 export default function MessageMe() {
-    const { isUp, location, navArrows } = useAppDirection("/messageme", "/work", 1000, -1000);
+    const { navArrows } = useAppDirection("/messageme", "/work", 1000, -1000);
     const form = useRef();
     const [isSubmitted, setIsSubmitted] = useState(false);
     const [isCheckMarked, setIsCheckMarked] = useState(false);
-    const [confetti, setConfetti] = useState(false)
-
-
-    function setConfettiTimer() {
-        setConfetti(true)
-        setTimeout(() => {
-            setConfetti(false)
-        }, 10000)
-    }
 
 
     const sendEmail = (e) => {
@@ -32,8 +22,6 @@ export default function MessageMe() {
 
         setIsSubmitted(true);
         setIsCheckMarked(true);
-        setConfettiTimer();
-
 
         setTimeout(() => {
             setIsCheckMarked(false);
@@ -44,8 +32,6 @@ export default function MessageMe() {
 
     return (
         <>
-            {confetti && <Confetti
-            />}
             <img
                 src={require("../resources/green-checkmark.png")}
                 className={isCheckMarked ? "messageme--checkmark on" : "messageme--checkmark"}

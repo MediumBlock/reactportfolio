@@ -29,6 +29,7 @@ export default function AboutMe() {
                     <img
                         src={require("../resources/transparency8.png")}
                         className="aboutme--image"
+                        alt="computer graphic"
                     />
             </div>
         </motion.div >
