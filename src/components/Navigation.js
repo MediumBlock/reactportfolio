@@ -17,10 +17,12 @@ export default function Navigation() {
             <img src={require("../resources/menu-dropdown.png")}
                 className="menu--dropdown top--menu motion"
                 ref={toggleTopRef}
+                alt="menu dropdown"
             />
             <img src={require("../resources/menu-dropdown.png")}
                 className="menu--dropdown bottom--menu motion"
                 ref={toggleBotRef}
+                alt="menu dropdown"
             />
         </>
 
@@ -29,10 +31,12 @@ export default function Navigation() {
             <img src={require("../resources/menu-dropdown-green.png")}
                 className="menu--dropdown top--menu motion"
                 ref={toggleTopRef}
+                alt="menu dropdown"
             />
             <img src={require("../resources/menu-dropdown-green.png")}
                 className="menu--dropdown bottom--menu motion"
                 ref={toggleBotRef}
+                alt="menu dropdown"
             />
         </>
 
@@ -41,11 +45,13 @@ export default function Navigation() {
         <img
             src={require("../resources/box-green.png")}
             className="marker unfilled"
+            alt="sidebar nav"
         />
         :
         <img
             src={require("../resources/box-purple.png")}
             className="marker unfilled"
+            alt="sidebar nav"
         />
 
 
@@ -53,11 +59,13 @@ export default function Navigation() {
         <img
             src={require("../resources/box-green-filled.png")}
             className="marker filled"
+            alt="sidebar nav"
         />
         :
         <img
             src={require("../resources/box-purple-filled.png")}
             className="marker filled"
+            alt="sidebar nav"
         />
 
     const LinkArray = ["/", "/skills", "/aboutme", "/work", "/messageme"]
@@ -117,16 +125,19 @@ export default function Navigation() {
                     {isMenuOpen && width < breakpoint ?
                         <img src={require("../resources/logo-purp.png")}
                             className="logo"
+                            alt="logo"
                         />
                         :
                         location.pathname === "/" || location.pathname === "/aboutme"
                             ?
                             <img src={require("../resources/logo2.png")}
                                 className="logo"
+                                alt="logo"
                             />
                             :
                             <img src={require("../resources/logo-purp.png")}
                                 className="logo"
+                                alt="logo"
                             />
                     }
                 </Link>

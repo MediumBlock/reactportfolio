@@ -42,7 +42,9 @@ export default function TileElements() {
                     target='_blank'
                     rel="noopener"
                     aria-label={thisProject.name}>
-                    <img src={require(`../resources/${thisProject.thumbnail}`)} />
+                    <img src={require(`../resources/${thisProject.thumbnail}`)}
+                        alt="project image"
+                    />
                 </a>
             </div>
 
