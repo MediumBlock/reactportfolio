@@ -1,6 +1,7 @@
 import React from "react";
 import Tile from "./Tile";
 import { motion } from "framer-motion";
+import { v4 as uuidv4 } from 'uuid';
 import { data } from "../resources/data"
 import useAppDirection from "../Hooks/useAppDirection";
 
@@ -12,7 +13,7 @@ export default function Work() {
     const dataMap = data.map(item => (
         <Tile
             name={item.name}
-            key={item.name}
+            key={uuidv4()}
             logo={item.logo}
         />
     ))

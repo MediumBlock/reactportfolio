@@ -1,14 +1,12 @@
 import React, { useContext } from "react";
-import { data } from "../resources/data";
-import { motion } from "framer-motion";
-import { Context } from "../Hooks/Context";
-
+import { v4 as uuidv4 } from 'uuid';
 import { Link, useParams } from "react-router-dom";
+import { motion } from "framer-motion";
+import { data } from "../resources/data";
 
 export default function TileElements() {
 
     const { project } = useParams();
-    const { width, breakpoint } = useContext(Context)
     const thisProject = data.find(item => item.name === project)
 
     return (
@@ -32,7 +30,7 @@ export default function TileElements() {
                     <p>{thisProject.description.p5}</p>
                     <br />
                     <h4>Features Incorporated:</h4>
-                    <ul>{thisProject.features.map(item => (<><li>{item}</li></>))}</ul>
+                    <ul>{thisProject.features.map(item => (<><li key={uuidv4()}>{item}</li></>))}</ul>
                     <p>Approx time to complete:</p>
                     <br />
                     <p>{thisProject.time}</p>

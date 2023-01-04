@@ -6,7 +6,7 @@ import { Context } from "../Hooks/Context";
 
 export default function Main() {
 
-    const { isUp, location, navArrows } = useAppDirection("/skills", "/", 1000, -1000);
+    const { navArrows } = useAppDirection("/skills", "/", 1000, -1000);
     const { width, breakpoint } = useContext(Context)
 
 
