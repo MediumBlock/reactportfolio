@@ -170,7 +170,7 @@ export default function Navigation() {
                                 <h5>My Projects</h5>
                             </div>
                             <h5 className="hello">SAY HELLO</h5>
-                            <h5>m.paspaliaris@gmail.com</h5>
+                            <h5>michael.paspa@gmail.com</h5>
                             <h5>+61 420 686 886</h5>
                         </div>
                     </div>

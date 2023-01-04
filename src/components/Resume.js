@@ -25,7 +25,7 @@ export default function Resume() {
                         <ul>
                             <li>Melbourne, Australia</li>
                             <li>+61 420 686 886</li>
-                            <li>m.paspalaris@gmail.com</li>
+                            <li>michael.paspa@gmail.com</li>
                         </ul>
                     </div>
                     <div className="education--left">

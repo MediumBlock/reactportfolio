@@ -295,13 +295,13 @@ h4 {
     display: flex;
     position: absolute;
     left: 0%;
-    width: 85%;
+    width: 100%;
     margin-top: 5%;
 }
 
 .subheading {
     margin-right: 10%;
-    width: clamp(300px, 70%, 1000px);
+    width: clamp(300px, 100%, 1000px);
 }
 
 
@@ -541,6 +541,10 @@ img.whiteframe {
 .aboutme--content {
     width: clamp(100px, 45%, 700px);
     top: 30%;
+}
+
+.aboutme--content h1 {
+    font-size: clamp(28px, 3.5vw, 70px);
 }
 
 .aboutme--content h3 {

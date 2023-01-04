@@ -23,8 +23,8 @@ export default function Main() {
                     <h1>Front-end <br />  Developer<span>.</span></h1>
                     <h2>A love for creating detailed and complete frontend packages for a great end user experience.</h2>
                     <div className="subtext">
-                        <h4 className="subheading">Self-motivated and experienced in several disciplines from UI to UX and all the programming needed in between</h4>
-                        <h4>Eager to tackle any challenges and skill up front end or back</h4>
+                        <h4 className="subheading">Self-motivated and experienced in several disciplines from UI to UX and all the programming needed in between.</h4>
+                        <h4 className="subheading">Eager to tackle any challenges big or small and willing to learn any new concepts, ideas, languages or frameworks.</h4>
                     </div>
                     {breakpoint < width &&
                         <img src={require("../resources/line.png")}
