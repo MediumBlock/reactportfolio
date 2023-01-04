@@ -28,7 +28,7 @@ export default function Work() {
             <div className="work--container">
                 <div className="work--text">
                     <h2><span>/</span>work<span>.</span></h2>
-                    <h4>some of the personal projects I've worked on in the past.</h4>
+                    <h4>Some of the personal projects I've worked on in the past.</h4>
                 </div>
                 <div className="tile--container">
                     {dataMap}
