@@ -7,7 +7,7 @@ export const data = [
         gitLink: "https://github.com/MediumBlock/reactportfolio",
         name: 'Portfolio',
         logo: "profile.png",
-        thumbnail: 'portfolio-ss.png',
+        thumbnail: 'portfolio-ss.webp',
         description: {
             p1: `My most ambitious project to date in both content and scope.`,
             p2: `It's used to showcase my skills as a developer by culminating most if not all of my studies since April 2022.`,
@@ -23,7 +23,7 @@ export const data = [
         gitLink: "https://github.com/MediumBlock/minireddit",
         name: 'MiniReddit',
         logo: "minireddit.png",
-        thumbnail: 'minireddit-ss.png',
+        thumbnail: 'minireddit-ss.webp',
         description: {
             p1: `MiniReddit is an app to simplify the reddit browsing experience, allowing for a larger focus on content by having less distractions and no ads.`,
             p2: `The scope of MiniReddit was simple enough; to create a more steamlined version of reddit.com; which only dedicates a small portion of the screen to content coupled with an overabundance of advertisements. But, the execution proved to be more difficult, especially navigating the reddit API.`,
@@ -39,7 +39,7 @@ export const data = [
         gitLink: "https://github.com/MediumBlock/picsome",
         name: 'Picsome',
         logo: "picsome.png",
-        thumbnail: 'picsome-ss.png',
+        thumbnail: 'picsome-ss.webp',
         description: {
             p1: `Picsome was made as an end of course project for the Scrimba React Course.`,
             p2: `It was made to emulate the the minimum viable functionality of a mock e-commerce store, allowing you to 'like' and add photos to cart, it utilises React Router to navigate between the Cart and Main components.`,
@@ -54,7 +54,7 @@ export const data = [
         gitLink: "https://github.com/MediumBlock/opentrivia",
         name: 'Quizzical',
         logo: "quizzical.png",
-        thumbnail: 'quizzical-ss.png',
+        thumbnail: 'quizzical-ss.webp',
         description: {
             p1: `Quizzical is a fun "test your knowledge" trivia app, on initialisation the user gets a choice of 5 random multiple choice questions from the OpenTriviaDB API, the user is then able to select their desired answers once finished selecting their answers they can then click on the "Check Answers" button to reveal the correct and incorrect answers, when satisfied they are then able to start a new game from a new pool of randomly generated questions.`,
             p2: `This App was made as part of an end of course challenge for React Hooks; it makes extensive use of state and conditional rendering.`,
@@ -68,7 +68,7 @@ export const data = [
         gitLink: "https://github.com/MediumBlock/tenzies",
         name: 'Tenzies',
         logo: "tenzies.png",
-        thumbnail: 'tenzies-ss.png',
+        thumbnail: 'tenzies-ss.webp',
         description: {
             p1: `Tenzies is another fun app where users can play the game 'Tenzi' in digital form. Simply put, Tenzies is a game where you have 10 sets of dice and the goal is to roll until all 10 are the same number, you can 'hold' any number of dice between rolls.`,
             p2: `This App was made as a course challenge on the useEffect and useState hooks, it helped to solidify these specific hooks and present them in a fun and simple to play game`,
@@ -82,7 +82,7 @@ export const data = [
         gitLink: "https://github.com/MediumBlock/typespeed",
         name: 'Typespeed',
         logo: "typespeed.png",
-        thumbnail: 'typespeed-ss.png',
+        thumbnail: 'typespeed-ss.webp',
         description: {
             p1: `Typespeed is an aptly named App that tests your typing speed. It runs on a 15 second timer and the goal is for the user to type as many full words as possible in the time allocated. `,
             p2: `The App makes extensive use of the useEffect hook in order to keep track of all the side effects such as the timer countdown, it also uses the useRef hook to keep focus in the typing area once the game has initialised.`,
