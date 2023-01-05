@@ -277,7 +277,7 @@ h4 {
 .main--content {
     display: flex;
     position: relative;
-    top: 30%;
+    top: 25%;
 }
 
 
@@ -287,6 +287,10 @@ h4 {
     left: 15%;
     top: 18%;
     width: 35%;
+}
+
+.main--left h1 {
+    font-size: clamp(45px, 4vw, 80px);
 }
 
 .subtext {
@@ -349,7 +353,7 @@ img.whiteframe {
     position: absolute;
     width: 10%;
     height: 80%;
-    top: 30%;
+    top: 35%;
     left: -40%;
 }
 
