@@ -1,18 +1,22 @@
 {
   "files": {
-    "main.css": "/reactportfolio/static/css/main.72a74ec1.css",
-    "main.js": "/reactportfolio/static/js/main.a175d4f3.js",
+    "main.css": "/reactportfolio/static/css/main.94c885b5.css",
+    "main.js": "/reactportfolio/static/js/main.19f759cd.js",
     "static/media/minireddit-ss.png": "/reactportfolio/static/media/minireddit-ss.7bab5088af34a56fde6f.png",
     "static/media/picsome-ss.png": "/reactportfolio/static/media/picsome-ss.648028f93ed496ead397.png",
     "static/media/portfolio-ss.png": "/reactportfolio/static/media/portfolio-ss.b179f03100da1242a536.png",
     "static/media/headshot.png": "/reactportfolio/static/media/headshot.e6d75ee10e0efd4d66ae.png",
     "static/media/mainhero.png": "/reactportfolio/static/media/mainhero.4ecf37b470d768c00b3a.png",
+    "static/media/minireddit-ss.webp": "/reactportfolio/static/media/minireddit-ss.32e4c7a1b80fb98ab983.webp",
     "static/media/transparency8.png": "/reactportfolio/static/media/transparency8.30020b819ec086d6711a.png",
+    "static/media/picsome-ss.webp": "/reactportfolio/static/media/picsome-ss.d5069d492501cc730f79.webp",
     "static/media/green-checkmark.png": "/reactportfolio/static/media/green-checkmark.9ef513598d70176b0515.png",
     "static/media/tenzies.png": "/reactportfolio/static/media/tenzies.f4ebef2d64faff174494.png",
     "static/media/quizzical-ss.png": "/reactportfolio/static/media/quizzical-ss.a8d5f29b0ca190cbc71c.png",
+    "static/media/portfolio-ss.webp": "/reactportfolio/static/media/portfolio-ss.99175f46b1c84613a63f.webp",
     "static/media/Michael Paspaliaris Resume.pdf": "/reactportfolio/static/media/Michael Paspaliaris Resume.f4cd44da207dd0c4dfbe.pdf",
     "static/media/quizzical.png": "/reactportfolio/static/media/quizzical.495b2ce93f3be5af3868.png",
+    "static/media/quizzical-ss.webp": "/reactportfolio/static/media/quizzical-ss.e67855a28bdee91065f2.webp",
     "static/media/purpledots.png": "/reactportfolio/static/media/purpledots.6e8efa23c21c7c8ed32b.png",
     "static/media/tenzies-ss.png": "/reactportfolio/static/media/tenzies-ss.75ae4b2a9edd2765c328.png",
     "static/media/greendots.png": "/reactportfolio/static/media/greendots.74da75c24601f6c9d1a8.png",
@@ -23,6 +27,8 @@
     "static/media/logo2.png": "/reactportfolio/static/media/logo2.6870dc3f2c545efa0ab0.png",
     "static/media/logo-purp.png": "/reactportfolio/static/media/logo-purp.b8fac77efebd41a67cea.png",
     "static/media/green-dots.png": "/reactportfolio/static/media/green-dots.e308b695ce625676bff7.png",
+    "static/media/typespeed-ss.webp": "/reactportfolio/static/media/typespeed-ss.4cdb506d9af3a261c668.webp",
+    "static/media/tenzies-ss.webp": "/reactportfolio/static/media/tenzies-ss.b495633bc2587f037461.webp",
     "static/media/mainimg-mobile.png": "/reactportfolio/static/media/mainimg-mobile.50e0722486175f7889c9.png",
     "static/media/picsome.png": "/reactportfolio/static/media/picsome.e4e7381fd945ee7e2923.png",
     "static/media/typespeed-ss.png": "/reactportfolio/static/media/typespeed-ss.a889a5a66890b8e027bf.png",
@@ -31,11 +37,11 @@
     "index.html": "/reactportfolio/index.html",
     "static/media/right.svg": "/reactportfolio/static/media/right.095a2c2b24f79d740ca0.svg",
     "static/media/left.svg": "/reactportfolio/static/media/left.527911056c1028344ceb.svg",
-    "main.72a74ec1.css.map": "/reactportfolio/static/css/main.72a74ec1.css.map",
-    "main.a175d4f3.js.map": "/reactportfolio/static/js/main.a175d4f3.js.map"
+    "main.94c885b5.css.map": "/reactportfolio/static/css/main.94c885b5.css.map",
+    "main.19f759cd.js.map": "/reactportfolio/static/js/main.19f759cd.js.map"
   },
   "entrypoints": [
-    "static/css/main.72a74ec1.css",
-    "static/js/main.a175d4f3.js"
+    "static/css/main.94c885b5.css",
+    "static/js/main.19f759cd.js"
   ]
 }
