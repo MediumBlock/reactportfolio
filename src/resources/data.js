@@ -4,7 +4,7 @@ export const data = [
 
     {
         link: 'https://mediumblock.github.io/',
-        gitLink: "https://github.com/MediumBlock/reactportfolio",
+        gitLink: "https://mediumblock.github.io/reactportfolio/#/",
         name: 'Portfolio',
         logo: "profile.png",
         thumbnail: 'portfolio-ss.webp',
