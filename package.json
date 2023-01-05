@@ -1,7 +1,7 @@
 {
   "name": "reactportfolio",
   "version": "0.1.0",
-  "homepage": "https://mediumblock.github.io/reactportfolio/",
+  "homepage": "https://mediumblock.github.io/reactportfolio/#",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.9.1",
