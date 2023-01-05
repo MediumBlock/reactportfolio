@@ -20,20 +20,27 @@ export default function TileElements() {
             <div className="elements--content">
                 <div className="elements--text">
                     <p>{thisProject.description.p1}</p>
-                    <br />
+                    <br /><br />
                     <p>{thisProject.description.p2}</p>
-                    <br />
+                    <br /><br />
                     <p>{thisProject.description.p3}</p>
-                    <br />
+                    <br /><br />
                     <p>{thisProject.description.p4}</p>
-                    <br />
+                    {thisProject.description.p4 && <><br /><br /></>}
                     <p>{thisProject.description.p5}</p>
-                    <br />
-                    <h4>Features Incorporated:</h4>
+                    {thisProject.description.p5 && <><br /><br /></>}
+                    <h4>Technologies and tools used:</h4>
                     <ul>{thisProject.features.map(item => (<><li key={uuidv4()}>{item}</li></>))}</ul>
                     <p>Approx time to complete:</p>
                     <br />
                     <p>{thisProject.time}</p>
+                    <br />
+                    <h4>Link to project on GitHub   <a href={thisProject.gitLink}
+                    target='_blank'
+                    rel="noopener"
+                    aria-label={thisProject.name}>
+                     here.
+                </a></h4>
 
                 </div>
                 <a href={thisProject.link}
