@@ -21,9 +21,9 @@ export default function Main() {
             <div className="main--content">
                 <div className="main--left">
                     <h1>Front-end <br />  Developer<span>.</span></h1>
-                    <h2>A love for creating detailed and complete frontend packages for a great end user experience.</h2>
+                    <h2>A love for creating detailed and complete frontend packages for a great end-user experience.</h2>
                     <div className="subtext">
-                        <h4 className="subheading">Self-motivated and experienced in several disciplines from UI to UX and all the programming needed in between.</h4>
+                        <h4 className="subheading">Experienced in several disciplines from UI to UX and all the programming needed in-between.</h4>
                         <h4 className="subheading">Eager to tackle any challenges big or small and willing to learn any new concepts, ideas, languages or frameworks.</h4>
                     </div>
                     {breakpoint < width &&

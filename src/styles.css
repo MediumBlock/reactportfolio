@@ -830,6 +830,14 @@ img.whiteframe {
     margin-bottom: 1%;
 }
 
+.elements--container li,
+.elements--container ul {
+    color: var(--color-work-text);
+}
+
+
+
+
 @media screen and (max-width: 1600px) {
 
     .elements--container p,
