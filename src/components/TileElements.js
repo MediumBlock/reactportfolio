@@ -33,12 +33,13 @@ export default function TileElements() {
                     <ul>{thisProject.features.map(item => (<><li key={item}>{item}</li></>))}</ul>
                     <h4>Approx time to complete:</h4>
                     <p>{thisProject.time}</p>
-                    <h4>Link to project on GitHub   <a href={thisProject.gitLink}
-                    target='_blank'
-                    rel="noopener"
-                    aria-label={thisProject.name}>
-                     here.
-                </a></h4>
+                    <h4>Link to project on GitHub <a href={thisProject.gitLink}
+                            target='_blank'
+                            rel="noopener"
+                            aria-label={thisProject.name}
+                        >
+                            here.
+                        </a></h4>
 
                 </div>
                 <a href={thisProject.link}

@@ -838,6 +838,7 @@ img.whiteframe {
 
 
 
+
 @media screen and (max-width: 1600px) {
 
     .elements--container p,
@@ -870,6 +871,9 @@ img.whiteframe {
     }
 
 
+    
+
+
 }
 
 @media screen and (max-width: 1000px) {
@@ -896,7 +900,10 @@ img.whiteframe {
         margin: 0 auto;
         margin-bottom: 3%;
 
+    }
 
+    .elements--text a {
+        top: 0;
     }
 
 }
