@@ -1,13 +1,16 @@
 {
   "files": {
-    "main.css": "/reactportfolio/static/css/main.67b18500.css",
-    "main.js": "/reactportfolio/static/js/main.70259182.js",
+    "main.css": "/reactportfolio/static/css/main.8a05fa2f.css",
+    "main.js": "/reactportfolio/static/js/main.065ff65d.js",
     "static/media/minireddit-ss.png": "/reactportfolio/static/media/minireddit-ss.7bab5088af34a56fde6f.png",
     "static/media/picsome-ss.png": "/reactportfolio/static/media/picsome-ss.648028f93ed496ead397.png",
     "static/media/portfolio-ss.png": "/reactportfolio/static/media/portfolio-ss.b179f03100da1242a536.png",
+    "static/media/minireddit-ss-min.png": "/reactportfolio/static/media/minireddit-ss-min.f8e14423f1100895f094.png",
+    "static/media/picsome-ss-min.png": "/reactportfolio/static/media/picsome-ss-min.7c7dec38a1c9faf20373.png",
     "static/media/headshot.png": "/reactportfolio/static/media/headshot.e6d75ee10e0efd4d66ae.png",
     "static/media/mainhero.png": "/reactportfolio/static/media/mainhero.4ecf37b470d768c00b3a.png",
     "static/media/minireddit-ss.webp": "/reactportfolio/static/media/minireddit-ss.32e4c7a1b80fb98ab983.webp",
+    "static/media/portfolio-ss-min.png": "/reactportfolio/static/media/portfolio-ss-min.58ea4c96435cb233ddda.png",
     "static/media/transparency8.png": "/reactportfolio/static/media/transparency8.30020b819ec086d6711a.png",
     "static/media/picsome-ss.webp": "/reactportfolio/static/media/picsome-ss.d5069d492501cc730f79.webp",
     "static/media/green-checkmark.png": "/reactportfolio/static/media/green-checkmark.9ef513598d70176b0515.png",
@@ -37,11 +40,11 @@
     "index.html": "/reactportfolio/index.html",
     "static/media/right.svg": "/reactportfolio/static/media/right.095a2c2b24f79d740ca0.svg",
     "static/media/left.svg": "/reactportfolio/static/media/left.527911056c1028344ceb.svg",
-    "main.67b18500.css.map": "/reactportfolio/static/css/main.67b18500.css.map",
-    "main.70259182.js.map": "/reactportfolio/static/js/main.70259182.js.map"
+    "main.8a05fa2f.css.map": "/reactportfolio/static/css/main.8a05fa2f.css.map",
+    "main.065ff65d.js.map": "/reactportfolio/static/js/main.065ff65d.js.map"
   },
   "entrypoints": [
-    "static/css/main.67b18500.css",
-    "static/js/main.70259182.js"
+    "static/css/main.8a05fa2f.css",
+    "static/js/main.065ff65d.js"
   ]
 }
