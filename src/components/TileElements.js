@@ -1,13 +1,31 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { v4 as uuidv4 } from 'uuid';
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { data } from "../resources/data";
 
 export default function TileElements() {
 
+    const navigate = useNavigate();
+    const [isGoingBack, setIsGoingBack] = useState(false)
     const { project } = useParams();
     const thisProject = data.find(item => item.name === project)
+
+    const navBack = !isGoingBack &&
+        <div className="tile--backarrow">
+            <img src={require("../resources/mobilenavpurp.png")}
+                onClick={handleNavBack}
+            />
+        </div>
+
+
+    function handleNavBack() {
+        setTimeout(() => {
+            setIsGoingBack(true)
+            navigate("/work", { state: { value: 1000 } });
+        }, 200)
+    }
+
 
     return (
         <motion.div
@@ -16,6 +34,7 @@ export default function TileElements() {
             exit={{ opacity: 0, y: -1000, transition: { duration: 0.65 } }}
             className="elements--container"
         >
+            {navBack}
             <h2>{thisProject.name}</h2>
             <div className="elements--content">
                 <div className="elements--text">
@@ -34,12 +53,12 @@ export default function TileElements() {
                     <h4>Approx time to complete:</h4>
                     <p>{thisProject.time}</p>
                     <h4>Link to project on GitHub <a href={thisProject.gitLink}
-                            target='_blank'
-                            rel="noopener"
-                            aria-label={thisProject.name}
-                        >
-                            here.
-                        </a></h4>
+                        target='_blank'
+                        rel="noopener"
+                        aria-label={thisProject.name}
+                    >
+                        here.
+                    </a></h4>
 
                 </div>
                 <a href={thisProject.link}

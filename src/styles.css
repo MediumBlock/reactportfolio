@@ -796,6 +796,15 @@ img.whiteframe {
     width: 100%;
 }
 
+.tile--backarrow img {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    width: 3vw;
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+
 .elements--content img {
     transition: 0.5s all;
     width: 100%;
@@ -870,6 +879,12 @@ img.whiteframe {
         padding: 2%;
     }
 
+    .tile--backarrow img {
+        top: 12%;
+        left: 5%;
+        width: clamp(40px, 3vw, 200px);
+    }
+
 
     
 
@@ -904,6 +919,12 @@ img.whiteframe {
 
     .elements--text a {
         top: 0;
+    }
+    
+    .tile--backarrow img {
+        top: 8%;
+        left: 9%;
+        width: clamp(30px, 5vw, 200px);
     }
 
 }
