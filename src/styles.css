@@ -803,6 +803,7 @@ img.whiteframe {
     width: 3vw;
     transform: rotate(90deg);
     cursor: pointer;
+    z-index: 3;
 }
 
 .elements--content img {
