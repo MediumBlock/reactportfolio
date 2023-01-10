@@ -794,6 +794,7 @@ img.whiteframe {
     text-align: center;
     top: 10%;
     width: 100%;
+    z-index: 1;
 }
 
 .tile--backarrow img {
