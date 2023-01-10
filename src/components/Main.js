@@ -27,26 +27,26 @@ export default function Main() {
                         <h4 className="subheading">Eager to tackle any challenges big or small and willing to learn any new concepts, ideas, languages or frameworks.</h4>
                     </div>
                     {breakpoint < width &&
-                        <img src={require("../resources/line.png")}
+                        <img src={require("../resources/line.webp")}
                             className="squiggle"
                         />}
                 </div>
                 <div className="main--right">
                     <div className="sub--main">
-                        <img src={require("../resources/headshot.png")}
+                        <img src={require("../resources/headshot.webp")}
                             className="headshot"
                             alt="developer headshot"
                         />
-                        <img src={require("../resources/whiteframe.png")}
+                        <img src={require("../resources/whiteframe.webp")}
                             className="whiteframe"
                             alt="background graphic"
                         />
-                        {breakpoint < width ? <img src={require("../resources/mainimg.png")}
+                        {breakpoint < width ? <img src={require("../resources/mainimg.webp")}
                             className="main--img"
                             alt="background graphic"
                         />
                             :
-                            <img src={require("../resources/mainimg-mobile.png")}
+                            <img src={require("../resources/mainimg-mobile.webp")}
                                 className="main--img"
                                 alt="background graphic"
                             />}

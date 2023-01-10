@@ -13,7 +13,7 @@ export default function TileElements() {
 
     const navBack = !isGoingBack &&
         <div className="tile--backarrow">
-            <img src={require("../resources/mobilenavpurp.png")}
+            <img src={require("../resources/mobilenavpurp.webp")}
                 onClick={handleNavBack}
             />
         </div>

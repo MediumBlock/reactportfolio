@@ -21,7 +21,7 @@ export default function Skills() {
             {navArrows}
             <div className="skills">
                 <div className="skills--left">
-                    {width > breakpoint && <img src={require("../resources/green-dots.png")}
+                    {width > breakpoint && <img src={require("../resources/green-dots.webp")}
                         className="green"
                         alt=""
                     />}
@@ -29,12 +29,12 @@ export default function Skills() {
                     <h5>Experience in most aspects of visual design across multiple disciplines; such as colour theory, typography, visual hierachy, design philosophy and more.
                         <br /><br />Also experienced in achieving the best possible end user experience utilising UX topics such as Interaction / Inclusive Design, Design Psychology, and combining tools and processes such as Wireframing and Prototyping to speed-up and streamline design processes.
                         <br /><br />All the design principles listed above have not only been extensively studied but also put into practise across multiple projects showcased later on.</h5>
-                    {width > breakpoint && <img src={require("../resources/skills-left.png")}
+                    {width > breakpoint && <img src={require("../resources/skills-left.webp")}
                         alt=""
                     />}
                 </div>
                 <div className="skills--right">
-                    {width > breakpoint && <img src={require("../resources/skills-right.png")}
+                    {width > breakpoint && <img src={require("../resources/skills-right.webp")}
                         alt=""
                     />}
                     <h1>Engineering</h1>
@@ -43,7 +43,7 @@ export default function Skills() {
                 </div>
             </div>
             <div>
-                <img src={require("../resources/line.png")}
+                <img src={require("../resources/line.webp")}
                     className="squiggle--skills"
                     alt=""
                 />

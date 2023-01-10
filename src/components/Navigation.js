@@ -14,12 +14,12 @@ export default function Navigation() {
 
     const menuCrossPurp =
         <>
-            <img src={require("../resources/menu-dropdown.png")}
+            <img src={require("../resources/menu-dropdown.webp")}
                 className="menu--dropdown top--menu motion"
                 ref={toggleTopRef}
                 alt="menu dropdown"
             />
-            <img src={require("../resources/menu-dropdown.png")}
+            <img src={require("../resources/menu-dropdown.webp")}
                 className="menu--dropdown bottom--menu motion"
                 ref={toggleBotRef}
                 alt="menu dropdown"
@@ -28,12 +28,12 @@ export default function Navigation() {
 
     const menuCrossGreen =
         <>
-            <img src={require("../resources/menu-dropdown-green.png")}
+            <img src={require("../resources/menu-dropdown-green.webp")}
                 className="menu--dropdown top--menu motion"
                 ref={toggleTopRef}
                 alt="menu dropdown"
             />
-            <img src={require("../resources/menu-dropdown-green.png")}
+            <img src={require("../resources/menu-dropdown-green.webp")}
                 className="menu--dropdown bottom--menu motion"
                 ref={toggleBotRef}
                 alt="menu dropdown"
@@ -43,13 +43,13 @@ export default function Navigation() {
 
     const boxFilled = location.pathname === "/aboutme" ?
         <img
-            src={require("../resources/box-green.png")}
+            src={require("../resources/box-green.webp")}
             className="marker unfilled"
             alt="sidebar nav"
         />
         :
         <img
-            src={require("../resources/box-purple.png")}
+            src={require("../resources/box-purple.webp")}
             className="marker unfilled"
             alt="sidebar nav"
         />
@@ -57,13 +57,13 @@ export default function Navigation() {
 
     const boxUnfilled = location.pathname === "/aboutme" ?
         <img
-            src={require("../resources/box-green-filled.png")}
+            src={require("../resources/box-green-filled.webp")}
             className="marker filled"
             alt="sidebar nav"
         />
         :
         <img
-            src={require("../resources/box-purple-filled.png")}
+            src={require("../resources/box-purple-filled.webp")}
             className="marker filled"
             alt="sidebar nav"
         />
@@ -124,19 +124,19 @@ export default function Navigation() {
             <div className="nav--logo">
                 <Link to="/">
                     {isMenuOpen && width < breakpoint ?
-                        <img src={require("../resources/logo-purp.png")}
+                        <img src={require("../resources/logo-purp.webp")}
                             className="logo"
                             alt="logo"
                         />
                         :
                         location.pathname === "/" || location.pathname === "/aboutme"
                             ?
-                            <img src={require("../resources/logo2.png")}
+                            <img src={require("../resources/logo2.webp")}
                                 className="logo"
                                 alt="logo"
                             />
                             :
-                            <img src={require("../resources/logo-purp.png")}
+                            <img src={require("../resources/logo-purp.webp")}
                                 className="logo"
                                 alt="logo"
                             />

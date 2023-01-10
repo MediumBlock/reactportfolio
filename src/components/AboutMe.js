@@ -29,7 +29,7 @@ export default function AboutMe() {
                     </h3>
                 </div>
                     <img
-                        src={require("../resources/transparency8.png")}
+                        src={require("../resources/transparency8.webp")}
                         className="aboutme--image"
                         alt="computer graphic"
                     />

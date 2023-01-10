@@ -51,11 +51,11 @@ function useAppDirection(navDown, navUp, directionValueDown, directionValueUp) {
                 {
                     pathname === "/aboutme"
                         ?
-                        <img src={require("../resources/mobilenavgreen.png")}
+                        <img src={require("../resources/mobilenavgreen.webp")}
                             onClick={handleNavArrowsUp}
                         />
                         :
-                        <img src={require("../resources/mobilenavpurp.png")}
+                        <img src={require("../resources/mobilenavpurp.webp")}
                             onClick={handleNavArrowsUp}
                         />
                 }
@@ -66,11 +66,11 @@ function useAppDirection(navDown, navUp, directionValueDown, directionValueUp) {
                 {
                     pathname === "/aboutme"
                         ?
-                        <img src={require("../resources/mobilenavgreen.png")}
+                        <img src={require("../resources/mobilenavgreen.webp")}
                             onClick={handleNavArrowsDown}
                         />
                         :
-                        <img src={require("../resources/mobilenavpurp.png")}
+                        <img src={require("../resources/mobilenavpurp.webp")}
                             onClick={handleNavArrowsDown}
                         />
                 }
