@@ -29,6 +29,7 @@ export default function Main() {
                     {breakpoint < width &&
                         <img src={require("../resources/line.webp")}
                             className="squiggle"
+                            alt=""
                         />}
                 </div>
                 <div className="main--right">

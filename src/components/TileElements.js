@@ -15,6 +15,7 @@ export default function TileElements() {
         <div className="tile--backarrow">
             <img src={require("../resources/mobilenavpurp.webp")}
                 onClick={handleNavBack}
+                alt="go back"
             />
         </div>
 

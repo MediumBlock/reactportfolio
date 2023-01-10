@@ -53,10 +53,12 @@ function useAppDirection(navDown, navUp, directionValueDown, directionValueUp) {
                         ?
                         <img src={require("../resources/mobilenavgreen.webp")}
                             onClick={handleNavArrowsUp}
+                            alt="navigate back"
                         />
                         :
                         <img src={require("../resources/mobilenavpurp.webp")}
                             onClick={handleNavArrowsUp}
+                            alt="navigate forward"
                         />
                 }
             </div>
@@ -68,10 +70,12 @@ function useAppDirection(navDown, navUp, directionValueDown, directionValueUp) {
                         ?
                         <img src={require("../resources/mobilenavgreen.webp")}
                             onClick={handleNavArrowsDown}
+                            alt="navigate back"
                         />
                         :
                         <img src={require("../resources/mobilenavpurp.webp")}
                             onClick={handleNavArrowsDown}
+                            alt="navigate forward"
                         />
                 }
             </div>
