@@ -72,6 +72,7 @@ export default function Navigation() {
     const LinkBoxes = LinkArray.map(item => (
         <div onClick={() => handleSideBar(item)}
             key={item}
+            alt=""
         >
             {location.pathname === item ? boxFilled : boxUnfilled}
         </div>
