@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/reactportfolio/static/css/main.fef9fda7.css",
-    "main.js": "/reactportfolio/static/js/main.14b370c3.js",
+    "main.css": "/reactportfolio/static/css/main.c0ab4d8f.css",
+    "main.js": "/reactportfolio/static/js/main.7cf0608e.js",
     "static/media/minireddit-ss.png": "/reactportfolio/static/media/minireddit-ss.7bab5088af34a56fde6f.png",
     "static/media/picsome-ss.png": "/reactportfolio/static/media/picsome-ss.648028f93ed496ead397.png",
     "static/media/portfolio-ss.png": "/reactportfolio/static/media/portfolio-ss.b179f03100da1242a536.png",
@@ -21,6 +21,7 @@
     "static/media/Michael Paspaliaris Resume.pdf": "/reactportfolio/static/media/Michael Paspaliaris Resume.f4cd44da207dd0c4dfbe.pdf",
     "static/media/green-checkmark.webp": "/reactportfolio/static/media/green-checkmark.a812e8ff478a41a8e390.webp",
     "static/media/quizzical.png": "/reactportfolio/static/media/quizzical.495b2ce93f3be5af3868.png",
+    "static/media/Michael Paspaliaris Resume-cropped.pdf": "/reactportfolio/static/media/Michael Paspaliaris Resume-cropped.d8f0ad7279a103c7df85.pdf",
     "static/media/quizzical-ss.webp": "/reactportfolio/static/media/quizzical-ss.e67855a28bdee91065f2.webp",
     "static/media/purpledots.png": "/reactportfolio/static/media/purpledots.6e8efa23c21c7c8ed32b.png",
     "static/media/tenzies-ss.png": "/reactportfolio/static/media/tenzies-ss.75ae4b2a9edd2765c328.png",
@@ -73,11 +74,11 @@
     "index.html": "/reactportfolio/index.html",
     "static/media/right.svg": "/reactportfolio/static/media/right.095a2c2b24f79d740ca0.svg",
     "static/media/left.svg": "/reactportfolio/static/media/left.527911056c1028344ceb.svg",
-    "main.fef9fda7.css.map": "/reactportfolio/static/css/main.fef9fda7.css.map",
-    "main.14b370c3.js.map": "/reactportfolio/static/js/main.14b370c3.js.map"
+    "main.c0ab4d8f.css.map": "/reactportfolio/static/css/main.c0ab4d8f.css.map",
+    "main.7cf0608e.js.map": "/reactportfolio/static/js/main.7cf0608e.js.map"
   },
   "entrypoints": [
-    "static/css/main.fef9fda7.css",
-    "static/js/main.14b370c3.js"
+    "static/css/main.c0ab4d8f.css",
+    "static/js/main.7cf0608e.js"
   ]
 }
