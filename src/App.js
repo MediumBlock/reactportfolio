@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div>
-      {/* <Navigation /> */}
+      <Navigation />
       <AnimatedRoutes />
     </div>
   );

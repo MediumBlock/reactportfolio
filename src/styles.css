@@ -1119,12 +1119,9 @@ input:focus {
     left: 42.5%;
     top: 37.5%;
     transition: all 0.3s ease-out;
-    opacity: 0;
-}
-
-.messageme--checkmark.on {
     opacity: 1;
 }
+
 
 
 @media screen and (max-width: 800px) {

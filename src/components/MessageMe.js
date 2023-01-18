@@ -32,11 +32,11 @@ export default function MessageMe() {
 
     return (
         <>
-            <img
+            {isCheckMarked && <img
                 src={require("../resources/green-checkmark.webp")}
-                className={isCheckMarked ? "messageme--checkmark on" : "messageme--checkmark"}
+                className="messageme--checkmark"
                 img="submission successful tick"
-            />
+            />}
             <motion.div
                 className='messageme--main'
                 initial={{ opacity: 0, y: 1000, transition: { duration: 0.65 } }}
