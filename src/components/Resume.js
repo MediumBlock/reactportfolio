@@ -55,6 +55,7 @@ export default function Resume() {
                             <li>Redux</li>
                             <li>HTML</li>
                             <li>NodeJS</li>
+                            <li>GitHub</li>
                         </ul>
                     </div>
                 </div>
