@@ -69,7 +69,7 @@ export default function Resume() {
                             <li><b>Javascript:</b> studied extensively over several modules from basic Javascript functionality such as loops, operators, classes, modules and methods to more advanced concepts such as Asynchronous functions and testing with suites such as Jest & Mocha.</li>
                             <li><b>React:</b> Studied and created a slew of projects in both class and functional components, learnt JSX, the different lifecycle methods, hooks, React Router and more.</li>
                             <li><b>Redux:</b> Learnt how to deploy Redux in React, learnt and implemented the different data flows in Redux such as the store, reducers, dispatch etc. Also learnt how to refactor with Redux toolkit and how middleware and thunks can be correctly utilised.</li>
-                            <li><b>Algorithms & Data structures:</b> studied both Linear & Complex data structures such as Linked lists, Hash Maps, Heaps & Algorithms such as bubble sort and merge sort.</li>
+                            <li><b>Algorithms & Data structures:</b> studied both Linear & Complex data structures such as Linked lists, Hash Maps, Heaps & various Algorithms in topics such as dyanmic programming, intervals and binary trees.</li>
                         </ul>
                         <div className="resume--date">
                             <h4>Scrimba | React Developer Course </h4>

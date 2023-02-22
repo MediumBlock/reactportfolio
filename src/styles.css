@@ -18,12 +18,15 @@ html::-webkit-scrollbar {
     display: none;
 }
 
+
+
 html,
 body {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
     box-sizing: border-box;
     background-color: var(--background-white);
+    scrollbar-width: none;
 }
 
 a {
