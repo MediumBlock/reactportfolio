@@ -331,7 +331,6 @@ h4 {
 
 img.headshot {
     width: clamp(10vh, 75%, 30vh);
-    /* width:  75%; */
 }
 
 .whiteframe {
