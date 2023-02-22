@@ -3,8 +3,8 @@
 export const data = [
 
     {
-        link: 'https://mediumblock.github.io/',
-        gitLink: "https://mediumblock.github.io/reactportfolio/#/",
+        link: "https://mediumblock.github.io/reactportfolio/#/",
+        gitLink: 'https://github.com/MediumBlock/reactportfolio',
         name: 'Portfolio',
         logo: "profile.webp",
         thumbnail: 'portfolio-ss.webp',
