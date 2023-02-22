@@ -1261,9 +1261,12 @@ input:focus {
     color: rgba(71, 71, 71, 0.75);
 }
 
+
+
 .contact--left li {
     font-size: 1.1rem;
 }
+
 
 
 .resume--right {
@@ -1286,7 +1289,7 @@ input:focus {
     margin-top: 1%;
 }
 
-.resume--right h3 {
+.resume--right h3, .contact--left .resume--weblink {
     display: inline;
     --underline-width-scale: calc(var(--underline-width) / var(--underline-intrinsic-width));
     padding: 0 calc(var(--underline-padding-x) + calc(var(--underline-cap-width) * var(--underline-width-scale)));
@@ -1313,6 +1316,16 @@ input:focus {
     --cap-image-left: url(https://github.com/MediumBlock/reactportfolio/blob/612c0dd53a964b434c6f3bfefd0e99758229ce7e/src/resources/left.svg?raw=true);
     --cap-image-right: url(https://github.com/MediumBlock/reactportfolio/blob/612c0dd53a964b434c6f3bfefd0e99758229ce7e/src/resources/right.svg?raw=true);
 }
+
+.contact--left .resume--weblink {
+    font-weight: 700;
+    font-size: 1.2rem;
+    --underline-width: 12;
+    color: purple;
+
+    
+}
+
 
 .hero--right h1 {
     font-size: clamp(82px, 5vw, 100px);

@@ -21,6 +21,16 @@ export default function Resume() {
                 </a>
                 <div className="resume--left">
                     <div className="contact--left">
+                        <h4>Website</h4>
+                        <a href="https://mediumblock.github.io/reactportfolio/"
+                            target='_blank'
+                            rel="noopener"
+                            aria-label="portfolio link">
+                            <ul>
+                                <li className="resume--weblink">GitHub - Portfolio</li>
+                            </ul>
+                        </a>
+
                         <h4>Contact Details</h4>
                         <ul>
                             <li>Melbourne, Australia</li>
@@ -58,7 +68,7 @@ export default function Resume() {
                         <h3>Education - Programming</h3>
                         <div className="resume--date">
                             <h4>Codecademy | Front-End Developer Course</h4>
-                            <h4>April - December 2022 </h4>
+                            <h4>April 2022 - Jan 2023 </h4>
                         </div>
                         <p>Codecademy is a paid service that offers many pathways in most programming disciplines. Enrolled in the front-end developer course over 7 months I took hundreds of classes and completed over 80 assignments & projects in the the following fields / learning objectives: </p>
                         <ul>
@@ -73,7 +83,7 @@ export default function Resume() {
                         </ul>
                         <div className="resume--date">
                             <h4>Scrimba | React Developer Course </h4>
-                            <h4>July - August 2022</h4>
+                            <h4>July - Aug 2022</h4>
                         </div>
                         <p>Scrimba is platform that offers both paid and free interactive visual courses in many area regarding web development, I enrolled and completed all react courses by Bob Ziroll upto and including Advanced, which had me completing over 200 coding challenges and 15 projects. In this course I studied the following:</p>
                         <ul>
@@ -90,7 +100,7 @@ export default function Resume() {
 
                         <div className="resume--date">
                             <h4>Foreign Investment Manager</h4>
-                            <h4> Nov 2019 - August 2022</h4>
+                            <h4> Nov 2019 - Jan 2023</h4>
                         </div>
                         <h5>Hoa Binh Construction Group | Ho Chi Minh City, Vietnam</h5>
                         <p>Hoa Binh is Vietnam’s largest construction contracting company by revenue, it is a publicly
@@ -122,7 +132,7 @@ export default function Resume() {
 
                         <div className="resume--date">
                             <h4>Accounts Manager</h4>
-                            <h4>July 2016 - September 2019</h4>
+                            <h4>July 2016 - Sept 2019</h4>
                         </div>
 
                         <h5>JS Sourcing | Shanghai, China</h5>
