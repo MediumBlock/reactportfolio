@@ -330,7 +330,8 @@ h4 {
 }
 
 img.headshot {
-    width: 75%;
+    width: clamp(10vh, 75%, 30vh);
+    /* width:  75%; */
 }
 
 .whiteframe {
@@ -341,11 +342,13 @@ img.headshot {
 
 img.whiteframe {
     width: 85%;
+    width: clamp(10vh, 85%, 35vh);
 }
 
 
 .main--img {
     width: 145%;
+    width: clamp(10vh, 145%, 60vh);
     top: -5%;
     left: -14%;
     position: absolute;
@@ -404,6 +407,7 @@ img.whiteframe {
         top: 0%;
 
     }
+
 }
 
 @media screen and (max-height: 700px) {
