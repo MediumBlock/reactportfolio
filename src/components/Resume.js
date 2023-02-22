@@ -54,6 +54,7 @@ export default function Resume() {
                             <li>React Router</li>
                             <li>Redux</li>
                             <li>HTML</li>
+                            <li>NodeJS</li>
                         </ul>
                     </div>
                 </div>
