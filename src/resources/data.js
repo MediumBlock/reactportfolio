@@ -12,7 +12,7 @@ export const data = [
             p1: `My most ambitious project to date in both content and scope.`,
             p2: `It's a culmination of my acquired skills as a developer showcasing most, if not all, of my studies since April 2022.`,
             p3: `Incorporating React Hooks, Data management, Conditional rendering, React Router, and utilising several libraries for aspects such as page transitions and structure.`,
-            p4: `There were many difficulties overcome, especially regarding logic behind animations between page transitions. After numerous approaches, this issue was solved by breaking the component down into its core functions and massaging each aspect, whilst also looking into documentation and other resources to achieve the desired functionality.`,
+            p4: `There were many difficulties to overcome, especially regarding logic behind animations between page transitions. After numerous approaches, this issue was solved by breaking the component down into its core functions and massaging each aspect, whilst also looking into documentation and other resources to achieve the desired functionality.`,
             p5: `This App incorporates responsive design allowing for smooth visuals on most phones, tablets and PCs. Extensive use of off-platform app Canva was used to create image elements in the App.`
         },
         features: ['React', 'Hooks', 'Canva', 'React Libraries such as Framer Motion', 'React Router'],
