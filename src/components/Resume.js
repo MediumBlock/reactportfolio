@@ -62,7 +62,7 @@ export default function Resume() {
                 <div className="resume--right">
                     <div className="hero--right">
                         <h1>Michael Paspa</h1>
-                        <h2>Aspiring Developer.</h2>
+                        <h2>Front-End Developer</h2>
                         <h4>Driven with a passion for life and programming, eager to hit the ground running and reach the next level on my journey.</h4>
                         <hr />
                     </div>
