@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/reactportfolio/static/css/main.ee706492.css",
-    "main.js": "/reactportfolio/static/js/main.fc1a336f.js",
+    "main.js": "/reactportfolio/static/js/main.faa31bda.js",
     "static/media/minireddit-ss.png": "/reactportfolio/static/media/minireddit-ss.7bab5088af34a56fde6f.png",
     "static/media/picsome-ss.png": "/reactportfolio/static/media/picsome-ss.648028f93ed496ead397.png",
     "static/media/portfolio-ss.png": "/reactportfolio/static/media/portfolio-ss.b179f03100da1242a536.png",
@@ -15,13 +15,12 @@
     "static/media/green-checkmark.png": "/reactportfolio/static/media/green-checkmark.9ef513598d70176b0515.png",
     "static/media/tenzies.png": "/reactportfolio/static/media/tenzies.f4ebef2d64faff174494.png",
     "static/media/quizzical-ss.png": "/reactportfolio/static/media/quizzical-ss.a8d5f29b0ca190cbc71c.png",
+    "static/media/Michael Paspa_ Front-End Developer.pdf": "/reactportfolio/static/media/Michael Paspa_ Front-End Developer.d8be6c496baea55058b6.pdf",
     "static/media/portfolio-ss.webp": "/reactportfolio/static/media/portfolio-ss.99175f46b1c84613a63f.webp",
     "static/media/transparency8.webp": "/reactportfolio/static/media/transparency8.35656aa28588666a2402.webp",
     "static/media/headshot.webp": "/reactportfolio/static/media/headshot.28dfe43f19481088e3b7.webp",
-    "static/media/Michael Paspaliaris Resume.pdf": "/reactportfolio/static/media/Michael Paspaliaris Resume.f4cd44da207dd0c4dfbe.pdf",
     "static/media/green-checkmark.webp": "/reactportfolio/static/media/green-checkmark.a812e8ff478a41a8e390.webp",
     "static/media/quizzical.png": "/reactportfolio/static/media/quizzical.495b2ce93f3be5af3868.png",
-    "static/media/Michael Paspaliaris Resume-cropped.pdf": "/reactportfolio/static/media/Michael Paspaliaris Resume-cropped.d8f0ad7279a103c7df85.pdf",
     "static/media/quizzical-ss.webp": "/reactportfolio/static/media/quizzical-ss.e67855a28bdee91065f2.webp",
     "static/media/purpledots.png": "/reactportfolio/static/media/purpledots.6e8efa23c21c7c8ed32b.png",
     "static/media/tenzies-ss.png": "/reactportfolio/static/media/tenzies-ss.75ae4b2a9edd2765c328.png",
@@ -75,10 +74,10 @@
     "static/media/right.svg": "/reactportfolio/static/media/right.095a2c2b24f79d740ca0.svg",
     "static/media/left.svg": "/reactportfolio/static/media/left.527911056c1028344ceb.svg",
     "main.ee706492.css.map": "/reactportfolio/static/css/main.ee706492.css.map",
-    "main.fc1a336f.js.map": "/reactportfolio/static/js/main.fc1a336f.js.map"
+    "main.faa31bda.js.map": "/reactportfolio/static/js/main.faa31bda.js.map"
   },
   "entrypoints": [
     "static/css/main.ee706492.css",
-    "static/js/main.fc1a336f.js"
+    "static/js/main.faa31bda.js"
   ]
 }
