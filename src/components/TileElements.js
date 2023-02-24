@@ -51,7 +51,7 @@ export default function TileElements() {
                         <p>{thisProject.description.p5}</p>
                         {thisProject.description.p5 && <><br /></>}
                         <h4>Technologies and tools used:</h4>
-                        <ul>{thisProject.features.map(item => (<><li key={item}>{item}</li></>))}</ul>
+                        <ul>{thisProject.features.map(item => (<li key={uuidv4()}>{item}</li>))}</ul>
                         <h4>Approx time to complete:</h4>
                         <p>{thisProject.time}</p>
                         <h4>Link to project on GitHub <a href={thisProject.gitLink}
