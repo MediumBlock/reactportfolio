@@ -1,15 +1,14 @@
 import React from "react";
-import Navigation from "./components/Navigation";
+import NavigationOld from "./components/NavigationOld";
 import AnimatedRoutes from "./components/AnimatedRoutes";
-import NavigationTest from "./components/NavigationTest";
+import Navigation from "./components/Navigation";
 
 
 function App() {
 
   return (
     <div>
-      {/* <Navigation /> */}
-      <NavigationTest />
+      <Navigation />
       <AnimatedRoutes />
     </div>
   );
