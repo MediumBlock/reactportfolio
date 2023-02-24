@@ -152,8 +152,6 @@ h4 {
     color: grey;
 }
 
-/* test section */
-
 
 .hamburger--menu {
     --x-width: calc(var(--hamburger-height) * 1.41421356237);
@@ -191,8 +189,6 @@ h4 {
 }
 
 
-
-
 .hamburger--work::before {
     rotate: 45deg;
     width: var(--x-width);
@@ -217,45 +213,6 @@ h4 {
 .hamburger--green input {
     background-color: var(--background-green);
 }
-
-
-
-/* test section */
-
-
-
-/* .top--menu {
-    top: -12.5%;
-    right: -270%;
-    transition: transform 0.5s;
-    transform-origin: 30% 70%;
-    z-index: 6;
-}
-
-.top--menu.motion {
-    transform: rotate(0deg);
-}
-
-.top--menu.reverse--motion {
-    transform: rotate(45deg);
-}
-
-.bottom--menu {
-    top: -10%;
-    right: -270%;
-    transition: transform 0.8s;
-    transform-origin: 40% 50%;
-    z-index: 6
-}
-
-.bottom--menu.motion {
-    transform: rotate(0deg);
-}
-
-.bottom--menu.reverse--motion {
-    transform: rotate(-45deg);
-} */
-
 
 
 .page--markers {
