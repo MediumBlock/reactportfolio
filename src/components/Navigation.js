@@ -24,8 +24,11 @@ export default function Navigation() {
             "hamburger--menu" + (isMenuOpen ? " hamburger--work" : "")}
         ref={toggleHamburgerRef}
         onClick={handleToggle}
+
     >
-        <input type="checkbox" />
+        <input type="checkbox"
+            alt="Toggle Menu"
+        />
     </label>
 
     const boxFilled = location.pathname === "/aboutme" ?
