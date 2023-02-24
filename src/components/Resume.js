@@ -11,7 +11,7 @@ export default function Resume() {
             className="resume--container">
 
             <div className="resume--section">
-                <a href="https://github.com/MediumBlock/reactportfolio/blob/18a43edab39738e7ec18b0537959d1acfafb79f4/src/resources/Michael%20Paspaliaris%20Resume.pdf?raw=true">
+                <a href="https://github.com/MediumBlock/reactportfolio/blob/d5529497ce613179095a6624bc2ebde9a0285c02/src/resources/Michael%20Paspa_%20Front-End%20Developer.pdf?raw=true">
                     <div className="resume--download">
                         <img src={require("../resources/icloud-download-475016.webp")}
                             alt="download resume link"
