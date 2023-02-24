@@ -27,7 +27,7 @@ export default function Navigation() {
 
     >
         <input type="checkbox"
-            alt="Toggle Menu"
+            aria-label="Toggle Menu"
         />
     </label>
 
