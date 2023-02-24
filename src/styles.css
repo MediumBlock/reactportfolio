@@ -12,6 +12,11 @@
     --underline-cap-width: 4px;
     --underline-offset-y: -2px;
     --underline-padding-x: 0.12em;
+    --bar-width: clamp(30px, 6vw, 65px);
+    --bar-height: clamp(5px, 0.5vh, 100px);
+    --hamburger-gap: clamp(4px, 0.5vh, 50px);
+    --animation-timing: 250ms ease-in-out;
+    --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
 }
 
 html::-webkit-scrollbar {
@@ -147,7 +152,79 @@ h4 {
     color: grey;
 }
 
-.top--menu {
+/* test section */
+
+
+.hamburger--menu {
+    --x-width: calc(var(--hamburger-height) * 1.41421356237);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: var(--hamburger-gap);
+    z-index: 5;
+    opacity: 1;
+    width: max-content;
+    cursor: pointer;
+    top: -12.5%;
+    right: -270%;
+}
+
+.hamburger--menu::before,
+.hamburger--menu::after,
+.hamburger--menu input {
+    content: "";
+    width: var(--bar-width);
+    height: var(--bar-height);
+    background-color: var(--background-purp);
+    transform-origin: left center;
+    border-radius: 9999px;
+    transition: opacity var(--animation-timing), width var(--animation-timing),
+        rotate var(--animation-timing), translate var(--animation-timing), background-color var(--animation-timing);
+}
+
+.hamburger--menu input {
+    appearance: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    pointer-events: none;
+}
+
+
+
+
+.hamburger--work::before {
+    rotate: 45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height) / -2);
+}
+
+.hamburger--work::after {
+    rotate: -45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height) / 2);
+}
+
+
+.hamburger--work input {
+    opacity: 0;
+    width: 0;
+}
+
+
+.hamburger--green::before,
+.hamburger--green::after,
+.hamburger--green input {
+    background-color: var(--background-green);
+}
+
+
+
+/* test section */
+
+
+
+/* .top--menu {
     top: -12.5%;
     right: -270%;
     transition: transform 0.5s;
@@ -177,7 +254,7 @@ h4 {
 
 .bottom--menu.reverse--motion {
     transform: rotate(-45deg);
-}
+} */
 
 
 
@@ -464,7 +541,7 @@ img.whiteframe {
     font-size: clamp(10px, 0.7vw, 40px);
     font-weight: 400;
     color: var(--subtext-purp);
-    z-index: 2;    
+    z-index: 2;
 }
 
 .skills--right {
@@ -833,7 +910,6 @@ img.whiteframe {
 .elements--content {
     display: flex;
     position: relative;
-    /* top: 20%; */
     margin-left: 15%;
 
 }
@@ -894,7 +970,7 @@ img.whiteframe {
     }
 
 
-    
+
 
 
 }
@@ -928,7 +1004,7 @@ img.whiteframe {
     .elements--text a {
         top: 0;
     }
-    
+
     .tile--backarrow img {
         top: 8%;
         left: 9%;
@@ -946,6 +1022,7 @@ img.whiteframe {
     right: 0px;
     bottom: 0px;
     left: 0px;
+    z-index: 1;
 }
 
 .messageme--container {
@@ -1289,7 +1366,8 @@ input:focus {
     margin-top: 1%;
 }
 
-.resume--right h3, .contact--left .resume--weblink {
+.resume--right h3,
+.contact--left .resume--weblink {
     display: inline;
     --underline-width-scale: calc(var(--underline-width) / var(--underline-intrinsic-width));
     padding: 0 calc(var(--underline-padding-x) + calc(var(--underline-cap-width) * var(--underline-width-scale)));
@@ -1323,7 +1401,7 @@ input:focus {
     --underline-width: 12;
     color: purple;
 
-    
+
 }
 
 
