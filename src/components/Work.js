@@ -31,7 +31,7 @@ export default function Work() {
                     <h2><span>/</span>work<span>.</span></h2>
                     <h4>Some of the personal projects I've worked on.</h4>
                 </div>
-                <div className="tile--container">
+                <div className="tile--container" >
                     {dataMap}
                 </div>
             </div>

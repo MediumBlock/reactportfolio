@@ -17,6 +17,9 @@
     --hamburger-gap: clamp(4px, 0.5vh, 50px);
     --animation-timing: 250ms ease-in-out;
     --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+    --container-width: 55%;
+    --tile-height: 70%;
+    --tile-border-radius: 10px;
 }
 
 html::-webkit-scrollbar {
@@ -701,12 +704,13 @@ img.whiteframe {
     position: relative;
     display: grid;
     grid-template: 1fr 1fr / repeat(3, 1fr);
-    gap: 3% 1.5%;
-    width: 55%;
-    height: 60%;
+    gap: 5% 1.5%;
+    width: var(--container-width);
+    height: 50%;
     left: 23%;
     top: 10%;
 }
+
 
 .tile {
     position: relative;
@@ -714,6 +718,7 @@ img.whiteframe {
     display: flex;
     flex-direction: column;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: var(--tile-border-radius);
 }
 
 .tile:hover {
@@ -727,9 +732,6 @@ img.whiteframe {
     height: 100%;
 }
 
-.tile--top {
-    height: 70%;
-}
 
 .tile--bottom {
     display: table;
@@ -739,6 +741,9 @@ img.whiteframe {
     height: 30%;
     bottom: 0;
     width: 100%;
+    border-bottom-left-radius: var(--tile-border-radius);
+    border-bottom-right-radius: var(--tile-border-radius);
+
 }
 
 .tile--bottom h5 {
@@ -747,14 +752,24 @@ img.whiteframe {
     vertical-align: middle;
 }
 
-.tile--top img {
-    position: relative;
-    top: 5%;
-    left: 30%;
-    right: 30%;
-    width: clamp(50px, 40%, 160px);
-    margin-bottom: 20%;
+
+
+.tile--top {
+    height: var(--tile-height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
+
+.tile--top img {
+    position: static;
+    width: clamp(100px, calc(var(--tile-height) * 0.5), 160px);
+    margin: 20px 0;
+
+}
+
+
 
 @media screen and (max-width: 1000px) {
 
