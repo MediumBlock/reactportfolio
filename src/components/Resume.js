@@ -56,6 +56,7 @@ export default function Resume() {
                             <li>HTML</li>
                             <li>NodeJS</li>
                             <li>Git Version Control</li>
+                            <li>Visual Studio Code</li>
                         </ul>
                     </div>
                 </div>
@@ -83,6 +84,7 @@ export default function Resume() {
                             <li><b>Redux:</b> Learnt how to deploy Redux in React, learnt and implemented the different data flows in Redux such as the store, reducers, dispatch etc. Also learnt how to refactor with Redux toolkit and how middleware and thunks can be correctly utilised.</li>
                             <li><b>Algorithms & Data structures:</b> studied both Linear & Complex data structures such as Linked lists, Hash Maps, Heaps & various Algorithms in topics such as dyanmic programming, intervals and binary trees.</li>
                         </ul>
+                        <br />
                         <div className="resume--date">
                             <h4>Scrimba | React Developer Course </h4>
                             <h4>July - Aug 2022</h4>
@@ -99,7 +101,6 @@ export default function Resume() {
 
                     <div className="experience--right">
                         <h3>Work Summary</h3>
-
                         <div className="resume--date">
                             <h4>Foreign Investment Manager</h4>
                             <h4> Nov 2019 - Jan 2023</h4>
@@ -117,6 +118,7 @@ export default function Resume() {
                             <li><b>Financial analysis & modelling</b> to provide senior management with full financial visibility
                                 and meaningful findings, e.g. labour & materials supply analysis in new foreign markets.
                             </li>
+
                             <li><b>Foreign market research</b> providing in-depth strategic analysis on overseas real-estate,
                                 construction industry conditions and understanding of competitive advantages, and
                                 potential pitfalls.</li>
@@ -127,6 +129,7 @@ export default function Resume() {
                             <li><b>Cross-cultural team coordination</b> between internal & foreign partner teams including
                                 Samsung C&T for airport project in Taiwan, Canadian contractors for apartment project, US
                                 engineering design firms entering Vietnam</li>
+        
                             <li><b>Business Development activities</b> in several countries (such as Canada, USA, Kuwait, and
                                 more) order to further the goals of expanding Hoa Binh’s construction operations overseas</li>
                         </ul>
