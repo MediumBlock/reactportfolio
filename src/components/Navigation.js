@@ -107,7 +107,6 @@ export default function Navigation() {
     return (
 
         <div className="navigation--container">
-
             <div className="nav--logo">
                 <Link to="/">
                     {isMenuOpen && width < breakpoint ?

@@ -61,7 +61,6 @@ export default function TileElements() {
                         >
                             here.
                         </a></h4>
-
                     </div>
                     <a href={thisProject.link}
                         target='_blank'
