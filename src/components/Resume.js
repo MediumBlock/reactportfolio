@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
+import { Context } from "../Hooks/Context";
 import { motion } from "framer-motion";
 
 export default function Resume() {
+
+    const { width, breakpoint } = useContext(Context);
+
 
     return (
         <motion.div
@@ -19,47 +23,50 @@ export default function Resume() {
                         <h6>Download</h6>
                     </div>
                 </a>
-                <div className="resume--left">
-                    <div className="contact--left">
-                        <h4>Website</h4>
-                        <a href="https://mediumblock.github.io/reactportfolio/"
-                            target='_blank'
-                            rel="noopener"
-                            aria-label="portfolio link">
-                            <ul>
-                                <li className="resume--weblink">GitHub - Portfolio</li>
-                            </ul>
-                        </a>
+                {width > breakpoint ?
+                    <div className="resume--left">
+                        <div className="contact--left">
+                            <h4>Website</h4>
+                            <a href="https://mediumblock.github.io/reactportfolio/"
+                                target='_blank'
+                                rel="noopener"
+                                aria-label="portfolio link">
+                                <ul>
+                                    <li className="resume--weblink">GitHub - Portfolio</li>
+                                </ul>
+                            </a>
 
-                        <h4>Contact Details</h4>
-                        <ul>
-                            <li>Melbourne, Australia</li>
-                            <li>+61 420 686 886</li>
-                            <li>michael.paspa@gmail.com</li>
-                        </ul>
+                            <h4>Contact Details</h4>
+                            <ul>
+                                <li>Melbourne, Australia</li>
+                                <li>+61 420 686 886</li>
+                                <li>michael.paspa@gmail.com</li>
+                            </ul>
+                        </div>
+                        <div className="education--left">
+                            <h4>Formal Education</h4>
+                            <ul>
+                                <li>Bachelor of Accounting<br />UniSA (2011-2015)</li>
+                                <li>Bachelor of Mechanical & Manufacturing Engineering<br />UniMelb(incomplete) (2007-2010)</li>
+                            </ul>
+                        </div>
+                        <div className="tech--left">
+                            <h4>Technologies</h4>
+                            <ul>
+                                <li>Javascript</li>
+                                <li>React</li>
+                                <li>CSS</li>
+                                <li>React Router</li>
+                                <li>Redux</li>
+                                <li>HTML</li>
+                                <li>NodeJS</li>
+                                <li>Git Version Control</li>
+                                <li>Visual Studio Code</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div className="education--left">
-                        <h4>Formal Education</h4>
-                        <ul>
-                            <li>Bachelor of Accounting<br />UniSA (2011-2015)</li>
-                            <li>Bachelor of Mechanical & Manufacturing Engineering<br />UniMelb(incomplete) (2007-2010)</li>
-                        </ul>
-                    </div>
-                    <div className="tech--left">
-                        <h4>Technologies</h4>
-                        <ul>
-                            <li>Javascript</li>
-                            <li>React</li>
-                            <li>CSS</li>
-                            <li>React Router</li>
-                            <li>Redux</li>
-                            <li>HTML</li>
-                            <li>NodeJS</li>
-                            <li>Git Version Control</li>
-                            <li>Visual Studio Code</li>
-                        </ul>
-                    </div>
-                </div>
+                    : <br />
+                }
                 <div className="resume--right">
                     <div className="hero--right">
                         <h1>Michael Paspa</h1>
@@ -129,7 +136,7 @@ export default function Resume() {
                             <li><b>Cross-cultural team coordination</b> between internal & foreign partner teams including
                                 Samsung C&T for airport project in Taiwan, Canadian contractors for apartment project, US
                                 engineering design firms entering Vietnam</li>
-        
+
                             <li><b>Business Development activities</b> in several countries (such as Canada, USA, Kuwait, and
                                 more) order to further the goals of expanding Hoa Binh’s construction operations overseas</li>
                         </ul>

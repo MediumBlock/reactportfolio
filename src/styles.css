@@ -1308,13 +1308,9 @@ input:focus {
     color: rgba(71, 71, 71, 0.75);
 }
 
-
-
 .contact--left li {
     font-size: 1.1rem;
 }
-
-
 
 .resume--right {
     margin-left: 4%;
@@ -1567,7 +1563,7 @@ input:focus {
 
     .resume--download {
         right: 5%;
-        top: 1vw;
+        top: clamp(5px, 2vh, 30px);
     }
 }
 

@@ -84,6 +84,7 @@ export default function Navigation() {
         handleToggle();
     }
 
+
     function handleSideBar(loc) {
         navigate(loc, { state: { value: 1000 } })
     }
