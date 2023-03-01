@@ -82,7 +82,7 @@ export default function Resume() {
                         </div>
                         <p>Codecademy is a paid service that offers many pathways in most programming disciplines. Enrolled in the front-end developer course over 7 months I took hundreds of classes and completed over 80 assignments & projects in the the following fields / learning objectives: </p>
                         <ul>
-                            <li><b>The fundamentals of Web Design:</b> How to plan for and make a website visually appealing with topics such as colour theory, UI & Text design, site layout and how to properly plan out a website with skills such as wireframing and prototyping</li>
+                            <li><b>The fundamentals of Web Design:</b> How to plan for and make a website visually appealing with topics such as colour theory, UI & Text design, site layout and how to properly plan out a website with skills such as wireframing and prototyping.</li>
                             <li><b>Early web programming fundamentals:</b> How to effectively programmatically create a simple web page with HTML, as well as basic CSS stylings such as the Box Model, CSS Selectors, Display & Positioning.</li>
                             <li><b>Responsive Design & CSS Animations:</b> How to make a website responsive by utilising CSS Grid, Flexbox, media queries, as well as how to create and implement animations using pure CSS.</li>
                             <li><b>Deploying websites:</b> Utlising GitHub for building and maintaining respositories, understanding and implementing Git operations as well as version control tools such as Branching as well as working with a team through Git.</li>
@@ -121,7 +121,7 @@ export default function Resume() {
                             <li><b>Major investment evaluations</b> ranging from $2-20M USD in capital outlay; presenting
                                 insights on viability, dangers and strategic considerations to drive management decision
                                 making and strategy, including overseas markets entry, real estate development projects,
-                                foreign company acquisitions etc</li>
+                                foreign company acquisitions, etc.</li>
                             <li><b>Financial analysis & modelling</b> to provide senior management with full financial visibility
                                 and meaningful findings, e.g. labour & materials supply analysis in new foreign markets.
                             </li>
@@ -135,10 +135,10 @@ export default function Resume() {
                                 Malaysian, Singaporean and Australian property developers.</li>
                             <li><b>Cross-cultural team coordination</b> between internal & foreign partner teams including
                                 Samsung C&T for airport project in Taiwan, Canadian contractors for apartment project, US
-                                engineering design firms entering Vietnam</li>
+                                engineering design firms entering Vietnam.</li>
 
                             <li><b>Business Development activities</b> in several countries (such as Canada, USA, Kuwait, and
-                                more) order to further the goals of expanding Hoa Binh’s construction operations overseas</li>
+                                more) order to further the goals of expanding Hoa Binh’s construction operations overseas.</li>
                         </ul>
                         <hr />
 
